@@ -1,38 +1,85 @@
-.App {
-  text-align: center;
+*{
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+#root {
+  height: 100%;
+  width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+html,body{
+  height: 100%;
+  width: 100%;
   display: flex;
-  flex-direction: column;
+  /*flex: 1;*/
+  font-family: "Noto Sans JP", sans-serif;
+  display: flex;
+}
+
+html {
+  font-size: 15px;
+}
+@media (min-width: 400px) {
+  html { /* TABLET */
+    font-size: 18px;
+  }
+  header {
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+  .header_menu {
+    width: 50%;
+    padding-left: 72px;
+  }
+}
+
+@media (min-width: 768px) {
+  html { /* DESKTOP */
+    font-size: 21px;
+  }
+  header {
+    padding-left: 44px;
+    padding-right: 44px;
+  }
+  .header_menu {
+    padding-left: 72px;
+  }
+
+}
+
+header {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  color: black;
+  font-family: Raleway, sans-serif;
+  font-size: 28px;
+  flex: 1
 }
 
-.App-link {
-  color: #61dafb;
+.header_menu {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  color: black;
+  font-size: 24px;
+  flex: 1
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.ant-menu, .ant-menu-light, .ant-menu-root, .ant-menu-horizontal {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row nowrap;
 }
+
+.ant-menu-item-selected::marker, ant-menu-item-only-child::marker {
+  list-style-type: none;
+}
+
+/*.ant-menu-submenu, .ant-menu-horizontal, .ant-menu-overflowed-submenu {*/
+/*  display: flex;*/
+/*  flex-direction: column;*/
+/*}*/

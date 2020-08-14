@@ -1,7 +1,8 @@
+@import '~antd/dist/antd.css';
+
 *{
   box-sizing: border-box;
 }
-
 
 #root {
   height: 100%;
@@ -12,14 +13,14 @@ html,body{
   height: 100%;
   width: 100%;
   display: flex;
-  /*flex: 1;*/
   font-family: "Noto Sans JP", sans-serif;
-  display: flex;
 }
 
 html {
   font-size: 15px;
+  /*--antd-wave-shadow-color: #6CCBB2;*/
 }
+
 @media (min-width: 400px) {
   html { /* TABLET */
     font-size: 18px;
@@ -29,8 +30,10 @@ html {
     padding-right: 36px;
   }
   .header_menu {
-    width: 50%;
     padding-left: 72px;
+  }
+  .ant-menu-horizontal {
+    width: 31vmax;
   }
 }
 
@@ -43,9 +46,11 @@ html {
     padding-right: 44px;
   }
   .header_menu {
-    padding-left: 72px;
+    padding-left: 330px;
   }
-
+  .ant-menu-horizontal {
+    width: 20vmax;
+  }
 }
 
 header {
@@ -53,33 +58,62 @@ header {
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
-  color: black;
+  color: rgba(0, 0, 0, 0.65);
   font-family: Raleway, sans-serif;
   font-size: 28px;
-  flex: 1
+  flex: 1;
+}
+
+header p {
+  margin: revert;
+  display: flex;
+  flex-flow: row nowrap;
+  /*border-bottom: 2px solid #f0f0f0;*/
+  /*margin-bottom: 24px;*/
 }
 
 .header_menu {
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-end;
-  color: black;
-  font-size: 24px;
-  flex: 1
+  flex: 1;
+  /*border-bottom: 2px solid #f0f0f0;*/
 }
 
 .ant-menu, .ant-menu-light, .ant-menu-root, .ant-menu-horizontal {
-  width: 100%;
+  /*width: 100%;*/
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-end;
   flex-flow: row nowrap;
+  font-size: 22px;
 }
 
-.ant-menu-item-selected::marker, ant-menu-item-only-child::marker {
-  list-style-type: none;
+/*change header menu underline color*/
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item:hover,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu:hover,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-active,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-active,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-open,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-open,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-selected,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-selected {
+  color: #1890ff;
+  border-bottom: 2px solid #1890ff;
 }
 
-/*.ant-menu-submenu, .ant-menu-horizontal, .ant-menu-overflowed-submenu {*/
-/*  display: flex;*/
-/*  flex-direction: column;*/
-/*}*/
+/*Change header menu text colors*/
+.ant-menu-horizontal > .ant-menu-item a {
+  color: rgba(0, 0, 0, 0.65);
+}
+
+/*Change header menu selected text color*/
+.ant-menu-horizontal > .ant-menu-item-selected a {
+  color: #1890ff;
+}
+
+.ant-menu-horizontal {
+  line-height: 46px;
+  white-space: nowrap;
+  border-bottom: 2px solid #f0f0f0;
+  /*width: 100%;*/
+}

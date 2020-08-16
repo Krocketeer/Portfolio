@@ -68,6 +68,7 @@ header p {
   margin: revert;
   display: flex;
   flex-flow: row nowrap;
+  white-space: nowrap;
   /*border-bottom: 2px solid #f0f0f0;*/
   /*margin-bottom: 24px;*/
 }
@@ -114,6 +115,6 @@ header p {
 .ant-menu-horizontal {
   line-height: 46px;
   white-space: nowrap;
-  border-bottom: 2px solid #f0f0f0;
+  border-bottom: 0px solid #f0f0f0;
   /*width: 100%;*/
 }

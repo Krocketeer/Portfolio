@@ -8,18 +8,16 @@ import Design from "./pages/Design"
 import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
 function App() {
-    return (
-        <Router>
-            <div className="App">
-                <Header />
-                <Switch>
-                    <Router path="/" exact component={Design} />
-                    <Route path="/about" component={About} />
-                    <Route path="/code" component={Code} />
-                </Switch>
-            </div>
-        </Router>
-    );
+    return <Router>
+        <div className="App">
+            <Header />
+            <Switch>
+                <Router path="/" exact component={Design} />
+                <Route path="/about" component={About} />
+                <Route path="/code" component={Code} />
+            </Switch>
+        </div>
+    </Router>
 }
 
 export default App;

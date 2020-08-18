@@ -25,7 +25,7 @@ html {
   html { /* TABLET */
     font-size: 18px;
   }
-  header {
+  header, .bio {
     padding-left: 36px;
     padding-right: 36px;
   }
@@ -41,7 +41,7 @@ html {
   html { /* DESKTOP */
     font-size: 21px;
   }
-  header {
+  header, .bio  {
     padding-left: 44px;
     padding-right: 44px;
   }
@@ -117,4 +117,23 @@ header p {
   white-space: nowrap;
   border-bottom: 0px solid #f0f0f0;
   /*width: 100%;*/
+}
+
+.bio {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  padding-top: 30px;
+}
+
+.bio img {
+  max-width: 25vw;
+  height: auto;
+}
+
+#text {
+  display: flex;
+  flex-direction: column;
+  max-width: 50vw;
+  font-size: 18px;
 }

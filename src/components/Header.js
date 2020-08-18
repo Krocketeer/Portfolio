@@ -1,5 +1,5 @@
 import React, {useState} from "react"
-import {BrowserRouter as Router, Link} from "react-router-dom";
+import {Link} from "react-router-dom";
 import {Menu} from "antd";
 
 import About from "../pages/About";
@@ -7,27 +7,29 @@ import Code from "../pages/Code";
 import Design from "../pages/Design"
 
 function Header() {
-    const [state, setState] = useState("Design");
-    console.log(state)
-    return  <Router>
-        <header className="site_header">
-            <p>Kenny Le</p>
-            <div className="header_menu">
-                <Menu selectedKeys={[state]} mode="horizontal" onClick={e => setState(e.key)}>
-                    <Menu.Item key="Design" onClick={e => setState("Design")}>
-                        <Link to="">Design</Link>
-                    </Menu.Item>
-                    <Menu.Item key="Code" onClick={e => setState("Code")}>
-                        <Link to="/code">Code</Link>
-                    </Menu.Item>
-                    <Menu.Item key="About" onClick={e => setState("About")}>
-                        <Link to="/about">About</Link>
-                    </Menu.Item>
-                </Menu>
-            </div>
-        </header>
-    </Router>
+    const path = window.location.pathname
+    const [state, setState] = useState(path);
+
+    console.log(state.substring(1))
+    return <header className="site_header">
+        <p>Kenny Le</p>
+        <div className="header_menu">
+            <Menu selectedKeys={[state]} mode="horizontal" onClick={e => setState(e.key)}>
+                <Menu.Item key="/" onClick={e => setState("/")}>
+                    <Link to="/">Design</Link>
+                </Menu.Item>
+                <Menu.Item key="/code" onClick={e => setState("/code")}>
+                    <Link to="/code">Code</Link>
+                </Menu.Item>
+                <Menu.Item key="/about" onClick={e => setState("/about")}>
+                    <Link to="/about">About</Link>
+                </Menu.Item>
+            </Menu>
+        </div>
+    </header>
 }
+
+
 
 export default Header
 

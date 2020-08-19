@@ -121,13 +121,16 @@ header p {
 
 .bio {
   display: flex;
-  flex-direction: row-reverse;
+  /*flex-direction: row-reverse;*/
   justify-content: space-around;
   padding-top: 30px;
+  /*flex-wrap: wrap;*/
+  flex-flow: row-reverse wrap;
 }
 
 .bio img {
   max-width: 25vw;
+  min-width: 200px;
   height: auto;
 }
 
@@ -135,5 +138,6 @@ header p {
   display: flex;
   flex-direction: column;
   max-width: 50vw;
+  min-width: 200px;
   font-size: 18px;
 }

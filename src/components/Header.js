@@ -1,5 +1,5 @@
 import React, {useState} from "react"
-import {Link} from "react-router-dom";
+import {Link, useHistory} from "react-router-dom";
 import {Menu} from "antd";
 
 import About from "../pages/About";
@@ -7,10 +7,11 @@ import Code from "../pages/Code";
 import Design from "../pages/Design"
 
 function Header() {
+    const history = useHistory();
     const path = window.location.pathname
     const [state, setState] = useState(path);
 
-    console.log(state.substring(1))
+    console.log(history)
     return <header className="site_header">
         <p>Kenny Le</p>
         <div className="header_menu">

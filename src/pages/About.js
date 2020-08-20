@@ -6,7 +6,7 @@ import {BrowserRouter, Link, Route} from "react-router-dom";
 function About() {
     return <div className="bio">
         <div id="text">
-            <h1>Hello there</h1>
+            <h1 style={{fontWeight: 350}}>Hello there</h1>
             <p>I'm Kenny, an undergraduate studying
                 <a href="https://www.hcde.washington.edu/"> Human Centered Design & Engineering </a>
                 at the University of Washington. I am interested in how design and data can be leveraged

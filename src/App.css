@@ -35,6 +35,9 @@ html {
   .ant-menu-horizontal {
     width: 31vmax;
   }
+  .bio img {
+    order: 2;
+  }
 }
 
 @media (min-width: 768px) {
@@ -50,6 +53,9 @@ html {
   }
   .ant-menu-horizontal {
     width: 20vmax;
+  }
+  .bio img {
+    order: 2;
   }
 }
 
@@ -121,23 +127,41 @@ header p {
 
 .bio {
   display: flex;
-  /*flex-direction: row-reverse;*/
   justify-content: space-around;
   padding-top: 30px;
-  /*flex-wrap: wrap;*/
   flex-flow: row-reverse wrap;
+  /*flex-direction: row-reverse;*/
+  /*flex-wrap: wrap;*/
 }
 
 .bio img {
   max-width: 25vw;
-  min-width: 200px;
-  height: auto;
+  min-width: 230px;
+  height: 100%;
+  /*order: -2;*/
 }
 
 #text {
   display: flex;
-  flex-direction: column;
+  flex-flow: column wrap;
   max-width: 50vw;
-  min-width: 200px;
+  min-width: 400px;
   font-size: 18px;
+}
+
+.codeProjects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#codeProject1, #codeProject2, #codeProject3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.65);
+  padding: 0px 43vw 0px;
+  margin: 10px;
+  height: 100px;
 }

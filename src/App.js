@@ -12,9 +12,12 @@ function App() {
         <div className="App">
             <Header />
             <Switch>
-                <Router path="/" exact component={Design} />
+                <Route path="/" exact component={Design} />
                 <Route path="/about" component={About} />
                 <Route path="/code" component={Code} />
+                <Route path="/design/:projects" component={Design}></Route>
+                <Route path="/code/:projects" component={<Code />}></Route>
+                {/*<Route path="*">404 Not Found</Route>*/}
             </Switch>
         </div>
     </Router>

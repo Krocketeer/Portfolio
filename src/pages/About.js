@@ -5,6 +5,7 @@ import {BrowserRouter, Link, Route} from "react-router-dom";
 
 function About() {
     return <div className="bio">
+        <img src={profile_pic} alt="Kenny Le"/>
         <div id="text">
             <h1 style={{fontWeight: 350}}>Hello there</h1>
             <p>I'm Kenny, an undergraduate studying
@@ -14,7 +15,6 @@ function About() {
                 situations to find out what it means to be a human.
             </p>
         </div>
-        <img src={profile_pic} alt="Kenny Le"/>
     </div>
 }
 

@@ -1,5 +1,4 @@
 import React, {useState} from "react"
-import {Menu} from "antd";
 import {useHistory, Route, Link} from "react-router-dom";
 
 // function Code() {
@@ -20,35 +19,37 @@ import {useHistory, Route, Link} from "react-router-dom";
 //
 // export default Code
 
-export default function Code(props) {
+export default function Code() {
     const history = useHistory()
-    const path = history.location.pathname.substring(1)
-    const [activeProject, setActiveProject] = useState(props.match.params.projects)
-    // const [activeProject, setActiveProject] = useState(path)
+    // const path = history.location.pathname.substring(1)
+    const path = window.location.pathname
+    const [activeProject, setActiveProject] = useState(path)
     const projectName = ["nullHolder", "Project 1", "Project 2", "Project 3", "Project 4"]
 
-    return <div className="codeProjects">
-
-        <Link to="/code/codeProject1">
-            <div id="codeProject1" style={styles.projectBox} onClick={e => setActiveProject("codeProject1")}>
-                <p>Project 1</p>
-                {/*<Link to="/code/codeProject1">{projectName[1]}</Link>*/}
+    return <div className="codeProjects" onClick={e => setActiveProject(e.key)}>
+        <Link to="/code/project1">
+            <div id="/code/project1" style={styles.projectBox} onClick={e => setActiveProject("/code/project1")}>
+                <p>{projectName[1]}</p>
             </div>
         </Link>
 
-        <div id="codeProject2" style={styles.projectBox}>
-            {/*<p>Project 2</p>*/}
-            <Link to="/code/codeProject2">{projectName[2]}</Link>
-        </div>
+        <Link to="/code/project2">
+            <div id="project2" style={styles.projectBox}>
+                <p>Project 2</p>
+                {/*<Link to="/code/codeProject2">{projectName[2]}</Link>*/}
+            </div>
+        </Link>
 
-        <div id="codeProject3" style={styles.projectBox}>
-            {/*<p>Project 3</p>*/}
-            <Link to="/code/codeProject3">{projectName[3]}</Link>
-        </div>
+        <Link to="/code/project3">
+            <div id="project3" style={styles.projectBox}>
+                <p>Project 3</p>
+                {/*<Link to="/code/codeProject3">{projectName[3]}</Link>*/}
+            </div>
+        </Link>
 
-        <div id="codeProject4" style={styles.projectBox}>
+        <div id="project4" style={styles.projectBox}>
             {/*<p>Project 4</p>*/}
-            <Link to="/code/codeProject4">{projectName[4]}</Link>
+            <Link to="/code/project4">{projectName[4]}</Link>
         </div>
     </div>
 }
@@ -71,7 +72,8 @@ const styles={
         maxHeight: "21vw",
         minWidth: "450px",
         maxWidth: "47vw",
-        width: "47vw"
+        width: "47vw",
+        fontSize: "24px"
     }
 }
 

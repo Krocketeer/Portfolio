@@ -5,6 +5,7 @@ import Header from "./components/Header";
 import Code from "./pages/Code"
 import About from "./pages/About"
 import Design from "./pages/Design"
+import Project1 from "./projects/Project1";
 import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
 function App() {
@@ -15,8 +16,9 @@ function App() {
                 <Route path="/" exact component={Design} />
                 <Route path="/about" component={About} />
                 <Route path="/code" component={Code} />
-                <Route path="/design/:projects" component={Design}></Route>
-                <Route path="/code/:projects" component={<Code />}></Route>
+                <Route path="/code/project1" component={Project1} />
+                {/*<Route path="/design/:projects" component={Design}></Route>*/}
+                {/*<Route path="/code/:projects" component={<Code />}></Route>*/}
                 {/*<Route path="*">404 Not Found</Route>*/}
             </Switch>
         </div>

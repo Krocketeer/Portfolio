@@ -1,7 +1,6 @@
 import React, {useState} from "react"
 import profile_pic from "../images/Test2.png";
-import {Menu} from "antd";
-import {BrowserRouter, Link, Route} from "react-router-dom";
+import { MDBMask, MDBView } from "mdbreact";
 
 function About() {
     return <div className="bio">

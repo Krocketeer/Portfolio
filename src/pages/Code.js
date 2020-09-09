@@ -1,43 +1,37 @@
-import React, {useState} from "react"
-import {useHistory, Route, Link} from "react-router-dom";
+import React, { useState } from "react"
+import { Link } from "react-router-dom";
+import { MDBMask, MDBView, MDBContainer, MDBRow, MDBCol } from "mdbreact";
+import Airbnb from "../images/AirBnb Logo w Name.png";
 
-// function Code() {
-//     return <div className="codeProjects">
-//         <div id="codeProject1">
-//             <p>Project 1</p>
-//         </div>
-//
-//         <div id="codeProject2">
-//             <p>Project 2</p>
-//         </div>
-//
-//         <div id="codeProject3">
-//             <p>Project 3</p>
-//         </div>
-//     </div>
-// }
-//
-// export default Code
 
 export default function Code() {
-    const history = useHistory()
-    // const path = history.location.pathname.substring(1)
     const path = window.location.pathname
     const [activeProject, setActiveProject] = useState(path)
     const projectName = ["nullHolder", "Project 1", "Project 2", "Project 3", "Project 4"]
 
     return <div className="codeProjects" onClick={e => setActiveProject(e.key)}>
         <Link to="/code/project1">
-            <div id="/code/project1" style={styles.projectBox} onClick={e => setActiveProject("/code/project1")}>
-                <p>{projectName[1]}</p>
-            </div>
+            <MDBView hover>
+                <div id="project1" style={styles.projectBox} onClick={e => setActiveProject("/code/project1")}>
+                    <img style={styles.image} src={Airbnb} alt="airbnb logo" />
+                    <MDBMask overlay="black-strong">
+                        <div style={styles.hoverText}>
+                            <p>Project 1 title</p>
+                            <p>Project 1 Description</p>
+                        </div>
+                    </MDBMask>
+                </div>
+            </MDBView>
         </Link>
 
         <Link to="/code/project2">
-            <div id="project2" style={styles.projectBox}>
-                <p>Project 2</p>
-                {/*<Link to="/code/codeProject2">{projectName[2]}</Link>*/}
-            </div>
+            <MDBView hover>
+                <div id="project2" style={styles.projectBox}>
+                    <p>Project 2</p>
+                    {/*<Link to="/code/codeProject2">{projectName[2]}</Link>*/}
+                </div>
+                <MDBMask className="flex-center" overlay="red-strong"></MDBMask>
+            </MDBView>
         </Link>
 
         <Link to="/code/project3">
@@ -55,11 +49,17 @@ export default function Code() {
 }
 
 const styles={
-    pageLayout:{
+    hoverText:{
         display: "flex",
-        flexFlow: "rowWrap",
+        flexDirection: "column",
+        flexWrap: "wrap",
         justifyContent: "center",
-        alignItems: "center"
+        alignItems: "center",
+        textAlign: "center",
+        color: "white",
+        fontWeight: "500",
+        fontSize: "24px",
+        lineHeight: "24px",
     },
     projectBox: {
         display: "flex",
@@ -74,6 +74,14 @@ const styles={
         maxWidth: "47vw",
         width: "47vw",
         fontSize: "24px"
+    },
+    image: {
+        minHeight: "200px",
+        height: "20.5vw",
+        maxHeight: "20.5vw",
+        minWidth: "450px",
+        maxWidth: "47vw",
+        width: "47vw",
     }
 }
 

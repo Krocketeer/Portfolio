@@ -1,10 +1,7 @@
 import React, {useState} from "react"
-import {Link, useHistory} from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import {Menu} from "antd";
 
-import About from "../pages/About";
-import Code from "../pages/Code";
-import Design from "../pages/Design"
 
 function Header() {
     const history = useHistory();
@@ -13,7 +10,9 @@ function Header() {
 
     console.log(history)
     return <header className="site_header">
-        <p>Kenny Le</p>
+        <Link to="/">
+            <p style={{color: "black"}} onClick={e => setState("/")}>Kenny Le</p>
+        </Link>
         <div className="header_menu">
             <Menu selectedKeys={[state]} mode="horizontal" onClick={e => setState(e.key)}>
                 <Menu.Item key="/" onClick={e => setState("/")}>

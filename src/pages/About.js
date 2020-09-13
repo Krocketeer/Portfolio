@@ -1,6 +1,5 @@
-import React, {useState} from "react"
+import React from "react"
 import profile_pic from "../images/Test2.png";
-import { MDBMask, MDBView } from "mdbreact";
 
 function About() {
     return <div className="bio">

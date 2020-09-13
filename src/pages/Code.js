@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import { Link } from "react-router-dom";
-import { MDBMask, MDBView, MDBContainer, MDBRow, MDBCol } from "mdbreact";
+import { MDBMask, MDBView } from "mdbreact";
 import Airbnb from "../images/AirBnb Logo w Name.png";
 
 export default function Code() {

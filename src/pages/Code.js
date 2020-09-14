@@ -67,8 +67,8 @@ export default function Code() {
     </div>
 }
 
-const styles={
-    hoverText:{
+const styles= {
+    hoverText: {
         display: "flex",
         flexDirection: "column",
         flexWrap: "wrap",
@@ -77,8 +77,9 @@ const styles={
         textAlign: "center",
         color: "white",
         fontWeight: "500",
-        fontSize: "24px",
-        lineHeight: "24px",
+        fontSize: "1.45em",
+        lineHeight: "16px",
+        marginTop: "24px"
     },
     projectBox: {
         display: "flex",
@@ -96,8 +97,16 @@ const styles={
     },
     image: {
         minHeight: "198px",
-        height: "20.5vw",
-        maxHeight: "20.5vw",
+        height: "20.75vw",
+        maxHeight: "20.75vw",
+        minWidth: "448px",
+        maxWidth: "47vw",
+        width: "47vw",
+    },
+    imageModified: {
+        minHeight: "198px",
+        height: "20.85vw",
+        maxHeight: "20.85vw",
         minWidth: "448px",
         maxWidth: "47vw",
         width: "47vw",

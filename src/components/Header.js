@@ -4,11 +4,13 @@ import {Menu} from "antd";
 
 
 function Header() {
-    const history = useHistory();
+    // const history = useHistory();
     const path = window.location.pathname
     const [state, setState] = useState(path);
-
-    console.log(history)
+    console.log(path)
+    // if (path.includes("design")) {
+    //     setState("/")
+    // }
     return <header className="site_header">
         <Link to="/">
             <p style={{color: "black"}} onClick={e => setState("/")}>Kenny Le</p>

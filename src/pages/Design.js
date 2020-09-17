@@ -2,22 +2,29 @@ import React, { useState } from "react"
 import { Link } from "react-router-dom";
 import { MDBMask, MDBView } from "mdbreact";
 import Airbnb from "../images/AirBnb Logo w Name.png";
-import SeaTransitCover from "../images/Cover.png"
+import SeaTransitCover from "../images/STHoverCover.png"
+import SeaTransitCoverHover from "../images/STCover.png"
 
 export default function Design() {
     const path = window.location.pathname
     const [activeProject, setActiveProject] = useState(path)
+    const [image, setImage] = useState(SeaTransitCover)
     const projectName = ["nullHolder", "Seattle Transit Rebrand", "Project 2", "Project 3", "Project 4"]
 
     return <div className="designProjects" onClick={e => setActiveProject(e.key)}>
         <Link to="/design/seattleTransit">
             <MDBView hover>
-                <div id={projectName[1]} style={styles.projectBox} onClick={e => setActiveProject("/design/seattleTransit")}>
-                    <img style={styles.imageModified} src={SeaTransitCover} alt="Seattle Transit Rebrand" />
+                <div id={projectName[1]} style={styles.projectBox}
+                     onClick={() => setActiveProject("/design/seattleTransit")}
+                     onMouseOver={() => setImage(SeaTransitCover)}
+                     onMouseOut={() => setImage(SeaTransitCoverHover)}>
+                    <img style={styles.imageModified}
+                        src={image}
+                         alt="Seattle Transit Rebrand" />
                     <MDBMask overlay="black-strong">
                         <div style={styles.hoverText}>
                             <p>{projectName[1]}</p>
-                            <p style={{fontSize: ".75em"}}>Visual Design</p>
+                            <p style={{fontSize: ".75em"}}>Visual Design & Brand Identity</p>
                         </div>
                     </MDBMask>
                 </div>
@@ -26,7 +33,7 @@ export default function Design() {
 
         <Link to="/design/project2">
             <MDBView hover>
-                <div id="project2" style={styles.projectBox} onClick={e => setActiveProject("/code/project2")}>
+                <div id="project2" style={styles.projectBox} onClick={() => setActiveProject("/code/project2")}>
                     <img style={styles.image} src={Airbnb} alt="airbnb logo" />
                     <MDBMask overlay="black-strong">
                         <div style={styles.hoverText}>
@@ -40,7 +47,7 @@ export default function Design() {
 
         <Link to="/design/project3">
             <MDBView hover>
-                <div id="project3" style={styles.projectBox} onClick={e => setActiveProject("/code/project3")}>
+                <div id="project3" style={styles.projectBox} onClick={() => setActiveProject("/code/project3")}>
                     <img style={styles.image} src={Airbnb} alt="airbnb logo" />
                     <MDBMask overlay="black-strong">
                         <div style={styles.hoverText}>
@@ -54,7 +61,7 @@ export default function Design() {
 
         <Link to="/design/project4">
             <MDBView hover>
-                <div id="project4" style={styles.projectBox} onClick={e => setActiveProject("/code/project4")}>
+                <div id="project4" style={styles.projectBox} onClick={() => setActiveProject("/code/project4")}>
                     <img style={styles.image} src={Airbnb} alt="airbnb logo" />
                     <MDBMask overlay="black-strong">
                         <div style={styles.hoverText}>
@@ -86,7 +93,7 @@ const styles= {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        border: "1px solid rgba(0, 0, 0, 0.65)",
+        // border: "1px solid rgba(0, 0, 0, 0.65)",
         margin: "10px",
         minHeight: "200px",
         height: "21vw",

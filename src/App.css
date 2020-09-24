@@ -9,12 +9,14 @@
   width: 100%;
 }
 
-html,body{
+html, body{
   height: 100%;
   width: 100%;
   display: flex;
   font-family: "Noto Sans JP", sans-serif;
   background-color: rgb(248, 248, 248);
+  color: black;
+  font-size: 15px;
 }
 
 html {
@@ -23,7 +25,7 @@ html {
 }
 
 @media (min-width: 400px) {
-  html { /* TABLET */
+  html, body { /* TABLET */
     font-size: 18px;
   }
   header, .bio {
@@ -36,13 +38,21 @@ html {
   .ant-menu-horizontal {
     width: 31vmax;
   }
-  .bio img {
-    /*order: 2;*/
+
+  .intro {
+    padding-left: 108px;
+    padding-right: 108px;
+  }
+
+  #details {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
   }
 }
 
 @media (min-width: 768px) {
-  html { /* DESKTOP */
+  html, body { /* DESKTOP */
     font-size: 21px;
   }
   header, .bio  {
@@ -55,9 +65,18 @@ html {
   .ant-menu-horizontal {
     width: 20vmax;
   }
-  .bio img {
-    /*order: 2;*/
+
+  .intro {
+    padding-left: 108px;
+    padding-right: 108px;
   }
+
+  #details {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
+
 }
 
 header {
@@ -93,7 +112,7 @@ header p {
   display: flex;
   justify-content: flex-end;
   flex-flow: row nowrap;
-  font-size: 22px;
+  font-size: 23px;
   background-color: rgb(248, 248, 248);
 }
 
@@ -112,7 +131,8 @@ header p {
 
 /*Change header menu text colors*/
 .ant-menu-horizontal > .ant-menu-item a {
-  color: rgba(0, 0, 0, 0.65);
+  /*color: rgba(0, 0, 0, 0.65);*/
+  color: black;
 }
 
 /*Change header menu selected text color*/
@@ -187,8 +207,38 @@ header p {
 }
 
 .intro {
+  /*padding-left: 64px;*/
+  /*padding-right: 64px;*/
   padding-left: 108px;
+  padding-right: 108px;
 }
+
+#pageCover {
+  display: flex;
+  justify-content: center;
+}
+
+#pageHeader {
+  margin-top: 100px;
+}
+
+h4 {
+  margin-bottom: 0.25em;
+}
+
+#details {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  /*align-items: center;*/
+}
+
+#info {
+  padding-bottom: 50px;
+  padding-right: 100px;
+  min-width: 269px;
+}
+
 
 /*#project1, #project2, #project3, #project4 {*/
 /*  display: flex;*/

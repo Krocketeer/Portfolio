@@ -11,7 +11,7 @@ export default function Code() {
     return <div className="codeProjects" onClick={e => setActiveProject(e.key)}>
         <Link to="/code/project1">
             <MDBView hover>
-                <div id={projectName[1]} style={styles.projectBox} onClick={e => setActiveProject("/code/project1")}>
+                <div id={projectName[1]} style={styles.projectBox} onClick={() => setActiveProject("/code/project1")}>
                     <img style={styles.image} src={Airbnb} alt="airbnb logo" />
                     <MDBMask overlay="black-strong">
                         <div style={styles.hoverText}>
@@ -25,7 +25,7 @@ export default function Code() {
 
         <Link to="/code/project2">
             <MDBView hover>
-                <div id="project2" style={styles.projectBox} onClick={e => setActiveProject("/code/project2")}>
+                <div id="project2" style={styles.projectBox} onClick={() => setActiveProject("/code/project2")}>
                     <img style={styles.image} src={Airbnb} alt="airbnb logo" />
                     <MDBMask overlay="black-strong">
                         <div style={styles.hoverText}>
@@ -39,7 +39,7 @@ export default function Code() {
 
         <Link to="/code/project3">
             <MDBView hover>
-                <div id="project3" style={styles.projectBox} onClick={e => setActiveProject("/code/project3")}>
+                <div id="project3" style={styles.projectBox} onClick={() => setActiveProject("/code/project3")}>
                     <img style={styles.image} src={Airbnb} alt="airbnb logo" />
                     <MDBMask overlay="black-strong">
                         <div style={styles.hoverText}>
@@ -53,7 +53,7 @@ export default function Code() {
 
         <Link>
             <MDBView hover>
-                <div id="project4" style={styles.projectBox} onClick={e => setActiveProject("/code/project4")}>
+                <div id="project4" style={styles.projectBox} onClick={() => setActiveProject("/code/project4")}>
                     <img style={styles.image} src={Airbnb} alt="airbnb logo" />
                     <MDBMask overlay="black-strong">
                         <div style={styles.hoverText}>
@@ -85,7 +85,7 @@ const styles= {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        border: "1px solid rgba(0, 0, 0, 0.65)",
+        // border: "1px solid rgba(0, 0, 0, 0.65)",
         margin: "10px",
         minHeight: "200px",
         height: "21vw",

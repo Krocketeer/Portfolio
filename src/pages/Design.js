@@ -2,13 +2,13 @@ import React, { useState } from "react"
 import { Link } from "react-router-dom";
 import { MDBMask, MDBView } from "mdbreact";
 import Airbnb from "../images/AirBnb Logo w Name.png";
-import SeaTransitCover from "../images/STHoverCover.png"
-import SeaTransitCoverHover from "../images/STCover.png"
+import SeaTransitCoverHover from "../images/STHoverCover.png"
+import SeaTransitCover from "../images/STCover.png"
 
 export default function Design() {
     const path = window.location.pathname
     const [activeProject, setActiveProject] = useState(path)
-    const [image, setImage] = useState(SeaTransitCover)
+    const [image, setImage] = useState(SeaTransitCoverHover)
     const projectName = ["nullHolder", "Seattle Transit Rebrand", "Project 2", "Project 3", "Project 4"]
 
     return <div className="designProjects" onClick={e => setActiveProject(e.key)}>
@@ -33,7 +33,8 @@ export default function Design() {
 
         <Link to="/design/project2">
             <MDBView hover>
-                <div id="project2" style={styles.projectBox} onClick={() => setActiveProject("/code/project2")}>
+                <div id="project2" style={styles.projectBox}
+                     onClick={() => setActiveProject("/code/project2")}>
                     <img style={styles.image} src={Airbnb} alt="airbnb logo" />
                     <MDBMask overlay="black-strong">
                         <div style={styles.hoverText}>

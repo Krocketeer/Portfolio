@@ -4,15 +4,15 @@ import Moodboard from "../images/Moodboard.png"
 
 export default function SeattleTransit() {
     return <div className="intro">
-        <div id="pageCover">
-            <img src={SeaTransitCover} alt="Seattle Transit Rebrand" />
+        <div className="pageCover">
+            <img src={SeaTransitCover} alt="Seattle Transit Rebrand" style={{width: "100%", height: "auto"}}/>
         </div>
-        <div id="pageHeader">
+        <div className="pageHeader">
             <h3>Seattle Public Transit</h3>
             <h6>Visual Design & Brand Identity</h6>
 
-            <div id="details" style={{marginTop: "50px"}}>
-                <div id="info">
+            <div className="details" style={{marginTop: "50px"}}>
+                <div className="info">
                     <h6>Tools</h6>
                     <div>Adobe Illustrator</div>
                     <div>Adobe Photoshop</div>
@@ -39,18 +39,31 @@ export default function SeattleTransit() {
             </div>
             <div id="Moodboard">
                 <h6>Setting the Mood</h6>
-                <div style={{display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center"}}>
-                    <p> The first step in creating a rebrand for Seattle public transit was figuring out what feeling the
-                        rebrand should embody. I chose images that represent the lively night life of Seattle and the
-                        numerous rich-nature colors that exist in and around the city. Particularly, I wanted to incorporate
-                        things and places that were iconic to Seattle, such as Pike Place Market, and be able to represent
-                        them in the rebrand. </p>
+                <div style={styles.centerDiv}>
+                    <p> The first step in creating a rebrand for Seattle public transit was figuring out what feeling
+                        the rebrand should embody. I chose images that represent the lively night life of Seattle and
+                        the numerous rich-nature colors that exist in and around the city. Particularly, I wanted to
+                        incorporate things and places that were iconic to Seattle, such as Pike Place Market, and be
+                        able to represent them in the rebrand. </p>
                     <img src={Moodboard} alt="Moodboard" style={{width: "75%", height: "auto"}}/>
+                    <figcaption className="caption">Visual representation of the direction for the rebrand of Seattle public transit</figcaption>
+                </div>
+            </div>
+            <div>
+                <h6>Colors</h6>
+                <div>
+
                 </div>
             </div>
         </div>
-        <p>A modernized rebrand </p>
-
-
     </div>
+}
+
+const styles= {
+    centerDiv: {
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        paddingBottom: "50px"
+    }
 }

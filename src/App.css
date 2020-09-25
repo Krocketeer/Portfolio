@@ -213,12 +213,12 @@ header p {
   padding-right: 108px;
 }
 
-#pageCover {
+.pageCover {
   display: flex;
   justify-content: center;
 }
 
-#pageHeader {
+.pageHeader {
   margin-top: 100px;
 }
 
@@ -226,14 +226,14 @@ h4 {
   margin-bottom: 0.25em;
 }
 
-#details {
+.details {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
   /*align-items: center;*/
 }
 
-#info {
+.info {
   padding-bottom: 50px;
   padding-right: 100px;
   min-width: 269px;

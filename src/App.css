@@ -24,61 +24,6 @@ html {
   /*--antd-wave-shadow-color: #6CCBB2;*/
 }
 
-@media (min-width: 400px) {
-  html, body { /* TABLET */
-    font-size: 18px;
-  }
-  header, .bio {
-    padding-left: 36px;
-    padding-right: 36px;
-  }
-  .header_menu {
-    padding-left: 72px;
-  }
-  .ant-menu-horizontal {
-    width: 31vmax;
-  }
-
-  .intro {
-    padding-left: 108px;
-    padding-right: 108px;
-  }
-
-  #details {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-  }
-}
-
-@media (min-width: 768px) {
-  html, body { /* DESKTOP */
-    font-size: 21px;
-  }
-  header, .bio  {
-    padding-left: 44px;
-    padding-right: 44px;
-  }
-  .header_menu {
-    padding-left: 330px;
-  }
-  .ant-menu-horizontal {
-    width: 20vmax;
-  }
-
-  .intro {
-    padding-left: 108px;
-    padding-right: 108px;
-  }
-
-  #details {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-  }
-
-}
-
 header {
   display: flex;
   flex-flow: row nowrap;
@@ -209,8 +154,8 @@ header p {
 .intro {
   /*padding-left: 64px;*/
   /*padding-right: 64px;*/
-  padding-left: 108px;
-  padding-right: 108px;
+  /*padding-left: 108px;*/
+  /*padding-right: 108px;*/
 }
 
 .pageCover {
@@ -226,17 +171,96 @@ h4 {
   margin-bottom: 0.25em;
 }
 
-.details {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  /*align-items: center;*/
-}
-
 .info {
   padding-bottom: 50px;
   padding-right: 100px;
   min-width: 269px;
+}
+
+#SeaTransColor, #SeaTransType {
+  width: 60%;
+  height: auto
+}
+
+#SeaTransUserFlow, #SeaTransLowFi {
+  width: 480px;
+  height: 360px;
+}
+
+@media (min-width: 400px) {
+  html, body { /* TABLET */
+    font-size: 18px;
+  }
+  header, .bio {
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+  .header_menu {
+    padding-left: 72px;
+  }
+  .ant-menu-horizontal {
+    width: 31vmax;
+  }
+
+  .intro {
+    padding-left: 108px;
+    padding-right: 108px;
+  }
+
+  .details {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+
+  #SeaTransColor {
+    width: 100%;
+    height: auto
+  }
+
+  #SeaTransType {
+    width: 115%;
+    height: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  html, body { /* DESKTOP */
+    font-size: 21px;
+  }
+  header, .bio  {
+    padding-left: 44px;
+    padding-right: 44px;
+  }
+  .header_menu {
+    padding-left: 330px;
+  }
+  .ant-menu-horizontal {
+    width: 20vmax;
+  }
+
+  .intro {
+    padding-left: 108px;
+    padding-right: 108px;
+  }
+
+  .details {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
+
+  #SeaTransColor, #SeaTransType {
+    width: 69%;
+    height: auto
+  }
+
+  #SeaTransUserFlow, #SeaTransLowFi {
+    width: 826px;
+    height: 620px;
+    margin-right: 24px;
+  }
+
 }
 
 

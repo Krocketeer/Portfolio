@@ -151,20 +151,9 @@ header p {
   line-height: 24px;
 }
 
-.intro {
-  /*padding-left: 64px;*/
-  /*padding-right: 64px;*/
-  /*padding-left: 108px;*/
-  /*padding-right: 108px;*/
-}
-
 .pageCover {
   display: flex;
   justify-content: center;
-}
-
-.pageHeader {
-  margin-top: 100px;
 }
 
 h4 {
@@ -182,9 +171,16 @@ h4 {
   height: auto
 }
 
+#SeaTransPDFs {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  /*padding-bottom: 50px;*/
+}
+
 #SeaTransUserFlow, #SeaTransLowFi {
-  width: 480px;
-  height: 360px;
+  width: 360px;
+  height: 480px;
 }
 
 @media (min-width: 400px) {
@@ -202,9 +198,13 @@ h4 {
     width: 31vmax;
   }
 
-  .intro {
-    padding-left: 108px;
-    padding-right: 108px;
+  .pageHeader {
+    margin-top: 50px;
+  }
+
+  .pageLayout {
+    padding-left: 54px;
+    padding-right: 54px;
   }
 
   .details {
@@ -221,6 +221,19 @@ h4 {
   #SeaTransType {
     width: 115%;
     height: auto;
+  }
+
+  #SeaTransPDFs {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    /*padding-bottom: 50px;*/
+  }
+
+  #SeaTransUserFlow, #SeaTransLowFi {
+    width: 480px;
+    height: 640px;
+    padding-bottom: 25px;
   }
 }
 
@@ -239,7 +252,11 @@ h4 {
     width: 20vmax;
   }
 
-  .intro {
+  .pageHeader {
+    margin-top: 100px;
+  }
+
+  .pageLayout {
     padding-left: 108px;
     padding-right: 108px;
   }
@@ -255,10 +272,18 @@ h4 {
     height: auto
   }
 
+  #SeaTransPDFs {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    /*padding-bottom: 50px;*/
+  }
+
   #SeaTransUserFlow, #SeaTransLowFi {
-    width: 826px;
-    height: 620px;
-    margin-right: 24px;
+    width: 720px;
+    height: 960px;
+    margin-right: 48px;
   }
 
 }

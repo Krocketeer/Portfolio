@@ -5,9 +5,11 @@ import colors from "../images/Colors.png"
 import type from "../images/Type.png"
 import userFlow from "../images/UserFlow.pdf"
 import lowFi from "../images/LowFiWireframes.pdf"
+import icons from "../images/Icons.png"
+import icons2 from "../images/Icons2.png"
 
 export default function SeattleTransit() {
-    return <div className="intro">
+    return <div className="pageLayout">
         <div className="pageCover">
             <img src={SeaTransitCover} alt="Seattle Transit Rebrand" style={{width: "100%", height: "auto"}}/>
         </div>
@@ -81,20 +83,41 @@ export default function SeattleTransit() {
             <div>
                 <h6>User Flows & Low-Fi Designs</h6>
                 <div style={styles.centerDiv}>
-                    <p>
+                    <p style={{paddingBottom: "25px"}}>
                         Before designing a mobile and kiosk application for Seattle public transit, a user flow was
                         created out of interviews and observations to reflect the needs of riders. User flows focused
                         on core functionalities of a mobile and kiosk application that could best serve riders in their
                         commutes. The user flows then served as a grounding base for me as I created low-fidelity
                         designs of the mobile and kiosk applications.
                     </p>
-                    <div style={{display: "flex", flexDirection: "row", alignItems: "center", paddingBottom: "50px"}}>
-                        {/*<iframe allowFullScreen frameBorder="1"*/}
-                        {/*        src="https://app.lucidchart.com/documents/embeddedchart/005f3677-5b78-45bd-b82c-a0be533068d3"*/}
-                        {/*        id="SeaTransUserFlow"></iframe>*/}
-                        <embed allowFullScreen frameBorder="1" src={userFlow} id="SeaTransUserFlow"/>
-                        <embed allowFullScreen frameBorder="1" src={lowFi} id="SeaTransLowFi"/>
+                    <div id="SeaTransPDFs">
+                        <embed id="SeaTransUserFlow" src={userFlow} allowFullScreen/>
+                        <embed id="SeaTransLowFi" src={lowFi} allowFullScreen/>
                     </div>
+                </div>
+            </div>
+            <div>
+                <h6>Iconography</h6>
+                <div style={styles.centerDiv}>
+                    <p style={{paddingBottom: "25px"}}>
+                        One of the core visual aspects of a design is the usage of icons. Icons were selected based
+                        on their clarity in helping riders understand information at a quick glance, either in person
+                        or on an application.
+                    </p>
+                    <div>
+                        <img src={icons} alt="list of icons for rebrand"/>
+                        <img src={icons2} alt="second list of icons for rebrand"/>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h6>Hi-Fi Wireframes</h6>
+                <div>
+                    <p style={{paddingBottom: "25px"}}>
+                        Equipped with a visual system and low-fidelity designs, I then created high-fidelity wireframes
+                        of a mobile and kiosk application for Seattle public transit. These wireframes focused on
+                        functionality, while maintaining a simple and elegant design.
+                    </p>
                 </div>
             </div>
         </div>

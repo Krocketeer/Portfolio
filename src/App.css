@@ -235,6 +235,11 @@ h4 {
     height: 640px;
     padding-bottom: 25px;
   }
+
+  #SeaTransIcons {
+    width: 100%;
+    height: auto;
+  }
 }
 
 @media (min-width: 768px) {
@@ -284,6 +289,12 @@ h4 {
     width: 720px;
     height: 960px;
     margin-right: 48px;
+  }
+
+  #SeaTransIcons {
+    width: 75%;
+    height: auto;
+    padding-bottom: 25px;
   }
 
 }

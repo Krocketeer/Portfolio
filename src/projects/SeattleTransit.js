@@ -82,7 +82,7 @@ export default function SeattleTransit() {
             </div>
             <div>
                 <h6>User Flows & Low-Fi Designs</h6>
-                <div style={styles.centerDiv}>
+                <div style={styles.centerDiv25}>
                     <p style={{paddingBottom: "25px"}}>
                         Before designing a mobile and kiosk application for Seattle public transit, a user flow was
                         created out of interviews and observations to reflect the needs of riders. User flows focused
@@ -98,26 +98,34 @@ export default function SeattleTransit() {
             </div>
             <div>
                 <h6>Iconography</h6>
-                <div style={styles.centerDiv}>
+                <div style={styles.centerDiv25}>
                     <p style={{paddingBottom: "25px"}}>
                         One of the core visual aspects of a design is the usage of icons. Icons were selected based
                         on their clarity in helping riders understand information at a quick glance, either in person
                         or on an application.
                     </p>
-                    <div>
-                        <img src={icons} alt="list of icons for rebrand"/>
-                        <img src={icons2} alt="second list of icons for rebrand"/>
+                    <div style={{display: "flex", flexDirection: "column", alignItems: "center"}}>
+                        <img id="SeaTransIcons" src={icons} alt="list of icons for rebrand"/>
+                        <img id="SeaTransIcons" src={icons2} alt="second list of icons for rebrand"/>
                     </div>
                 </div>
             </div>
             <div>
                 <h6>Hi-Fi Wireframes</h6>
-                <div>
+                <div style={styles.centerDiv25}>
                     <p style={{paddingBottom: "25px"}}>
                         Equipped with a visual system and low-fidelity designs, I then created high-fidelity wireframes
                         of a mobile and kiosk application for Seattle public transit. These wireframes focused on
                         functionality, while maintaining a simple and elegant design.
                     </p>
+                    <div style={{display: "flex", flexDirection: "column", alignItems: "center"}}>
+                        <iframe style={{border: "1px solid rgba(0, 0, 0, 0.1)", width:"800px", height:"450px"}}
+                                src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FHxQYDPyEaua4wPOzOtMWkc%2FSeattle-Transit-Rebrand-App%3Fnode-id%3D2%253A10%26viewport%3D78%252C241%252C0.29441380500793457%26scaling%3Dscale-down&chrome=DOCUMENTATION"
+                                allowFullScreen title="Seattle Transit Rebrand App"/>
+                        <iframe style={{border: "1px solid rgba(0, 0, 0, 0.1)", width:"800px", height: "450px"}}
+                                src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F9pk8hfFcEeL6X3KRpe91Cd%2FSeattle-Transit-Rebrand-Kiosk%3Fnode-id%3D168%253A489%26viewport%3D-154%252C680%252C0.17509283125400543%26scaling%3Dscale-down&chrome=DOCUMENTATION"
+                                allowFullScreen title="Seattle Transit Rebrand Kiosk"/>
+                    </div>
                 </div>
             </div>
         </div>
@@ -130,5 +138,11 @@ const styles= {
         flexDirection: "column",
         alignItems: "center",
         paddingBottom: "50px"
+    },
+    centerDiv25: {
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        paddingBottom: "25px"
     }
 }

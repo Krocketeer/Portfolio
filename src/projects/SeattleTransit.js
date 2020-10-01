@@ -119,13 +119,23 @@ export default function SeattleTransit() {
                         functionality, while maintaining a simple and elegant design.
                     </p>
                     <div style={{display: "flex", flexDirection: "column", alignItems: "center"}}>
-                        <iframe style={{border: "1px solid rgba(0, 0, 0, 0.1)", width:"800px", height:"450px"}}
+                        <iframe id="figmaFrame"
                                 src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FHxQYDPyEaua4wPOzOtMWkc%2FSeattle-Transit-Rebrand-App%3Fnode-id%3D2%253A10%26viewport%3D78%252C241%252C0.29441380500793457%26scaling%3Dscale-down&chrome=DOCUMENTATION"
                                 allowFullScreen title="Seattle Transit Rebrand App"/>
-                        <iframe style={{border: "1px solid rgba(0, 0, 0, 0.1)", width:"800px", height: "450px"}}
+                        <iframe id="figmaFrame"
                                 src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F9pk8hfFcEeL6X3KRpe91Cd%2FSeattle-Transit-Rebrand-Kiosk%3Fnode-id%3D168%253A489%26viewport%3D-154%252C680%252C0.17509283125400543%26scaling%3Dscale-down&chrome=DOCUMENTATION"
                                 allowFullScreen title="Seattle Transit Rebrand Kiosk"/>
                     </div>
+                </div>
+            </div>
+            <div>
+                <h6>Wayfinding System</h6>
+                <div>
+                    <p> An essential part of public transit is the usage of wayfinding in order to help riders navigate
+                        the public transit system. Wayfinding signs were created to be big and visually distinct so
+                        that riders can easily understand the information on the signs as they are heading to their
+                        destination. An ORCA card mock up was also created to visually represent the rebrand on
+                        something that riders would be using everyday. </p>
                 </div>
             </div>
         </div>

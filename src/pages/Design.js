@@ -2,8 +2,8 @@ import React, { useState } from "react"
 import { Link } from "react-router-dom";
 import { MDBMask, MDBView } from "mdbreact";
 import Airbnb from "../images/AirBnb Logo w Name.png";
-import SeaTransitCoverHover from "../images/STHoverCover.png"
-import SeaTransitCover from "../images/STCover.png"
+import SeaTransitCoverHover from "../images/SeattleTransit/STHoverCover.png"
+import SeaTransitCover from "../images/SeattleTransit/STCover.png"
 
 export default function Design() {
     const path = window.location.pathname

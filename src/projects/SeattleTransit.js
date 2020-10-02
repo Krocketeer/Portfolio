@@ -1,11 +1,12 @@
 import React from "react"
-import SeaTransitCover from "../images/STBigCover.png"
-import moodBoard from "../images/Moodboard.png"
-import colors from "../images/Colors.png"
-import type from "../images/Type.png"
-import userFlow from "../images/UserFlow.pdf"
-import lowFi from "../images/LowFiWireframes.pdf"
-import icons from "../images/Icons.png"
+import SeaTransitCover from "../images/SeattleTransit/STBigCover.png"
+import moodBoard from "../images/SeattleTransit/Moodboard.png"
+import colors from "../images/SeattleTransit/Colors.png"
+import type from "../images/SeattleTransit/Type.png"
+import userFlow from "../images/SeattleTransit/UserFlow.pdf"
+import lowFi from "../images/SeattleTransit/LowFiWireframes.pdf"
+import icons from "../images/SeattleTransit/Icons.png"
+
 
 export default function SeattleTransit() {
     return <div className="pageLayout">
@@ -143,6 +144,9 @@ export default function SeattleTransit() {
                         that riders can easily understand the information on the signs as they are heading to their
                         destination. In addition, the ORCA card was updated to a more modern and simplistic design to
                         compliment the styles shown in the rebrand. </p>
+                    <div>
+                        {/*<img src={}/>*/}
+                    </div>
                 </div>
             </div>
         </div>

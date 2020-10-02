@@ -6,7 +6,6 @@ import type from "../images/Type.png"
 import userFlow from "../images/UserFlow.pdf"
 import lowFi from "../images/LowFiWireframes.pdf"
 import icons from "../images/Icons.png"
-import icons2 from "../images/Icons2.png"
 
 export default function SeattleTransit() {
     return <div className="pageLayout">
@@ -45,7 +44,7 @@ export default function SeattleTransit() {
             </div>
             <div id="moodBoard">
                 <h6>Setting the Mood</h6>
-                <div style={styles.centerDiv}>
+                <div style={styles.centerDiv50}>
                     <p> The first step in creating a rebrand for Seattle public transit was figuring out what feeling
                         the rebrand should embody. I chose images that represent the lively night life of Seattle and
                         the numerous rich-nature colors that exist in and around the city. Particularly, I wanted to
@@ -57,11 +56,12 @@ export default function SeattleTransit() {
             </div>
             <div>
                 <h6>Colors</h6>
-                <div style={styles.centerDiv}>
-                    <p style={{paddingBottom: "25px"}}> Inspired by the mood board, the color palette pulls from many
+                <div style={styles.centerDiv50}>
+                    <p style={{paddingBottom: "25px"}}>
+                        Inspired by the mood board, the color palette pulls from many
                         of the vibrant imagery that exists in and around the city. Midnight serves as a base color that
                         many Seattlites are used to while ocean blue, blizzard blue, and minty green act as an accent
-                        that is visible in bright and dark environments. Pine green and slate pruple were chosen to
+                        that is visible in bright and dark environments. Pine green and slate purple were chosen to
                         stand out against the other blues and greens while still being remaining cohesive with the
                         color scheme. </p>
                     <img id="SeaTransColor" src={colors} alt="Color palette for rebrand"/>
@@ -69,20 +69,20 @@ export default function SeattleTransit() {
             </div>
             <div>
                 <h6>Typography</h6>
-                <div style={styles.centerDiv}>
-                    <p style={{paddingBottom: "25px"}}>
+                <div style={styles.centerDiv50}>
+                    <p>
                         One of the main ways to communicate information towards riders of Seattle public transit is
                         through text. As a result, the typefaces of the text need to be visually distinct enough for
                         riders to be able to read, even if they are rushing to get where they are going. Cabin was
-                        chosen for its modern look while being bold enough to catch riders’ eyes. Open Sans pairs
-                        well with Cabin, creating a cohesive system.
+                        chosen for its modern look while being bold enough to catch riders’ eyes. Open Sans was chosen
+                        as the font pairs well with Cabin, creating a cohesive system.
                     </p>
                     <img id="SeaTransType" src={type} alt="Typography layout for rebrand"/>
                 </div>
             </div>
             <div>
                 <h6>User Flows & Low-Fi Designs</h6>
-                <div style={styles.centerDiv25}>
+                <div style={styles.centerDiv}>
                     <p style={{paddingBottom: "25px"}}>
                         Before designing a mobile and kiosk application for Seattle public transit, a user flow was
                         created out of interviews and observations to reflect the needs of riders. User flows focused
@@ -91,39 +91,46 @@ export default function SeattleTransit() {
                         designs of the mobile and kiosk applications.
                     </p>
                     <div id="SeaTransPDFs">
-                        <embed id="SeaTransUserFlow" src={userFlow} allowFullScreen/>
-                        <embed id="SeaTransLowFi" src={lowFi} allowFullScreen/>
+                        <div style={styles.centerDiv50}>
+                            <embed id="SeaTransUserFlow" src={userFlow} allowFullScreen/>
+                            <i>User Flow Diagram</i>
+                        </div>
+                        <div style={styles.centerDiv50}>
+                            <embed id="SeaTransLowFi" src={lowFi} allowFullScreen/>
+                            <i>Low-fidelity mockups of App and Kiosk tasks</i>
+                        </div>
                     </div>
                 </div>
             </div>
             <div>
                 <h6>Iconography</h6>
-                <div style={styles.centerDiv25}>
-                    <p style={{paddingBottom: "25px"}}>
+                <div style={styles.centerDiv50}>
+                    <p>
                         One of the core visual aspects of a design is the usage of icons. Icons were selected based
                         on their clarity in helping riders understand information at a quick glance, either in person
                         or on an application.
                     </p>
-                    <div style={{display: "flex", flexDirection: "column", alignItems: "center"}}>
-                        <img id="SeaTransIcons" src={icons} alt="list of icons for rebrand"/>
-                        <img id="SeaTransIcons" src={icons2} alt="second list of icons for rebrand"/>
+                    <div style={styles.centerDiv}>
+                        <img id="SeaTransIcons" src={icons} alt="list of icons used in high fidelity wireframes"/>
                     </div>
                 </div>
             </div>
             <div>
                 <h6>Hi-Fi Wireframes</h6>
-                <div style={styles.centerDiv25}>
-                    <p style={{paddingBottom: "25px"}}>
+                <div style={styles.centerDiv50}>
+                    <p>
                         Equipped with a visual system and low-fidelity designs, I then created high-fidelity wireframes
                         of a mobile and kiosk application for Seattle public transit. These wireframes focused on
-                        functionality, while maintaining a simple and elegant design.
+                        functionality, while maintaining a simple and elegant design. (Not working? Click here to
+                        view the <a href={links.figmaAppWireframe}>App Wireframe</a> or the
+                        <a href={links.figmaKioskWireframe}> Kiosk Wireframe</a> in Figma)
                     </p>
-                    <div style={{display: "flex", flexDirection: "column", alignItems: "center"}}>
-                        <iframe id="figmaFrame"
-                                src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FHxQYDPyEaua4wPOzOtMWkc%2FSeattle-Transit-Rebrand-App%3Fnode-id%3D2%253A10%26viewport%3D78%252C241%252C0.29441380500793457%26scaling%3Dscale-down&chrome=DOCUMENTATION"
+                    <div style={styles.centerDiv}>
+                        <iframe id="figmaAppFrame"
+                                src={links.figmaAppEmbed}
                                 allowFullScreen title="Seattle Transit Rebrand App"/>
-                        <iframe id="figmaFrame"
-                                src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F9pk8hfFcEeL6X3KRpe91Cd%2FSeattle-Transit-Rebrand-Kiosk%3Fnode-id%3D168%253A489%26viewport%3D-154%252C680%252C0.17509283125400543%26scaling%3Dscale-down&chrome=DOCUMENTATION"
+                        <iframe id="figmaKioskFrame"
+                                src={links.figmaKioskEmbed}
                                 allowFullScreen title="Seattle Transit Rebrand Kiosk"/>
                     </div>
                 </div>
@@ -134,8 +141,8 @@ export default function SeattleTransit() {
                     <p> An essential part of public transit is the usage of wayfinding in order to help riders navigate
                         the public transit system. Wayfinding signs were created to be big and visually distinct so
                         that riders can easily understand the information on the signs as they are heading to their
-                        destination. An ORCA card mock up was also created to visually represent the rebrand on
-                        something that riders would be using everyday. </p>
+                        destination. In addition, the ORCA card was updated to a more modern and simplistic design to
+                        compliment the styles shown in the rebrand. </p>
                 </div>
             </div>
         </div>
@@ -143,16 +150,29 @@ export default function SeattleTransit() {
 }
 
 const styles= {
-    centerDiv: {
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        paddingBottom: "50px"
-    },
     centerDiv25: {
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
         paddingBottom: "25px"
-    }
+    },
+    centerDiv50: {
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        paddingBottom: "50px"
+    },
+    centerDiv: {
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+    },
+
+}
+
+const links= {
+    figmaAppWireframe: "https://www.figma.com/proto/HxQYDPyEaua4wPOzOtMWkc/Seattle-Transit-Rebrand-App?node-id=2%3A10&scaling=min-zoom",
+    figmaKioskWireframe: "https://www.figma.com/proto/9pk8hfFcEeL6X3KRpe91Cd/Seattle-Transit-Rebrand-Kiosk?node-id=168%3A489&scaling=min-zoom",
+    figmaAppEmbed: "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FHxQYDPyEaua4wPOzOtMWkc%2FSeattle-Transit-Rebrand-App%3Fnode-id%3D2%253A10%26viewport%3D78%252C241%252C0.29441380500793457%26scaling%3Dscale-down&chrome=DOCUMENTATION",
+    figmaKioskEmbed: "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F9pk8hfFcEeL6X3KRpe91Cd%2FSeattle-Transit-Rebrand-Kiosk%3Fnode-id%3D168%253A489%26viewport%3D-154%252C680%252C0.17509283125400543%26scaling%3Dscale-down&chrome=DOCUMENTATION"
 }

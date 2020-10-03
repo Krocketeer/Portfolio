@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import { ArrowUpOutlined } from "@ant-design/icons"
 
-const ScrollArrow =()=>{
+export default function ScrollArrow() {
     const [showScroll, setShowScroll] = useState(false)
 
     const checkScrollTop = () => {
@@ -12,24 +12,15 @@ const ScrollArrow =()=>{
         }
     };
 
-const scrollTop = () =>{
-    window.scrollTo({top: 0, behavior: 'smooth'});
-};
+    const scrollTop = () =>{
+        window.scrollTo({top: 0, behavior: 'smooth'});
+    };
 
-window.addEventListener('scroll', checkScrollTop)
+    window.addEventListener('scroll', checkScrollTop)
 
-    return (
-        <ArrowUpOutlined className="scrollTop" onClick={scrollTop}
-                         style={{
-                             height: 40,
-                             display: showScroll ? 'flex' : 'none',
-                             justifyContent: "flex-end",
-                             paddingRight: "40px",
-                         }}/>
-    );
+    return <ArrowUpOutlined className="scrollTop" onClick={scrollTop} style={{display: showScroll ? 'flex' : 'none'}}/>
 }
 
-export default ScrollArrow;
 
-// Credit to Macro6461 on Github
+// Base code credit to Macro6461 on Github
 // https://gist.github.com/macro6461/b144e95dddbdd692addf968d3e8a4dda#file-scrollarrow-js

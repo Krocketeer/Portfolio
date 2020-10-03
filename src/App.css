@@ -92,22 +92,9 @@ header p {
   /*width: 100%;*/
 }
 
-.scrollTop {
-  position: fixed;
-  width: 100%;
-  bottom: 20px;
-  align-items: center;
-  height: 20px;
-  justify-content: center;
-  z-index: 1000;
-  cursor: pointer;
-  animation: fadeIn 0.3s;
-  transition: opacity 0.4s;
-  opacity: 0.5;
-}
-
 .scrollTop:hover{
   opacity: 1;
+  color: #1890ff;
 }
 
 @keyframes fadeIn {
@@ -210,7 +197,20 @@ h4 {
     padding-left: 72px;
   }
   .ant-menu-horizontal {
-    width: 31vmax;
+    /*width: 31vmax;*/
+  }
+
+  .scrollTop {
+    position: fixed;
+    width: 100%;
+    bottom: 40px;
+    justify-content: flex-end;
+    z-index: 1000;
+    animation: fadeIn 0.3s;
+    transition: opacity 0.4s;
+    opacity: 0.75;
+    padding-right: 25px;
+    font-size: 25px;
   }
 
   .pageHeader {
@@ -284,6 +284,7 @@ h4 {
     margin-bottom: 30px;
     cursor: zoom-in;
   }
+
 }
 
 @media (min-width: 768px) {
@@ -298,7 +299,23 @@ h4 {
     padding-left: 330px;
   }
   .ant-menu-horizontal {
-    width: 20vmax;
+    /*width: 20vmax;*/
+  }
+
+  .scrollTop {
+    position: fixed;
+    width: 100%;
+    bottom: 40px;
+    /*align-items: center;*/
+    /*height: 40px;*/
+    justify-content: flex-end;
+    z-index: 1000;
+    /*cursor: pointer;*/
+    animation: fadeIn 0.3s;
+    transition: opacity 0.4s;
+    opacity: 0.75;
+    padding-right: 40px;
+    font-size: 30px;
   }
 
   .pageHeader {

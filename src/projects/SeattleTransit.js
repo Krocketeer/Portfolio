@@ -1,4 +1,4 @@
-import React from "react"
+import React, {useState} from "react"
 import { SRLWrapper } from "simple-react-lightbox"
 
 import SeaTransitCover from "../images/SeattleTransit/STBigCover.png"
@@ -13,9 +13,11 @@ import busMockup2 from "../images/SeattleTransit/Bus Stop Mockup 2.png"
 import lightRailSign from "../images/SeattleTransit/Light Rail Sign.png"
 import railStationMockup from "../images/SeattleTransit/Rail Station Mockup.png"
 import ORCA from "../images/SeattleTransit/Orca Card Mockup.png"
+import ScrollArrow from "../components/ScrollArrow";
 
 export default function SeattleTransit() {
     return <SRLWrapper options={lightboxOptions}>
+        <ScrollArrow/>
         <div className="pageLayout">
             <div className="pageCover">
                 <img src={SeaTransitCover} alt="Seattle Transit Rebrand"

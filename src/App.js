@@ -1,32 +1,35 @@
 import React from 'react';
 import './App.css';
 import "./components/Header"
+import {BrowserRouter as Router, Route, Switch, Redirect} from 'react-router-dom';
+import SimpleReactLightbox from "simple-react-lightbox"
 import Header from "./components/Header";
 import Code from "./pages/Code"
 import About from "./pages/About"
 import Design from "./pages/Design"
 import SeattleTransit from "./projects/SeattleTransit";
-import {BrowserRouter as Router, Route, Switch, Redirect} from 'react-router-dom';
 
 
 function App() {
-    return <Router>
-        <div className="App">
-            <Header />
-            <Switch>
-                <Route path="/" exact component={Design} />
-                <Route exact path="/design">
-                       <Redirect to ="/"/>
-                </Route>
-                <Route path="/about" component={About} />
-                <Route path="/code" exact component={Code} />
-                <Route path="/design/seattleTransit" component={SeattleTransit} />
-                {/*<Route path="/design/:projects" component={Design}></Route>*/}
-                {/*<Route path="/code/:projects" component={<Code />}></Route>*/}
-                <Route path="*">404 Not Found</Route>
-            </Switch>
-        </div>
-    </Router>
+    return <div className="App">
+        <SimpleReactLightbox>
+            <Router>
+                <Header />
+                    <Switch>
+                        <Route path="/" exact component={Design} />
+                        <Route exact path="/design">
+                               <Redirect to ="/"/>
+                        </Route>
+                        <Route path="/about" component={About} />
+                        <Route path="/code" exact component={Code} />
+                        <Route path="/design/seattleTransit" component={SeattleTransit} />
+                        {/*<Route path="/design/:projects" component={Design}></Route>*/}
+                        {/*<Route path="/code/:projects" component={<Code />}></Route>*/}
+                        <Route path="*">404 Not Found</Route>
+                    </Switch>
+                </Router>
+        </SimpleReactLightbox>
+    </div>
 }
 
 export default App;

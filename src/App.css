@@ -88,7 +88,7 @@ header p {
 .ant-menu-horizontal {
   line-height: 46px;
   white-space: nowrap;
-  border-bottom: 0px solid #f0f0f0;
+  border-bottom: 0 solid #f0f0f0;
   /*width: 100%;*/
 }
 
@@ -201,14 +201,22 @@ h4 {
     justify-content: space-between;
   }
 
-  #SeaTransColor {
+  #SeaTransMoodBoard {
     width: 100%;
-    height: auto
+    height: auto;
+    cursor: zoom-in;
+  }
+
+  #SeaTransColor {
+    width: 108%;
+    height: auto;
+    cursor: zoom-in;
   }
 
   #SeaTransType {
     width: 115%;
     height: auto;
+    cursor: zoom-in;
   }
 
   #SeaTransPDFs {
@@ -228,6 +236,7 @@ h4 {
   #SeaTransIcons {
     width: 100%;
     height: auto;
+    cursor: zoom-in;
   }
 
   #figmaAppFrame {
@@ -240,6 +249,13 @@ h4 {
     width: 575px;
     height: 500px;
     border: 1px solid rgba(0, 0, 0, 0);
+  }
+
+  #SeaTransWayfinding {
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+    cursor: zoom-in;
   }
 }
 
@@ -273,9 +289,17 @@ h4 {
     justify-content: space-between;
   }
 
+  #SeaTransMoodBoard {
+    width: 75%;
+    height: auto;
+    margin-top: -25px;
+    cursor: zoom-in;
+  }
+
   #SeaTransColor, #SeaTransType {
     width: 69%;
-    height: auto
+    height: auto;
+    cursor: zoom-in;
   }
 
   #SeaTransPDFs {
@@ -295,6 +319,7 @@ h4 {
   #SeaTransIcons {
     width: 75%;
     height: auto;
+    cursor: zoom-in;
     /*padding-bottom: 25px;*/
   }
 
@@ -308,6 +333,13 @@ h4 {
     width: 1100px;
     height: 900px;
     border: 1px solid rgba(0, 0, 0, 0);
+  }
+
+  #SeaTransWayfinding {
+    width: 69%;
+    height: auto;
+    margin-bottom: 40px;
+    cursor: zoom-in;
   }
 
 }

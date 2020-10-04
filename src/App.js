@@ -4,6 +4,7 @@ import "./components/Header"
 import {BrowserRouter as Router, Route, Switch, Redirect} from 'react-router-dom';
 import SimpleReactLightbox from "simple-react-lightbox"
 import Header from "./components/Header";
+import Footer from "./components/Footer"
 import Code from "./pages/Code"
 import About from "./pages/About"
 import Design from "./pages/Design"
@@ -15,19 +16,20 @@ function App() {
         <SimpleReactLightbox>
             <Router>
                 <Header />
-                    <Switch>
-                        <Route path="/" exact component={Design} />
-                        <Route exact path="/design">
-                               <Redirect to ="/"/>
-                        </Route>
-                        <Route path="/about" component={About} />
-                        <Route path="/code" exact component={Code} />
-                        <Route path="/design/seattleTransit" component={SeattleTransit} />
-                        {/*<Route path="/design/:projects" component={Design}></Route>*/}
-                        {/*<Route path="/code/:projects" component={<Code />}></Route>*/}
-                        <Route path="*">404 Not Found</Route>
-                    </Switch>
-                </Router>
+                <Switch>
+                    <Route path="/" exact component={Design} />
+                    <Route exact path="/design">
+                           <Redirect to ="/"/>
+                    </Route>
+                    <Route path="/about" component={About} />
+                    <Route path="/code" exact component={Code} />
+                    <Route path="/design/seattleTransit" component={SeattleTransit} />
+                    {/*<Route path="/design/:projects" component={Design}></Route>*/}
+                    {/*<Route path="/code/:projects" component={<Code />}></Route>*/}
+                    <Route path="*">404 Not Found</Route>
+                </Switch>
+                <Footer />
+            </Router>
         </SimpleReactLightbox>
     </div>
 }

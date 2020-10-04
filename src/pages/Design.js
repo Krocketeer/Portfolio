@@ -1,25 +1,29 @@
 import React, { useState } from "react"
 import { Link } from "react-router-dom";
 import { MDBMask, MDBView } from "mdbreact";
+
 import Airbnb from "../images/AirBnb Logo w Name.png";
 import SeaTransitCoverHover from "../images/SeattleTransit/STHoverCover.png"
 import SeaTransitCover from "../images/SeattleTransit/STCover.png"
+import BaseCampCover from "../images/BaseCamp/BaseCampCover.png"
+import BaseCampCoverHover from "../images/BaseCamp/Calendar.gif"
 
 export default function Design() {
     const path = window.location.pathname
     const [activeProject, setActiveProject] = useState(path)
-    const [image, setImage] = useState(SeaTransitCoverHover)
-    const projectName = ["nullHolder", "Seattle Transit Rebrand", "Project 2", "Project 3", "Project 4"]
+    const [p1Image, setP1Image] = useState(SeaTransitCoverHover)
+    const [p2Image, setP2Image] = useState(BaseCampCover)
+    const projectName = ["nullHolder", "Seattle Transit Rebrand", "Base Camp", "Project 3", "Project 4"]
 
     return <div className="designProjects" onClick={e => setActiveProject(e.key)}>
-        <Link to="/design/seattleTransit">
+        <Link to="/design/SeattleTransit">
             <MDBView hover>
                 <div id={projectName[1]} style={styles.projectBox}
-                     onClick={() => setActiveProject("/design/seattleTransit")}
-                     onMouseOver={() => setImage(SeaTransitCover)}
-                     onMouseOut={() => setImage(SeaTransitCoverHover)}>
+                     onClick={() => setActiveProject("/design/SeattleTransit")}
+                     onMouseOver={() => setP1Image(SeaTransitCover)}
+                     onMouseOut={() => setP1Image(SeaTransitCoverHover)}>
                     <img style={styles.imageModified}
-                        src={image}
+                        src={p1Image}
                          alt="Seattle Transit Rebrand" />
                     <MDBMask overlay="black-strong">
                         <div style={styles.hoverText}>
@@ -31,15 +35,17 @@ export default function Design() {
             </MDBView>
         </Link>
 
-        <Link to="/design/project2">
+        <Link to="/design/BaseCamp">
             <MDBView hover>
-                <div id="project2" style={styles.projectBox}
-                     onClick={() => setActiveProject("/code/project2")}>
-                    <img style={styles.image} src={Airbnb} alt="airbnb logo" />
+                <div id={projectName[2]} style={styles.projectBox}
+                     onClick={() => setActiveProject("/design/BaseCamp")}
+                     onMouseOver={() => setP2Image(BaseCampCoverHover)}
+                     onMouseOut={() => setP2Image(BaseCampCover)}>
+                    <img style={styles.image} src={p2Image} alt="airbnb logo" />
                     <MDBMask overlay="black-strong">
                         <div style={styles.hoverText}>
-                            <p>Project 2 title</p>
-                            <p style={{fontSize: ".75em"}}>Project 2 Description</p>
+                            <p>Base Camp</p>
+                            <p style={{fontSize: ".75em"}}>UX Design & Brand Identity</p>
                         </div>
                     </MDBMask>
                 </div>

@@ -285,6 +285,23 @@ h4 {
     cursor: zoom-in;
   }
 
+  #personaLayout {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .personas {
+    width: 100%;
+    height: auto;
+    margin-bottom: 25px;
+  }
+
+  #journeyMap {
+    width: 100%;
+    height: auto;
+  }
+
 }
 
 @media (min-width: 768px) {
@@ -384,6 +401,23 @@ h4 {
     height: auto;
     margin-bottom: 40px;
     cursor: zoom-in;
+  }
+
+  .personaLayout {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .personas {
+    width: 49%;
+    height: auto;
+    margin-bottom: 25px;
+  }
+
+  #journeyMap {
+    width: 50%;
+    height: auto;
   }
 
 }

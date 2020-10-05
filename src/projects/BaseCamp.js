@@ -15,7 +15,14 @@ import railStationMockup from "../images/SeattleTransit/Rail Station Mockup.png"
 import ORCA from "../images/SeattleTransit/Orca Card Mockup.png"
 import ScrollArrow from "../components/ScrollArrow";
 
-import BaseCampCover from "../images/BaseCamp/BaseCampCover.png"
+import BaseCampCover from "../images/BaseCamp/BaseCampCoverGray.png"
+import findings from "../images/BaseCamp/Findings.png"
+import primary from "../images/BaseCamp/Primary.png"
+import secondary from "../images/BaseCamp/Secondary.png"
+import tertiary from "../images/BaseCamp/Tertiary.png"
+import anti from "../images/BaseCamp/Anti.png"
+import journeyMap from "../images/BaseCamp/Journey Map.png"
+import designSpec from "../images/BaseCamp/Design Spec.png"
 
 export default function BaseCamp() {
     return <SRLWrapper options={lightboxOptions}>
@@ -73,32 +80,45 @@ export default function BaseCamp() {
                         <p> As a team, we conducted 7 qualitative, semi-structured interviews in order to identify pain
                             points, motivations, and needs of coaches & athletes while they’re away from their team.
                             Our interviewees spanned 5 different sports — rowing, football, water polo, sailing, and
-                            swimming — at the high school, collegiate club, Division-1, and National Team levels. </p>
-                        <img id="SeaTransMoodBoard" src={moodBoard} alt="Mood board"/>
+                            swimming — at the high school, collegiate club, Division-1, and National Team levels. After
+                            a thematic analysis of our interviews, we identified these 5 key findings:
+                        </p>
+                        <img id="SeaTransMoodBoard" src={findings} alt="Key findings of interviews with athletes and coaches"/>
+                        <p>
+                            We then took our findings to create 4 personas (primary, secondary, tertiary, & anti) and
+                            a user journey map to ground our design. The personas and journey map captured the pain
+                            points, motivations, and needs of athletes & coaches identified in our interviews.
+                        </p>
+                        <div style={{display: "flex", flexDirection: "column", alignItems: "center"}}>
+                            <div className="personaLayout">
+                                <img className="personas" src={primary} alt="Primary Persona" />
+                                <img className="personas" src={secondary} alt="Secondary Persona" />
+                            </div>
+                            <div className="personaLayout">
+                                <img className="personas" src={tertiary} alt="Tertiary Persona" />
+                                <img className="personas" src={anti} alt="Anti Persona" />
+                            </div>
+                            <img id="journeyMap" src={journeyMap} alt="User journey map for primary persona"/>
+                        </div>
                     </div>
                 </div>
                 <div>
-                    <h6>Colors</h6>
+                    <h6>Design Spec</h6>
                     <div style={styles.centerDiv50}>
                         <p style={{paddingBottom: "25px"}}>
-                            Inspired by the mood board, the color palette pulls from many
-                            of the vibrant imagery that exists in and around the city. Midnight serves as a base color that
-                            many Seattlites are used to while ocean blue, blizzard blue, and minty green act as an accent
-                            that is visible in bright and dark environments. Pine green and slate purple were chosen to
-                            stand out against the other blues and greens while still being remaining cohesive with the
-                            color scheme. </p>
-                        <img id="SeaTransColor" src={colors} alt="Color palette for rebrand"/>
+                            The first step in the ideation phase was creating a design spec to outline what our solution
+                            would entail. After reflecting on our user research, we identified several problems that our
+                            design should address to meet the needs of our persona archetypes. </p>
+                        <img id="SeaTransColor" src={designSpec} alt="Color palette for rebrand"/>
                     </div>
                 </div>
                 <div>
-                    <h6>Typography</h6>
+                    <h6>Storyboards</h6>
                     <div style={styles.centerDiv50}>
                         <p>
-                            One of the main ways to communicate information towards riders of Seattle public transit is
-                            through text. As a result, the typefaces of the text need to be visually distinct enough for
-                            riders to be able to read, even if they are rushing to get where they are going. Cabin was
-                            chosen for its modern look while being bold enough to catch riders’ eyes. Open Sans was chosen
-                            as the font pairs well with Cabin, creating a cohesive system.
+                            Next, our team set out to create storyboards to highlight key interactions between users
+                            and our design solution. Depicted is my storyboard that shows a coach using the design
+                            solution to send workouts to their team.
                         </p>
                         <img id="SeaTransType" src={type} alt="Typography layout for rebrand"/>
                     </div>

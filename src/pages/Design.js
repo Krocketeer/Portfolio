@@ -41,11 +41,12 @@ export default function Design() {
                      onClick={() => setActiveProject("/design/BaseCamp")}
                      onMouseOver={() => setP2Image(BaseCampCoverHover)}
                      onMouseOut={() => setP2Image(BaseCampCover)}>
-                    <img style={styles.image} src={p2Image} alt="airbnb logo" />
+                    {/*Gif recording at 1908x876*/}
+                    <img style={styles.image} src={p2Image} alt="Base Camp" />
                     <MDBMask overlay="black-strong">
                         <div style={styles.hoverText}>
                             <p>Base Camp</p>
-                            <p style={{fontSize: ".75em"}}>UX Design & Brand Identity</p>
+                            <p style={{fontSize: ".75em"}}>UX Design</p>
                         </div>
                     </MDBMask>
                 </div>

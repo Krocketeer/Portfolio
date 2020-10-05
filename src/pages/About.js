@@ -1,5 +1,5 @@
 import React from "react"
-import profile_pic from "../images/IMG_1381.jpeg";
+import profile_pic from "../images/IMG_3352.jpeg";
 
 function About() {
     return <div className="bio">

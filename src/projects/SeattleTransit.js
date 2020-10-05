@@ -21,7 +21,7 @@ export default function SeattleTransit() {
         <div className="pageLayout">
             <div className="pageCover">
                 <img src={SeaTransitCover} alt="Seattle Transit Rebrand"
-                     style={{width: "100%", height: "auto", cursor: "zoom-in"}}/>
+                     style={{width: "100%", height: "100%", cursor: "zoom-in"}}/>
             </div>
             <div className="pageHeader">
                 <h3>Seattle Public Transit</h3>
@@ -103,11 +103,13 @@ export default function SeattleTransit() {
                         </p>
                         <div id="SeaTransPDFs">
                             <div style={styles.centerDiv50}>
-                                <embed id="SeaTransUserFlow" src={userFlow} allowFullScreen/>
+                                {/*<embed id="SeaTransUserFlow" src={userFlow} allowFullScreen/>*/}
+                                <object id="SeaTransUserFlow" data={userFlow} type="application/pdf">User Flow Diagram</object>
                                 <i>User Flow Diagram</i>
                             </div>
                             <div style={styles.centerDiv50}>
-                                <embed id="SeaTransLowFi" src={lowFi} allowFullScreen/>
+                                {/*<embed id="SeaTransLowFi" src={lowFi} allowFullScreen/>*/}
+                                <object id="SeaTransLowFi" data={lowFi} type="application/pdf">Low-fidelity mockups of App and Kiosk tasks</object>
                                 <i>Low-fidelity mockups of App and Kiosk tasks</i>
                             </div>
                         </div>
@@ -127,13 +129,14 @@ export default function SeattleTransit() {
                     </div>
                 </div>
                 <div>
-                    <h6>Hi-Fi Wireframes</h6>
+                    <h6>High-Fi Interactive Prototype</h6>
                     <div style={styles.centerDiv50}>
-                        <p> Equipped with a visual system and low-fidelity designs, I then created high-fidelity wireframes
-                            of a mobile and kiosk application for Seattle public transit. These wireframes focused on
-                            functionality, while maintaining a simple and elegant design. (Not working? Click here to
-                            view the <a href={links.figmaAppWireframe}>App Wireframe</a> or the
-                            <a href={links.figmaKioskWireframe}> Kiosk Wireframe</a> in Figma)
+                        <p> Equipped with a visual system and low-fidelity designs, I then created high-fidelity
+                            wireframes of a mobile and kiosk application for Seattle public transit as well as an
+                            interactive prototype. These wireframes focused on functionality, while maintaining a
+                            simple and elegant design.  (Not working? Click here to view
+                            the <a href={links.figmaAppWireframe}>App Prototype</a> or the
+                            <a href={links.figmaKioskWireframe}> Kiosk Prototype</a> in Figma)
                         </p>
                         <div style={styles.centerDiv}>
                             <iframe id="figmaAppFrame"

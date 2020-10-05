@@ -1,19 +1,6 @@
 import React from "react"
 import { SRLWrapper } from "simple-react-lightbox"
-
-import SeaTransitCover from "../images/SeattleTransit/STBigCover.png"
-import moodBoard from "../images/SeattleTransit/Moodboard.png"
-import colors from "../images/SeattleTransit/Colors.png"
-import type from "../images/SeattleTransit/Type.png"
-import userFlow from "../images/SeattleTransit/UserFlow.pdf"
-import lowFi from "../images/SeattleTransit/LowFiWireframes.pdf"
-import icons from "../images/SeattleTransit/Icons.png"
-import busMockup from "../images/SeattleTransit/Bus Stop Mockup.png"
-import busMockup2 from "../images/SeattleTransit/Bus Stop Mockup 2.png"
-import lightRailSign from "../images/SeattleTransit/Light Rail Sign.png"
-import railStationMockup from "../images/SeattleTransit/Rail Station Mockup.png"
-import ORCA from "../images/SeattleTransit/Orca Card Mockup.png"
-import ScrollArrow from "../components/ScrollArrow";
+import ScrollArrow from "../components/ScrollArrow"
 
 import BaseCampCover from "../images/BaseCamp/BaseCampCoverGray.png"
 import findings from "../images/BaseCamp/Findings.png"
@@ -23,6 +10,12 @@ import tertiary from "../images/BaseCamp/Tertiary.png"
 import anti from "../images/BaseCamp/Anti.png"
 import journeyMap from "../images/BaseCamp/Journey Map.png"
 import designSpec from "../images/BaseCamp/Design Spec.png"
+import storyboard from "../images/BaseCamp/Storyboard.png"
+import infoArch from "../images/BaseCamp/InformationArchitectureGray.png"
+import paperProto from "../images/BaseCamp/PaperPrototypeAnnotated.pdf"
+import lowFi from "../images/BaseCamp/LowFiWireframes.pdf"
+import wireframes from "../images/BaseCamp/Wireframes.pdf"
+import designSys from "../images/BaseCamp/Design System.png"
 
 export default function BaseCamp() {
     return <SRLWrapper options={lightboxOptions}>
@@ -30,7 +23,7 @@ export default function BaseCamp() {
         <div className="pageLayout">
             <div className="pageCover">
                 <img src={BaseCampCover} alt="Base Camp"
-                     style={{width: "100%", height: "auto", cursor: "zoom-in"}}/>
+                     style={{width: "100%", height: "100%", cursor: "zoom-in"}}/>
             </div>
             <div className="pageHeader">
                 <h3>Base Camp</h3>
@@ -48,7 +41,9 @@ export default function BaseCamp() {
                         </div>
                         <div>
                             <h6>Collaborators</h6>
-                            <div>Isabel Klein</div>
+                            <div>
+                                <a href={links.isabelPortfolio}>Isabel Klein</a>
+                            </div>
                             <div>Yvonne Huang</div>
                         </div>
                     </div>
@@ -68,130 +63,133 @@ export default function BaseCamp() {
                         </div>
                     </div>
                 </div>
-                <div id="goal" style={{paddingBottom: "50px"}}>
+                <div style={{paddingBottom: "50px"}}>
                     <h6>The Goal</h6>
                     <p> Design an app platform that allows people to organize team goals, training plans, and
                         inter-team competition to facilitate structure, foster community, and motivate team athletes
-                        to perform their best, even when alone. </p>
+                        to perform their best, even when alone.
+                    </p>
                 </div>
-                <div id="moodBoard">
+                <div>
                     <h6>Understanding Users</h6>
                     <div style={styles.centerDiv50}>
                         <p> As a team, we conducted 7 qualitative, semi-structured interviews in order to identify pain
                             points, motivations, and needs of coaches & athletes while they’re away from their team.
                             Our interviewees spanned 5 different sports — rowing, football, water polo, sailing, and
                             swimming — at the high school, collegiate club, Division-1, and National Team levels. After
-                            a thematic analysis of our interviews, we identified these 5 key findings:
-                        </p>
-                        <img id="SeaTransMoodBoard" src={findings} alt="Key findings of interviews with athletes and coaches"/>
-                        <p>
+                            a thematic analysis of our interviews, we identified these 5 key findings:</p>
+                        <img id="BaseCampUserFindings" src={findings} alt="Key findings of interviews with athletes and coaches"/>
+                        <p style={{paddingBottom: "25px"}}>
                             We then took our findings to create 4 personas (primary, secondary, tertiary, & anti) and
                             a user journey map to ground our design. The personas and journey map captured the pain
                             points, motivations, and needs of athletes & coaches identified in our interviews.
                         </p>
                         <div style={{display: "flex", flexDirection: "column", alignItems: "center"}}>
-                            <div className="personaLayout">
-                                <img className="personas" src={primary} alt="Primary Persona" />
-                                <img className="personas" src={secondary} alt="Secondary Persona" />
+                            <div className="BaseCampPersonaLayout">
+                                <img className="BaseCampPersona" src={primary} alt="Primary Persona" />
+                                <img className="BaseCampPersona" src={secondary} alt="Secondary Persona" />
                             </div>
-                            <div className="personaLayout">
-                                <img className="personas" src={tertiary} alt="Tertiary Persona" />
-                                <img className="personas" src={anti} alt="Anti Persona" />
+                            <div className="BaseCampPersonaLayout">
+                                <img className="BaseCampPersona" src={tertiary} alt="Tertiary Persona" />
+                                <img className="BaseCampPersona" src={anti} alt="Anti Persona" />
                             </div>
-                            <img id="journeyMap" src={journeyMap} alt="User journey map for primary persona"/>
+                            <img id="BaseCampJourneyMap" src={journeyMap} alt="User journey map for primary persona"/>
                         </div>
                     </div>
                 </div>
                 <div>
                     <h6>Design Spec</h6>
                     <div style={styles.centerDiv50}>
-                        <p style={{paddingBottom: "25px"}}>
-                            The first step in the ideation phase was creating a design spec to outline what our solution
+                        <p> The first step in the ideation phase was creating a design spec to outline what our solution
                             would entail. After reflecting on our user research, we identified several problems that our
-                            design should address to meet the needs of our persona archetypes. </p>
-                        <img id="SeaTransColor" src={designSpec} alt="Color palette for rebrand"/>
+                            design should address to meet the needs of our persona archetypes.
+                        </p>
+                        <img id="BaseCampDesignSpec" src={designSpec} alt="Problems and goals for design solution"/>
                     </div>
                 </div>
                 <div>
                     <h6>Storyboards</h6>
                     <div style={styles.centerDiv50}>
-                        <p>
+                        <p style={{paddingBottom: "25px"}}>
                             Next, our team set out to create storyboards to highlight key interactions between users
-                            and our design solution. Depicted is my storyboard that shows a coach using the design
+                            and our design solution. Shown below, is my storyboard that shows a coach using the design
                             solution to send workouts to their team.
                         </p>
-                        <img id="SeaTransType" src={type} alt="Typography layout for rebrand"/>
+                        <img id="BaseCampStoryBoard" src={storyboard} alt="Storyboard of coaching using design solution"/>
                     </div>
                 </div>
                 <div>
-                    <h6>User Flows & Low-Fi Designs</h6>
-                    <div style={styles.centerDiv}>
+                    <h6>Information Architecture</h6>
+                    <div style={styles.centerDiv50}>
                         <p style={{paddingBottom: "25px"}}>
-                            Before designing a mobile and kiosk application for Seattle public transit, a user flow was
-                            created out of interviews and observations to reflect the needs of riders. User flows focused
-                            on core functionalities of a mobile and kiosk application that could best serve riders in their
-                            commutes. The user flows then served as a grounding base for me as I created low-fidelity
-                            designs of the mobile and kiosk applications.
+                            Afterwards, the team came together to create a list of features that we would want to
+                            include in our design. Grounding ourselves within our research, we brainstormed and then
+                            narrowed down the list of features into 5 main sections: workout feed, leaderboards, add
+                            workout, training, and communication. These were then mapped out with an information
+                            architecture to show how each section would exist within our design.
+                        </p>
+                        <img id="BaseCampInfoArch" src={infoArch} alt="Information Architecture for app" />
+                    </div>
+                </div>
+                <div>
+                    <h6>Paper Prototypes & Wireframes</h6>
+                    <div style={styles.centerDiv50}>
+                        <p style={{paddingBottom: "25px"}}> Before we could start on the wireframes, each of us created paper prototypes of the 5
+                            different sections outlined in the information architecture. This primarily allowed
+                            us materialize our ideas and experiment with what we wanted our design to look like.
+                            Afterwards, we sketched out our paper prototypes into wireframes and they eventually served
+                            as the basis for our digitalized wireframes. Of the 5 main sections, I focused the feed and
+                            leaderboards.
                         </p>
                         <div id="SeaTransPDFs">
                             <div style={styles.centerDiv50}>
-                                <embed id="SeaTransUserFlow" src={userFlow} allowFullScreen/>
-                                <i>User Flow Diagram</i>
+                                {/*<embed id="SeaTransUserFlow" src={paperProto} allowFullScreen/>*/}
+                                {/*https://stackoverflow.com/questions/1244788/embed-vs-object*/}
+                                <object id="BaseCampPaperProto" data={paperProto} type="application/pdf">Annotated paper prototypes</object>
+                                <i>Annotated paper prototypes</i>
                             </div>
                             <div style={styles.centerDiv50}>
-                                <embed id="SeaTransLowFi" src={lowFi} allowFullScreen/>
-                                <i>Low-fidelity mockups of App and Kiosk tasks</i>
+                                <object id="BaseCampLowFi" data={lowFi} type="application/pdf">Low-fidelity mockups of feed and leaderboard sections</object>
+                                {/*<embed id="BaseCampLowFi" src={lowFi} allowFullScreen/>*/}
+                                <i>Low-fidelity mockups of feed and leaderboard sections</i>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div>
-                    <h6>Iconography</h6>
-                    <div style={styles.centerDiv50}>
-                        <p>
-                            One of the core visual aspects of a design is the usage of icons. Icons were selected based
-                            on their clarity in helping riders understand information at a quick glance, either in person
-                            or on an application.
-                        </p>
-                        <div style={styles.centerDiv}>
-                            <img id="SeaTransIcons" src={icons} alt="list of icons used in high fidelity wireframes"/>
+                        <div style={styles.centerDiv50}>
+                            <object id="BaseCampWireFrames" data={wireframes} type="application/pdf">Digitalized wireframes of feed and leaderboard sections</object>
+                            {/*<embed id="SeaTransLowFi" src={wireframes} allowFullScreen/>*/}
+                            <i>Digitalized wireframes of feed and leaderboard sections</i>
                         </div>
                     </div>
                 </div>
                 <div>
-                    <h6>Hi-Fi Wireframes</h6>
+                    <h6>Design System</h6>
                     <div style={styles.centerDiv50}>
-                        <p> Equipped with a visual system and low-fidelity designs, I then created high-fidelity wireframes
-                            of a mobile and kiosk application for Seattle public transit. These wireframes focused on
-                            functionality, while maintaining a simple and elegant design. (Not working? Click here to
-                            view the <a href={links.figmaAppWireframe}>App Wireframe</a> or the
-                            <a href={links.figmaKioskWireframe}> Kiosk Wireframe</a> in Figma)
+                        <p> After some time working apart to create paper prototypes and wireframes, we then came
+                            together to create a centralized design system to ensure that our high fidelity prototype
+                            would be visually and functionally cohesive.
+                        </p>
+                        <p> The orange was chosen as our primary color because of its bright vibrancy and natural
+                            energetic feeling. This in combination with its association with the seasons encourages
+                            users to be active and achieve their goals. The main headings within our design use Futura
+                            while everything else is in Open Sans. Futura conveys a sense of efficiency and forwardness
+                            that many athletes are accustomed to while Open Sans was chosen for its welcoming and
+                            friendly feeling.
+                        </p>
+                        <img id="BaseCampDesignSys" src={designSys} alt="Centralized design system for the app"/>
+                    </div>
+                </div>
+
+                <div>
+                    <h6>Interactive Prototype</h6>
+                    <div style={styles.centerDiv50}>
+                        <p> After finishing our wireframes and design system, we then created high fidelity wireframes
+                            and an interactive prototype of our design. (Not working?
+                            <a href={links.figmaAppWireframe}> Click here</a> to view the prototype in Figma)
                         </p>
                         <div style={styles.centerDiv}>
                             <iframe id="figmaAppFrame"
                                     src={links.figmaAppEmbed}
                                     allowFullScreen title="Seattle Transit Rebrand App"/>
-                            <iframe id="figmaKioskFrame"
-                                    src={links.figmaKioskEmbed}
-                                    allowFullScreen title="Seattle Transit Rebrand Kiosk"/>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <h6>Wayfinding System</h6>
-                    <div>
-                        <p style={{paddingBottom: "25px"}}>
-                            An essential part of public transit is the usage of wayfinding in order to help riders navigate
-                            the public transit system. Wayfinding signs were created to be big and visually distinct so
-                            that riders can easily understand the information on the signs as they are heading to their
-                            destination. In addition, the ORCA card was updated to a more modern and simplistic design to
-                            compliment the styles shown in the rebrand. </p>
-                        <div style={styles.centerDiv}>
-                            <img id="SeaTransWayfinding" src={busMockup} alt="Mockup of Signs at a Bus Stop"/>
-                            <img id="SeaTransWayfinding" src={busMockup2} alt="Mockup of Signs at a Bus Stop"/>
-                            <img id="SeaTransWayfinding" src={lightRailSign} alt="Mockup of Light Rail navigational signs"/>
-                            <img id="SeaTransWayfinding" src={railStationMockup} alt="Mockup of Light Rail navigational signs"/>
-                            <img id="SeaTransWayfinding" src={ORCA} alt="Mockup of front and back of ORCA card"/>
                         </div>
                     </div>
                 </div>
@@ -222,10 +220,9 @@ const styles = {
 }
 
 const links = {
-    figmaAppWireframe: "https://www.figma.com/proto/HxQYDPyEaua4wPOzOtMWkc/Seattle-Transit-Rebrand-App?node-id=2%3A10&scaling=min-zoom",
-    figmaKioskWireframe: "https://www.figma.com/proto/9pk8hfFcEeL6X3KRpe91Cd/Seattle-Transit-Rebrand-Kiosk?node-id=168%3A489&scaling=min-zoom",
-    figmaAppEmbed: "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FHxQYDPyEaua4wPOzOtMWkc%2FSeattle-Transit-Rebrand-App%3Fnode-id%3D2%253A10%26viewport%3D78%252C241%252C0.29441380500793457%26scaling%3Dscale-down&chrome=DOCUMENTATION",
-    figmaKioskEmbed: "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F9pk8hfFcEeL6X3KRpe91Cd%2FSeattle-Transit-Rebrand-Kiosk%3Fnode-id%3D168%253A489%26viewport%3D-154%252C680%252C0.17509283125400543%26scaling%3Dscale-down&chrome=DOCUMENTATION"
+    isabelPortfolio: "https://www.isabelklein.com",
+    figmaAppWireframe: "https://www.figma.com/proto/v356mAOOar9qnXXQyQIgs1/Base-Camp?node-id=527%3A2585&viewport=268%2C736%2C0.25&scaling=scale-down",
+    figmaAppEmbed: "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fv356mAOOar9qnXXQyQIgs1%2FBase-Camp%3Fnode-id%3D527%253A2585%26viewport%3D268%252C736%252C0.25%26scaling%3Dscale-down&chrome=DOCUMENTATION",
 }
 
 const lightboxOptions = {

@@ -12,18 +12,20 @@ function Header() {
     //     setState("/")
     // }
     return <header className="site_header">
-        <Link to="/">
-            <p style={{color: "black"}} onClick={e => setState("/")}>Kenny Le</p>
-        </Link>
+        <div className="header_name">
+            <Link to="/">
+                <p onClick={() => setState("/")}>Kenny Le</p>
+            </Link>
+        </div>
         <div className="header_menu">
             <Menu selectedKeys={[state]} mode="horizontal" onClick={e => setState(e.key)}>
-                <Menu.Item key="/" onClick={e => setState("/")}>
+                <Menu.Item key="/" onClick={() => setState("/")}>
                     <Link to="/">Design</Link>
                 </Menu.Item>
-                <Menu.Item key="/code" onClick={e => setState("/code")}>
+                <Menu.Item key="/code" onClick={() => setState("/code")}>
                     <Link to="/code">Code</Link>
                 </Menu.Item>
-                <Menu.Item key="/about" onClick={e => setState("/about")}>
+                <Menu.Item key="/about" onClick={() => setState("/about")}>
                     <Link to="/about">About</Link>
                 </Menu.Item>
             </Menu>

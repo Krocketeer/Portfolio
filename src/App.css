@@ -24,34 +24,6 @@ html {
   /*--antd-wave-shadow-color: #6CCBB2;*/
 }
 
-header {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  align-items: center;
-  color: rgba(0, 0, 0, 0.65);
-  font-family: Raleway, sans-serif;
-  font-size: 28px;
-  flex: 1;
-}
-
-header p {
-  margin: revert;
-  display: flex;
-  flex-flow: row nowrap;
-  white-space: nowrap;
-  /*border-bottom: 2px solid #f0f0f0;*/
-  /*margin-bottom: 24px;*/
-}
-
-.header_menu {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-end;
-  flex: 1;
-  /*border-bottom: 2px solid #f0f0f0;*/
-}
-
 .ant-menu, .ant-menu-light, .ant-menu-root, .ant-menu-horizontal {
   /*width: 100%;*/
   display: flex;
@@ -78,6 +50,7 @@ header p {
 .ant-menu-horizontal > .ant-menu-item a {
   /*color: rgba(0, 0, 0, 0.65);*/
   color: black;
+  font-size: 24px;
 }
 
 /*Change header menu selected text color*/
@@ -178,15 +151,49 @@ h4 {
   html, body { /* MOBILE */
     font-size: 18px;
   }
-  header, .bio {
-    padding-left: 36px;
-    padding-right: 36px;
+
+  header {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-between;
+    color: rgba(0, 0, 0, 0.65);
+    font-family: Raleway, sans-serif;
+    font-size: 28px;
+    padding: 0 44px 0;
+  }
+
+  header p {
+    display: flex;
+    flex-flow: row nowrap;
+    white-space: nowrap;
+    color: black;
+    font-size: 28px;
+    margin: 40px 0 25px;
+  }
+
+  .header_menu {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    /*flex: 1;*/
+  }
+
+  .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item {
+    margin: 0 60px;
+    padding: 0;
+  }
+
+  .bio  {
+    padding: 0 36px 0;
   }
   .header_menu {
-    padding-left: 72px;
+    /*padding-left: 72px;*/
   }
   .ant-menu-horizontal {
     /*width: 31vmax;*/
+    /*margin-right: -16px;*/
+    margin-bottom: 25px;
   }
 
   .bio img {
@@ -326,21 +333,53 @@ h4 {
   html, body { /* DESKTOP & TABLET */
     font-size: 21px;
   }
-  header, .bio  {
-    padding-left: 44px;
-    padding-right: 44px;
+
+  header {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    color: rgba(0, 0, 0, 0.65);
+    font-family: Raleway, sans-serif;
+    font-size: 28px;
+    padding: 0 44px 0;
   }
+
+  header p {
+    margin: revert;
+    display: flex;
+    flex-flow: row nowrap;
+    white-space: nowrap;
+    color: black;
+    font-size: 28px;
+  }
+
   .header_menu {
-    padding-left: 330px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    /*flex: 1;*/
   }
+
+  .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item {
+    margin: 0 20px;
+    padding: 0;
+  }
+
+  .bio  {
+    padding: 0 44px 0;
+  }
+
   .ant-menu-horizontal {
     /*width: 20vmax;*/
+    margin-right: -16px;
+    margin-bottom: 0;
   }
 
   .bio img {
     width: 40%;
     height: 75%;
-    padding-bottom: 0px;
+    padding-bottom: 0;
   }
 
   #text {

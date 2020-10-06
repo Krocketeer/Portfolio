@@ -1,7 +1,7 @@
 import React from "react"
 import { SRLWrapper } from "simple-react-lightbox"
 
-import SeaTransitCover from "../images/SeattleTransit/STBigCover.png"
+import SeaTransitCover from "../images/SeattleTransit/STCover.png"
 import moodBoard from "../images/SeattleTransit/Moodboard.png"
 import colors from "../images/SeattleTransit/Colors.png"
 import type from "../images/SeattleTransit/Type.png"

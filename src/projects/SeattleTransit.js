@@ -81,8 +81,7 @@ export default function SeattleTransit() {
                 <div>
                     <h6>Typography</h6>
                     <div style={styles.centerDiv50}>
-                        <p>
-                            One of the main ways to communicate information towards riders of Seattle public transit is
+                        <p> One of the main ways to communicate information towards riders of Seattle public transit is
                             through text. As a result, the typefaces of the text need to be visually distinct enough for
                             riders to be able to read, even if they are rushing to get where they are going. Cabin was
                             chosen for its modern look while being bold enough to catch riders’ eyes. Open Sans was chosen
@@ -118,8 +117,7 @@ export default function SeattleTransit() {
                 <div>
                     <h6>Iconography</h6>
                     <div style={styles.centerDiv50}>
-                        <p>
-                            One of the core visual aspects of a design is the usage of icons. Icons were selected based
+                        <p> One of the core visual aspects of a design is the usage of icons. Icons were selected based
                             on their clarity in helping riders understand information at a quick glance, either in person
                             or on an application.
                         </p>

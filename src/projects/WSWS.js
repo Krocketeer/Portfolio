@@ -1,21 +1,18 @@
 import React from "react"
 import { SRLWrapper } from "simple-react-lightbox"
-
-import SeaTransitCover from "../images/SeattleTransit/STCover.png"
-import moodBoard from "../images/SeattleTransit/Moodboard.png"
-import colors from "../images/SeattleTransit/Colors.png"
-import type from "../images/SeattleTransit/Type.png"
-import userFlow from "../images/SeattleTransit/UserFlow.pdf"
-import lowFi from "../images/SeattleTransit/LowFiWireframes.pdf"
-import icons from "../images/SeattleTransit/Icons.png"
-import busMockup from "../images/SeattleTransit/Bus Stop Mockup.png"
-import busMockup2 from "../images/SeattleTransit/Bus Stop Mockup 2.png"
-import lightRailSign from "../images/SeattleTransit/Light Rail Sign.png"
-import railStationMockup from "../images/SeattleTransit/Rail Station Mockup.png"
-import ORCA from "../images/SeattleTransit/Orca Card Mockup.png"
 import ScrollArrow from "../components/ScrollArrow";
 
 import WSWSCover from "../images/WildlifeShelter/WSWSCoverGreen.png"
+import successful from "../images/WildlifeShelter/SuccessfulDesign.png"
+import unsuccessful1 from "../images/WildlifeShelter/UnsuccessfulDesign1.png"
+import unsuccessful2 from "../images/WildlifeShelter/UnsuccessfulDesign2.png"
+import unsuccessful3 from "../images/WildlifeShelter/UnsuccessfulDesign3.png"
+import pillars from "../images/WildlifeShelter/Pillars.png"
+import logo from "../images/WildlifeShelter/Logo.png"
+import type from "../images/WildlifeShelter/Type.png"
+import colors from "../images/WildlifeShelter/Colors.png"
+import mockups from "../images/WildlifeShelter/Mockups.png"
+
 
 export default function WSWS() {
     return <SRLWrapper options={lightboxOptions}>
@@ -35,8 +32,8 @@ export default function WSWS() {
                         <div>Adobe Illustrator</div>
                         <div>Adobe Xd</div>
                     </div>
-                    <div id="problemSpace" style={{paddingBottom: "50px"}}>
-                        <h6>Background</h6>
+                    <div style={{paddingBottom: "50px"}}>
+                        <h6>Background and Mission</h6>
                         <p> The West Sound Wildlife Shelter is a non-profit organization based in Washington that
                             provides “injured, orphaned, & sick wildlife a second chance at wildlife and promotes
                             the well-being of wildlife & their habitats through public outreach, education, and
@@ -45,19 +42,63 @@ export default function WSWS() {
                 </div>
                 <div id="goal" style={{paddingBottom: "50px"}}>
                     <h6>The Goal</h6>
-                    <p> The rebrand of King County Metro and Sound Transit aims to unify the
-                        two into one cohesive brand that represents Seattle public transit. </p>
+                    <p> Refresh and update the visual design of the West Sound Wildlife Shelter to match the
+                        organization's current identity and mission. </p>
                 </div>
-                <div id="moodBoard">
-                    <h6>Setting the Mood</h6>
+                <div>
+                    <h6>Understanding the Current Design</h6>
                     <div style={styles.centerDiv50}>
-                        <p> The first step in creating a rebrand for Seattle public transit was figuring out what feeling
-                            the rebrand should embody. I chose images that represent the lively night life of Seattle and
-                            the numerous rich-nature colors that exist in and around the city. Particularly, I wanted to
-                            incorporate things and places that were iconic to Seattle, such as Pike Place Market, and be
-                            able to represent them in the rebrand. </p>
-                        <img id="SeaTransMoodBoard" src={moodBoard} alt="Mood board"/>
-                        {/*<figcaption className="caption">Visual representation of the direction for the rebrand of Seattle public transit</figcaption>*/}
+                        <p> The first step in redesigning and creating a visual refresh was doing a brand audit of the
+                            organization. With a team of five others, we explored their website and noted several
+                            instances of successful design as well as unsuccessful design (pain points) that a user
+                            may encounter. Instances of successful design came from part of the website that directly
+                            related to the organization's mission statement. Unsuccessful elements stemmed from parts
+                            that drew users away. </p>
+                        <div style={{display: "flex", flexDirection: "column", alignItems: "center"}}>
+                            <div className="WSWSBrandAudit">
+                                <img className="WSWSWebDesign" src={successful}
+                                     alt="Successful design includes usage of organic colors and ways to get involved" />
+                                <img className="WSWSWebDesign" src={unsuccessful1}
+                                     alt="The website shows a lack of hierarchy, outdated information, and non-functional buttons" />
+                            </div>
+                            <div className="WSWSBrandAudit">
+                                <img className="WSWSWebDesign" src={unsuccessful2}
+                                     alt="There are various instances of too much information, broken links, and text inconsistencies" />
+                                <img className="WSWSWebDesign" src={unsuccessful3}
+                                     alt="The web design also shows inconsistent margins and navigation bar layouts" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h6>Redesign Pillars & Communication Goals</h6>
+                    <div style={styles.centerDiv50}>
+                        <p> After conducting a brand audit, the team established four pillars to keep us grounded in
+                            the organization's mission and identity while we were creating our redesigns. In particular,
+                            my redesign emphasizes three things: wildlife, human-friendliness, and simplicity. </p>
+                        <img id="WSWSPillars" src={pillars}
+                             alt="Our designs aimed to empower, communicate, focus, and implement"/>
+                    </div>
+                </div>
+                <div>
+                    <h6>Logo</h6>
+                    <div style={styles.centerDiv50}>
+                        <p> The logo and word mark work together to integrate a wildlife and a human aspect while still
+                            remaining simple. Modeled after a harpy eagle, the logo consists of an S as the body and
+                            a W as the ears. The bird sits inside a hour to portray how humans and animals can exist
+                            together as a part of the community. </p>
+                        <img id="WSWSLogo" src={logo} alt="Logo and word mark"/>
+                    </div>
+                </div>
+                <div>
+                    <h6>Typography</h6>
+                    <div style={styles.centerDiv50}>
+                        <p> The two typefaces chosen reflect the messages of being friendly and welcoming while still
+                            remaining simple and functional. Gibson is a nice blend of friendly and simple while
+                            still being bold enough to catch people's attention. Paired with Gibson, is Poppins which
+                            works well due to its softer, rounded font styling.
+                        </p>
+                        <img id="WSWSType" src={type} alt="Typography layout for rebrand"/>
                     </div>
                 </div>
                 <div>
@@ -70,94 +111,18 @@ export default function WSWS() {
                             that is visible in bright and dark environments. Pine green and slate purple were chosen to
                             stand out against the other blues and greens while still being remaining cohesive with the
                             color scheme. </p>
-                        <img id="SeaTransColor" src={colors} alt="Color palette for rebrand"/>
+                        <img id="WSWSColor" src={colors} alt="Color palette for rebrand"/>
                     </div>
                 </div>
                 <div>
-                    <h6>Typography</h6>
-                    <div style={styles.centerDiv50}>
-                        <p>
-                            One of the main ways to communicate information towards riders of Seattle public transit is
-                            through text. As a result, the typefaces of the text need to be visually distinct enough for
-                            riders to be able to read, even if they are rushing to get where they are going. Cabin was
-                            chosen for its modern look while being bold enough to catch riders’ eyes. Open Sans was chosen
-                            as the font pairs well with Cabin, creating a cohesive system.
-                        </p>
-                        <img id="SeaTransType" src={type} alt="Typography layout for rebrand"/>
-                    </div>
-                </div>
-                <div>
-                    <h6>User Flows & Low-Fi Designs</h6>
-                    <div style={styles.centerDiv}>
-                        <p style={{paddingBottom: "25px"}}>
-                            Before designing a mobile and kiosk application for Seattle public transit, a user flow was
-                            created out of interviews and observations to reflect the needs of riders. User flows focused
-                            on core functionalities of a mobile and kiosk application that could best serve riders in their
-                            commutes. The user flows then served as a grounding base for me as I created low-fidelity
-                            designs of the mobile and kiosk applications.
-                        </p>
-                        <div id="SeaTransPDFs">
-                            <div style={styles.centerDiv50}>
-                                {/*<embed id="SeaTransUserFlow" src={userFlow} allowFullScreen/>*/}
-                                <object id="SeaTransUserFlow" data={userFlow} type="application/pdf">User Flow Diagram</object>
-                                <i>User Flow Diagram</i>
-                            </div>
-                            <div style={styles.centerDiv50}>
-                                {/*<embed id="SeaTransLowFi" src={lowFi} allowFullScreen/>*/}
-                                <object id="SeaTransLowFi" data={lowFi} type="application/pdf">Low-fidelity mockups of App and Kiosk tasks</object>
-                                <i>Low-fidelity mockups of App and Kiosk tasks</i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <h6>Iconography</h6>
-                    <div style={styles.centerDiv50}>
-                        <p>
-                            One of the core visual aspects of a design is the usage of icons. Icons were selected based
-                            on their clarity in helping riders understand information at a quick glance, either in person
-                            or on an application.
+                    <h6>Mobile Mockups</h6>
+                    <div style={styles.centerDiv25}>
+                        <p> In order to illustrate how various components of the redesign would be used, a mobile design
+                            mockup was created. This example shows how a user would donate to the West Sound Wildlife
+                            Shelter.
                         </p>
                         <div style={styles.centerDiv}>
-                            <img id="SeaTransIcons" src={icons} alt="list of icons used in high fidelity wireframes"/>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <h6>High-Fi Interactive Prototype</h6>
-                    <div style={styles.centerDiv50}>
-                        <p> Equipped with a visual system and low-fidelity designs, I then created high-fidelity
-                            wireframes of a mobile and kiosk application for Seattle public transit as well as an
-                            interactive prototype. These wireframes focused on functionality, while maintaining a
-                            simple and elegant design.  (Not working? Click here to view
-                            the <a href={links.figmaAppWireframe}>App Prototype</a> or the
-                            <a href={links.figmaKioskWireframe}> Kiosk Prototype</a> in Figma)
-                        </p>
-                        <div style={styles.centerDiv}>
-                            <iframe id="figmaAppFrame"
-                                    src={links.figmaAppEmbed}
-                                    allowFullScreen title="Seattle Transit Rebrand App"/>
-                            <iframe id="figmaKioskFrame"
-                                    src={links.figmaKioskEmbed}
-                                    allowFullScreen title="Seattle Transit Rebrand Kiosk"/>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <h6>Wayfinding System</h6>
-                    <div>
-                        <p style={{paddingBottom: "25px"}}>
-                            An essential part of public transit is the usage of wayfinding in order to help riders navigate
-                            the public transit system. Wayfinding signs were created to be big and visually distinct so
-                            that riders can easily understand the information on the signs as they are heading to their
-                            destination. In addition, the ORCA card was updated to a more modern and simplistic design to
-                            compliment the styles shown in the rebrand. </p>
-                        <div style={styles.centerDiv}>
-                            <img id="SeaTransWayfinding" src={busMockup} alt="Mockup of Signs at a Bus Stop"/>
-                            <img id="SeaTransWayfinding" src={busMockup2} alt="Mockup of Signs at a Bus Stop"/>
-                            <img id="SeaTransWayfinding" src={lightRailSign} alt="Mockup of Light Rail navigational signs"/>
-                            <img id="SeaTransWayfinding" src={railStationMockup} alt="Mockup of Light Rail navigational signs"/>
-                            <img id="SeaTransWayfinding" src={ORCA} alt="Mockup of front and back of ORCA card"/>
+                            <img id="WSWSMockups" src={mockups} alt="list of icons used in high fidelity wireframes"/>
                         </div>
                     </div>
                 </div>
@@ -184,14 +149,6 @@ const styles = {
         flexDirection: "column",
         alignItems: "center",
     },
-
-}
-
-const links = {
-    figmaAppWireframe: "https://www.figma.com/proto/HxQYDPyEaua4wPOzOtMWkc/Seattle-Transit-Rebrand-App?node-id=2%3A10&scaling=min-zoom",
-    figmaKioskWireframe: "https://www.figma.com/proto/9pk8hfFcEeL6X3KRpe91Cd/Seattle-Transit-Rebrand-Kiosk?node-id=168%3A489&scaling=min-zoom",
-    figmaAppEmbed: "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FHxQYDPyEaua4wPOzOtMWkc%2FSeattle-Transit-Rebrand-App%3Fnode-id%3D2%253A10%26viewport%3D78%252C241%252C0.29441380500793457%26scaling%3Dscale-down&chrome=DOCUMENTATION",
-    figmaKioskEmbed: "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F9pk8hfFcEeL6X3KRpe91Cd%2FSeattle-Transit-Rebrand-Kiosk%3Fnode-id%3D168%253A489%26viewport%3D-154%252C680%252C0.17509283125400543%26scaling%3Dscale-down&chrome=DOCUMENTATION"
 }
 
 const lightboxOptions = {

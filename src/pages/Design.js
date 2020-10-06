@@ -75,19 +75,19 @@ export default function Design() {
             </MDBView>
         </Link>
 
-        <Link to="/design/project4">
-            <MDBView hover>
-                <div id="project4" style={styles.projectBox} onClick={() => setActiveProject("/code/project4")}>
-                    <img style={styles.image} src={Airbnb} alt="airbnb logo" />
-                    <MDBMask overlay="black-strong">
-                        <div style={styles.hoverText}>
-                            <p>Project 4 title</p>
-                            <p style={{fontSize: ".75em"}}>Project 4 Description</p>
-                        </div>
-                    </MDBMask>
-                </div>
-            </MDBView>
-        </Link>
+        {/*<Link to="/design/project4">*/}
+        {/*    <MDBView hover>*/}
+        {/*        <div id="project4" style={styles.projectBox} onClick={() => setActiveProject("/code/project4")}>*/}
+        {/*            <img style={styles.image} src={Airbnb} alt="airbnb logo" />*/}
+        {/*            <MDBMask overlay="black-strong">*/}
+        {/*                <div style={styles.hoverText}>*/}
+        {/*                    <p>Project 4 title</p>*/}
+        {/*                    <p style={{fontSize: ".75em"}}>Project 4 Description</p>*/}
+        {/*                </div>*/}
+        {/*            </MDBMask>*/}
+        {/*        </div>*/}
+        {/*    </MDBView>*/}
+        {/*</Link>*/}
     </div>
 }
 

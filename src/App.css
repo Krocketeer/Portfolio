@@ -327,6 +327,31 @@ h4 {
     height: 640px;
     margin-bottom: 25px;
   }
+
+  .WSWSBrandAudit {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .WSWSWebDesign {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 25px;
+  }
+
+  #WSWSColor, #WSWSPillars, #WSWSLogo, #WSWSMockups {
+    width: 100%;
+    height: 100%;
+    cursor: zoom-in;
+  }
+
+  #WSWSType {
+    width: 115%;
+    height: 100%;
+    cursor: zoom-in;
+  }
+
 }
 
 @media (min-width: 768px) {
@@ -507,6 +532,30 @@ h4 {
     width: 720px;
     height: 960px;
     margin-right: 48px;
+  }
+
+  .WSWSBrandAudit {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .WSWSWebDesign {
+    width: 49%;
+    height: 100%;
+    margin-bottom: 25px;
+  }
+
+  #WSWSColor, #WSWSType, #WSWSLogo, #WSWSPillars {
+    width: 69%;
+    height: 100%;
+    cursor: zoom-in;
+  }
+
+  #WSWSMockups {
+    width: 75%;
+    height: 100%;
+    cursor: zoom-in;
   }
 }
 

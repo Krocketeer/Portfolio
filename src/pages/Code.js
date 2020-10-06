@@ -6,64 +6,64 @@ import Airbnb from "../images/AirBnb Logo w Name.png";
 export default function Code() {
     const path = window.location.pathname
     const [activeProject, setActiveProject] = useState(path)
-    const projectName = ["nullHolder", "Project 1", "Project 2", "Project 3", "Project 4"]
+    const projectName = ["nullHolder", "Insights into AirBnb & Cities", "Project 2", "Project 3", "Project 4"]
 
     return <div className="codeProjects" onClick={e => setActiveProject(e.key)}>
-        <Link to="/code/project1">
+        <Link to="/code/airbnb">
             <MDBView hover>
-                <div id={projectName[1]} style={styles.projectBox} onClick={() => setActiveProject("/code/project1")}>
+                <div id={projectName[1]} style={styles.projectBox} onClick={() => setActiveProject("/code/airbnb")}>
                     <img style={styles.image} src={Airbnb} alt="airbnb logo" />
                     <MDBMask overlay="black-strong">
                         <div style={styles.hoverText}>
-                            <p>{projectName[1]} title</p>
-                            <p>Project 1 Description</p>
+                            <p>{projectName[1]}</p>
+                            <p>Data Visualization</p>
                         </div>
                     </MDBMask>
                 </div>
             </MDBView>
         </Link>
 
-        <Link to="/code/project2">
-            <MDBView hover>
-                <div id="project2" style={styles.projectBox} onClick={() => setActiveProject("/code/project2")}>
-                    <img style={styles.image} src={Airbnb} alt="airbnb logo" />
-                    <MDBMask overlay="black-strong">
-                        <div style={styles.hoverText}>
-                            <p>Project 2 title</p>
-                            <p>Project 2 Description</p>
-                        </div>
-                    </MDBMask>
-                </div>
-            </MDBView>
-        </Link>
+    {/*    <Link to="/code/project2">*/}
+    {/*        <MDBView hover>*/}
+    {/*            <div id="project2" style={styles.projectBox} onClick={() => setActiveProject("/code/project2")}>*/}
+    {/*                <img style={styles.image} src={Airbnb} alt="airbnb logo" />*/}
+    {/*                <MDBMask overlay="black-strong">*/}
+    {/*                    <div style={styles.hoverText}>*/}
+    {/*                        <p>Project 2 title</p>*/}
+    {/*                        <p>Project 2 Description</p>*/}
+    {/*                    </div>*/}
+    {/*                </MDBMask>*/}
+    {/*            </div>*/}
+    {/*        </MDBView>*/}
+    {/*    </Link>*/}
 
-        <Link to="/code/project3">
-            <MDBView hover>
-                <div id="project3" style={styles.projectBox} onClick={() => setActiveProject("/code/project3")}>
-                    <img style={styles.image} src={Airbnb} alt="airbnb logo" />
-                    <MDBMask overlay="black-strong">
-                        <div style={styles.hoverText}>
-                            <p>Project 3 title</p>
-                            <p>Project 3 Description</p>
-                        </div>
-                    </MDBMask>
-                </div>
-            </MDBView>
-        </Link>
+    {/*    <Link to="/code/project3">*/}
+    {/*        <MDBView hover>*/}
+    {/*            <div id="project3" style={styles.projectBox} onClick={() => setActiveProject("/code/project3")}>*/}
+    {/*                <img style={styles.image} src={Airbnb} alt="airbnb logo" />*/}
+    {/*                <MDBMask overlay="black-strong">*/}
+    {/*                    <div style={styles.hoverText}>*/}
+    {/*                        <p>Project 3 title</p>*/}
+    {/*                        <p>Project 3 Description</p>*/}
+    {/*                    </div>*/}
+    {/*                </MDBMask>*/}
+    {/*            </div>*/}
+    {/*        </MDBView>*/}
+    {/*    </Link>*/}
 
-        <Link>
-            <MDBView hover>
-                <div id="project4" style={styles.projectBox} onClick={() => setActiveProject("/code/project4")}>
-                    <img style={styles.image} src={Airbnb} alt="airbnb logo" />
-                    <MDBMask overlay="black-strong">
-                        <div style={styles.hoverText}>
-                            <p>Project 4 title</p>
-                            <p>Project 4 Description</p>
-                        </div>
-                    </MDBMask>
-                </div>
-            </MDBView>
-        </Link>
+    {/*    <Link>*/}
+    {/*        <MDBView hover>*/}
+    {/*            <div id="project4" style={styles.projectBox} onClick={() => setActiveProject("/code/project4")}>*/}
+    {/*                <img style={styles.image} src={Airbnb} alt="airbnb logo" />*/}
+    {/*                <MDBMask overlay="black-strong">*/}
+    {/*                    <div style={styles.hoverText}>*/}
+    {/*                        <p>Project 4 title</p>*/}
+    {/*                        <p>Project 4 Description</p>*/}
+    {/*                    </div>*/}
+    {/*                </MDBMask>*/}
+    {/*            </div>*/}
+    {/*        </MDBView>*/}
+    {/*    </Link>*/}
     </div>
 }
 

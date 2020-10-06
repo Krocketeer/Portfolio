@@ -3,8 +3,9 @@ import './App.css';
 import "./components/Header"
 import {BrowserRouter as Router, Route, Switch, Redirect} from 'react-router-dom';
 import SimpleReactLightbox from "simple-react-lightbox"
-import Header from "./components/Header";
+import Header from "./components/Header"
 import Footer from "./components/Footer"
+import Upcoming from "./pages/Upcoming"
 import Code from "./pages/Code"
 import About from "./pages/About"
 import Design from "./pages/Design"
@@ -25,6 +26,7 @@ function App() {
                     </Route>
                     <Route path="/about" component={About} />
                     <Route path="/code" exact component={Code} />
+                    <Route path="/code/airbnb" exact component={Upcoming} />
                     <Route path="/design/SeattleTransit" component={SeattleTransit} />
                     <Route path="/design/BaseCamp" component={BaseCamp} />
                     <Route path="/design/WestSoundWildlifeShelter" component={WSWS}/>

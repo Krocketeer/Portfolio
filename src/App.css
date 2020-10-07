@@ -81,7 +81,7 @@ html {
 
 .bio {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   padding-top: 30px;
   flex-flow: row wrap;
   /*flex-direction: row-reverse;*/
@@ -167,7 +167,7 @@ h4 {
   }
 
   .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item {
-    margin: 0 20px;
+    margin: 0 26px;
     padding: 0;
   }
 
@@ -202,12 +202,14 @@ h4 {
     align-items: center;
     /* border: "1px solid rgba(0, 0, 0, 0.65)",*/
     margin: 10px 10px 30px;
-    min-height: 114px;
-    height: 21vw;
-    max-height: 21vw;
-    min-width: 258px;
-    max-width: 47vw;
-    width: 47vw;
+    height: 126px;
+    width: 284px;
+    /*min-height: 114px;*/
+    /*height: 21vw;*/
+    /*max-height: 21vw;*/
+    /*min-width: 258px;*/
+    /*max-width: 47vw;*/
+    /*width: 47vw;*/
     font-size: 24px;
     /*margin-bottom: 20px;*/
   }
@@ -221,12 +223,14 @@ h4 {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 134px;
-    height: 21vw;
-    max-height: 21vw;
-    min-width: 280px;
-    width: 47vw;
-    max-width: 47vw;
+    height: 146px;
+    width: 304px;
+    /*min-height: 134px;*/
+    /*height: 21vw;*/
+    /*max-height: 21vw;*/
+    /*min-width: 280px;*/
+    /*width: 47vw;*/
+    /*max-width: 47vw;*/
     /*margin: 10px;*/
   }
 

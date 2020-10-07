@@ -95,19 +95,6 @@ html {
   align-items: center;
 }
 
-.view .mask {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 200px;
-  height: 21vw;
-  max-height: 21vw;
-  min-width: 450px;
-  width: 47vw;
-  max-width: 47vw;
-  margin: 10px;
-}
-
 .overlay .mask {
   transition: all 0.1s linear;
 }
@@ -147,7 +134,7 @@ h4 {
   height: 100%;
 }
 
-@media (min-width: 375px) {
+@media (min-width: 300px) {
   html, body { /* MOBILE */
     font-size: 18px;
   }
@@ -180,7 +167,7 @@ h4 {
   }
 
   .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item {
-    margin: 0 60px;
+    margin: 0 20px;
     padding: 0;
   }
 
@@ -209,6 +196,57 @@ h4 {
     font-weight: 400;
   }
 
+  .projectBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: "1px solid rgba(0, 0, 0, 0.65)",*/
+    margin: 10px 10px 30px;
+    min-height: 114px;
+    height: 21vw;
+    max-height: 21vw;
+    min-width: 258px;
+    max-width: 47vw;
+    width: 47vw;
+    font-size: 24px;
+    /*margin-bottom: 20px;*/
+  }
+
+  .coverImage {
+    height: 116%;
+    width: 116%;
+  }
+
+  .view .mask {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 134px;
+    height: 21vw;
+    max-height: 21vw;
+    min-width: 280px;
+    width: 47vw;
+    max-width: 47vw;
+    /*margin: 10px;*/
+  }
+
+  .hoverText {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-weight: 500;
+    /*font-size: 1em;*/
+    line-height: 30px;
+    margin-top: 24px;
+  }
+
+  .hoverText p {
+    margin-bottom: 10px;
+  }
+
   .scrollTop {
     position: fixed;
     width: 100%;
@@ -227,8 +265,7 @@ h4 {
   }
 
   .pageLayout {
-    padding-left: 54px;
-    padding-right: 54px;
+    padding: 0 36px;
   }
 
   .details {
@@ -263,8 +300,8 @@ h4 {
   }
 
   #SeaTransUserFlow, #SeaTransLowFi {
-    width: 480px;
-    height: 640px;
+    width: 240px;
+    height: 320px;
     margin-bottom: 25px;
   }
 
@@ -275,14 +312,14 @@ h4 {
   }
 
   #figmaAppFrame {
-    width: 348px;
-    height: 700px;
+    width: 232px;
+    height: 466px;
     border: 1px solid rgba(0, 0, 0, 0);
   }
 
   #figmaKioskFrame {
-    width: 575px;
-    height: 500px;
+    width: 383px;
+    height: 333px;
     border: 1px solid rgba(0, 0, 0, 0);
   }
 
@@ -323,8 +360,8 @@ h4 {
   }
 
   #BaseCampPaperProto, #BaseCampLowFi, #BaseCampWireFrames {
-    width: 480px;
-    height: 640px;
+    width: 240px;
+    height: 320px;
     margin-bottom: 25px;
   }
 
@@ -414,6 +451,57 @@ h4 {
     min-width: 400px;
     font-size: 18px;
     font-weight: 400;
+  }
+
+  .projectBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: "1px solid rgba(0, 0, 0, 0.65)",*/
+    margin: 10px;
+    min-height: 200px;
+    height: 21vw;
+    max-height: 21vw;
+    min-width: 450px;
+    max-width: 47vw;
+    width: 47vw;
+    font-size: 24px;
+  }
+
+  .coverImage {
+    min-height: 198px;
+    height: 20.75vw;
+    max-height: 20.75vw;
+    min-width: 448px;
+    max-width: 47vw;
+    width: 47vw;
+  }
+
+  .view .mask {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 200px;
+    height: 21vw;
+    max-height: 21vw;
+    min-width: 450px;
+    width: 47vw;
+    max-width: 47vw;
+    margin: 10px;
+  }
+
+  .hoverText {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-weight: 500;
+    font-size: 1.45em;
+    line-height: 16px;
+    margin-top: 24px;
   }
 
   .scrollTop {

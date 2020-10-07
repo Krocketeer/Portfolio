@@ -21,15 +21,16 @@ export default function Design() {
     return <div className="designProjects" onClick={e => setActiveProject(e.key)}>
         <Link to="/design/SeattleTransit">
             <MDBView hover>
-                <div id={projectName[1]} style={styles.projectBox}
+                <div className="projectBox"
                      onClick={() => setActiveProject("/design/SeattleTransit")}
                      onMouseOver={() => setP1Image(SeaTransitCoverHover)}
                      onMouseOut={() => setP1Image(SeaTransitCover)}>
-                    <img style={styles.imageModified}
+                    {/*style={styles.imageModified}*/}
+                    <img className="coverImage"
                         src={p1Image}
                          alt="Seattle Transit Rebrand" />
                     <MDBMask overlay="black-strong">
-                        <div style={styles.hoverText}>
+                        <div className="hoverText">
                             <p>{projectName[1]}</p>
                             <p style={{fontSize: ".75em"}}>Visual Design & Brand Identity</p>
                         </div>
@@ -40,15 +41,15 @@ export default function Design() {
 
         <Link to="/design/BaseCamp">
             <MDBView hover>
-                <div id={projectName[2]} style={styles.projectBox}
+                <div className="projectBox"
                      onClick={() => setActiveProject("/design/BaseCamp")}
                      onMouseOver={() => setP2Image(BaseCampCoverHover)}
                      onMouseOut={() => setP2Image(BaseCampCover)}>
                     {/*Gif recording at 1908x876*/}
-                    <img style={styles.image} src={p2Image} alt="Base Camp" />
+                    <img className="coverImage" src={p2Image} alt="Base Camp" />
                     <MDBMask overlay="black-strong">
-                        <div style={styles.hoverText}>
-                            <p>Base Camp</p>
+                        <div className="hoverText">
+                            <p >Base Camp</p>
                             <p style={{fontSize: ".75em"}}>UX Design</p>
                         </div>
                     </MDBMask>
@@ -58,16 +59,16 @@ export default function Design() {
 
         <Link to="/design/WestSoundWildlifeShelter">
             <MDBView hover>
-                <div id={projectName[3]} style={styles.projectBox}
+                <div className="projectBox"
                      onClick={() => setActiveProject("/design/WestSoundWildlifeShelter")}
                      onMouseOver={() => setP3Image(WSWSCoverHover)}
                      onMouseOut={() => setP3Image(WSWSCover)}>
-                    <img style={styles.imageModified}
+                    <img className="coverImage"
                          src={p3Image}
                          alt="West Sound Wildlife Shelter" />
                     <MDBMask overlay="black-strong">
-                        <div style={styles.hoverText}>
-                            <p>{projectName[1]}</p>
+                        <div className="hoverText">
+                            <p>{projectName[3]}</p>
                             <p style={{fontSize: ".75em"}}>Visual Design & Brand Identity</p>
                         </div>
                     </MDBMask>
@@ -114,7 +115,7 @@ const styles= {
         minHeight: "200px",
         height: "21vw",
         maxHeight: "21vw",
-        minWidth: "450px",
+        minWidth: "275px",
         maxWidth: "47vw",
         width: "47vw",
         fontSize: "24px"

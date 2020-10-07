@@ -6,17 +6,23 @@ import Airbnb from "../images/AirBnb Logo w Name.png";
 export default function Code() {
     const path = window.location.pathname
     const [activeProject, setActiveProject] = useState(path)
+    const [p1Image, setP1Image] = useState(Airbnb)
     const projectName = ["nullHolder", "Insights into AirBnb & Cities", "Project 2", "Project 3", "Project 4"]
 
     return <div className="codeProjects" onClick={e => setActiveProject(e.key)}>
         <Link to="/code/airbnb">
             <MDBView hover>
-                <div id={projectName[1]} style={styles.projectBox} onClick={() => setActiveProject("/code/airbnb")}>
-                    <img style={styles.image} src={Airbnb} alt="airbnb logo" />
+                <div className="projectBox"
+                     onClick={() => setActiveProject("/code/airbnb")}
+                     onMouseOver={() => setP1Image(Airbnb)}
+                     onMouseOut={() => setP1Image(Airbnb)}>
+                    <img className="coverImage"
+                         src={p1Image}
+                         alt="Airbnb" />
                     <MDBMask overlay="black-strong">
-                        <div style={styles.hoverText}>
+                        <div className="hoverText">
                             <p>{projectName[1]}</p>
-                            <p>Data Visualization</p>
+                            <p style={{fontSize: ".75em"}}>Data Visualization</p>
                         </div>
                     </MDBMask>
                 </div>

@@ -6,7 +6,7 @@ import Airbnb from "../images/AirBnb Logo w Name.png";
 import SeaTransitCoverHover from "../images/SeattleTransit/STAltCover.png"
 import SeaTransitCover from "../images/SeattleTransit/STCover.png"
 import BaseCampCover from "../images/BaseCamp/BaseCampCover.png"
-import BaseCampCoverHover from "../images/BaseCamp/Calendar.gif"
+import BaseCampCoverHover from "../images/BaseCamp/CalendarSmaller.gif"
 import WSWSCoverHover from "../images/WildlifeShelter/WSWSCover.png"
 import WSWSCover from "../images/WildlifeShelter/WSWSCoverGreen.png"
 

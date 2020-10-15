@@ -13,53 +13,56 @@ import type from "../images/WildlifeShelter/Type.png"
 import colors from "../images/WildlifeShelter/Colors.png"
 import mockups from "../images/WildlifeShelter/Mockups.png"
 
+import PRCover from "../images/ReactPortfolio/MacBookMockUp.png"
+import frontPage from "../images/ReactPortfolio/OldPortfolio/Front Page.png"
 
-export default function WSWS() {
+
+export default function PortfolioRedesign() {
     return <SRLWrapper options={lightboxOptions}>
         <ScrollArrow/>
         <div className="pageLayout">
             <div className="pageCover">
-                <img src={WSWSCover} alt="West Sound Wildlife Shelter"
+                <img src={PRCover} alt="Portfolio Redesign"
                      style={{width: "100%", height: "100%", cursor: "zoom-in"}}/>
             </div>
             <div className="pageHeader">
-                <h3>West Sound Wildlife Shelter</h3>
-                <h6>Visual Design & Brand Identity</h6>
+                <h3>Portfolio Redesign</h3>
+                <h6>Web Design & React.js Development</h6>
 
                 <div className="details" style={{marginTop: "50px"}}>
                     <div className="info">
                         <h6>Tools</h6>
-                        <div>Illustrator</div>
-                        <div>Adobe Xd</div>
+                        <div>Figma</div>
+                        <div>React.js</div>
                     </div>
                     <div style={{paddingBottom: "50px"}}>
-                        <h6>Background and Mission</h6>
-                        <p> The West Sound Wildlife Shelter is a non-profit organization based in Washington that
-                            provides “injured, orphaned, & sick wildlife a second chance at wildlife and promotes
-                            the well-being of wildlife & their habitats through public outreach, education, and
-                            involvement”. </p>
+                        <h6>Background</h6>
+                        <p> As a design student, I knew I needed to create a portfolio to showcase my design work. Over
+                            the course of a few weeks during the winter break of my sophomore year, I quickly built my
+                            portfolio using Wordpress and Elementor. However, I eventually became dissatisfied with the
+                            design of my portfolio because it did not reflect the style and skills I had developed since
+                            originally building my portfolio.
+                        </p>
                     </div>
                 </div>
                 <div id="goal" style={{paddingBottom: "50px"}}>
                     <h6>The Goal</h6>
-                    <p> Refresh and update the visual design of the West Sound Wildlife Shelter to match the
-                        organization's current identity and mission. </p>
+                    <p> Recreate my portfolio to reflect the style and skills I have developed as a designer. </p>
                 </div>
                 <div>
-                    <h6>Understanding the Current Design</h6>
+                    <h6>Old Portfolio Takeaways</h6>
                     <div style={styles.centerDiv50}>
-                        <p> The first step in redesigning and creating a visual refresh was doing a brand audit of the
-                            organization. With a team of five others, we explored their website and noted several
-                            instances of successful design as well as unsuccessful design (pain points) that a user
-                            may encounter. Instances of successful design came from part of the website that directly
-                            related to the organization's mission statement. Unsuccessful elements stemmed from parts
-                            that drew users away. </p>
+                        <p> Before I could recreate my portfolio, I first had to take a look at my old portfolio and
+                            note things that I liked and did not like about the design. While I fundamentally wanted to
+                            recreate my portfolio from scratch, there were aspects of my old portfolio that I wanted to
+                            keep going forward. Mainly, I wanted to keep the general rectangle layout of the portfolio
+                            the same because it strikes a nice balance between maximizing the amount of content per page
+                            while giving each project enough space to be prominent on their own.
+                        </p>
                         <div style={{display: "flex", flexDirection: "column", alignItems: "center"}}>
                             <div className="WSWSBrandAudit">
-                                <img className="WSWSWebDesign" src={successful}
+                                <img className="WSWSWebDesign" src={frontPage}
                                      alt="Successful design includes usage of organic colors and ways to get involved" />
-                                <img className="WSWSWebDesign" src={unsuccessful1}
-                                     alt="The website shows a lack of hierarchy, outdated information, and non-functional buttons" />
                             </div>
                             <div className="WSWSBrandAudit">
                                 <img className="WSWSWebDesign" src={unsuccessful2}

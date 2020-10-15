@@ -33,11 +33,10 @@ export default function BaseCamp() {
                     <div className="info">
                         <div style={{paddingBottom: "25px"}}>
                             <h6>Tools</h6>
-                            <div>Adobe Illustrator</div>
-                            <div>Adobe Photoshop</div>
                             <div>Figma</div>
-                            <div>Final Cut Pro X</div>
+                            <div>Illustrator</div>
                             <div>Lucid Chart</div>
+                            <div>Photoshop</div>
                         </div>
                         <div>
                             <h6>Collaborators</h6>

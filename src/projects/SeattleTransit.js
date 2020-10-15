@@ -30,10 +30,10 @@ export default function SeattleTransit() {
                 <div className="details" style={{marginTop: "50px"}}>
                     <div className="info">
                         <h6>Tools</h6>
-                        <div>Adobe Illustrator</div>
-                        <div>Adobe Photoshop</div>
                         <div>Figma</div>
+                        <div>Illustrator</div>
                         <div>Lucid Chart</div>
+                        <div>Photoshop</div>
                     </div>
                     <div id="problemSpace" style={{paddingBottom: "50px"}}>
                         <h6>Problem Space</h6>

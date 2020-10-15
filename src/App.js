@@ -12,6 +12,7 @@ import Design from "./pages/Design"
 import SeattleTransit from "./projects/SeattleTransit";
 import BaseCamp from "./projects/BaseCamp"
 import WSWS from "./projects/WSWS"
+import Portfolio from "./projects/PortfolioRedesign"
 
 
 function App() {

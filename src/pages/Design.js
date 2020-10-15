@@ -2,21 +2,25 @@ import React, { useState } from "react"
 import { Link } from "react-router-dom";
 import { MDBMask, MDBView } from "mdbreact";
 
-import Airbnb from "../images/AirBnb Logo w Name.png";
 import SeaTransitCoverHover from "../images/SeattleTransit/STAltCover.png"
 import SeaTransitCover from "../images/SeattleTransit/STCover.png"
 import BaseCampCover from "../images/BaseCamp/BaseCampCover.png"
 import BaseCampCoverHover from "../images/BaseCamp/CalendarSmaller.gif"
+import BaseCampCoverAlt from "../images/BaseCamp/BaseCampCoverAlt.png"
 import WSWSCoverHover from "../images/WildlifeShelter/WSWSCover.png"
 import WSWSCover from "../images/WildlifeShelter/WSWSCoverGreen.png"
+import PortfolioCoverHover from "../images/ReactPortfolio/MacBookMockUpHover.png";
+import PortfolioCover from "../images/ReactPortfolio/MacBookMockUp.png";
 
 export default function Design() {
     const path = window.location.pathname
     const [activeProject, setActiveProject] = useState(path)
     const [p1Image, setP1Image] = useState(SeaTransitCover)
-    const [p2Image, setP2Image] = useState(BaseCampCover)
+    const [p2Image, setP2Image] = useState(BaseCampCoverAlt)
     const [p3Image, setP3Image] = useState(WSWSCover)
-    const projectName = ["nullHolder", "Seattle Transit Rebrand", "Base Camp", "West Sound Wildlife Shelter", "Project 4"]
+    const [p4Image, setP4Image] = useState(PortfolioCover)
+    const projectName = ["nullHolder", "Seattle Transit Rebrand", "Base Camp", "West Sound Wildlife Shelter",
+                        "Portfolio Redesign"]
 
     return <div className="designProjects" onClick={e => setActiveProject(e.key)}>
         <Link to="/design/SeattleTransit">
@@ -44,7 +48,7 @@ export default function Design() {
                 <div className="projectBox"
                      onClick={() => setActiveProject("/design/BaseCamp")}
                      onMouseOver={() => setP2Image(BaseCampCoverHover)}
-                     onMouseOut={() => setP2Image(BaseCampCover)}>
+                     onMouseOut={() => setP2Image(BaseCampCoverAlt)}>
                     {/*Gif recording at 1908x876*/}
                     <img className="coverImage" src={p2Image} alt="Base Camp" />
                     <MDBMask overlay="black-strong">
@@ -76,6 +80,26 @@ export default function Design() {
             </MDBView>
         </Link>
 
+        <Link to="/design/PortfolioRedesign">
+            <MDBView hover>
+                <div className="projectBox"
+                     onClick={() => setActiveProject("/design/PortfolioRedesign")}
+                     onMouseOver={() => setP4Image(PortfolioCoverHover)}
+                     onMouseOut={() => setP4Image(PortfolioCover)}>
+                    <img className="coverImage"
+                         src={p4Image}
+                         alt="Portfolio Cover" />
+                    <MDBMask overlay="black-strong">
+                        <div className="hoverText">
+                            <p>{projectName[4]}</p>
+                            <p style={{fontSize: ".75em"}}>Web Design & React.js Development</p>
+                        </div>
+                    </MDBMask>
+                </div>
+            </MDBView>
+        </Link>
+
+
         {/*<Link to="/design/project4">*/}
         {/*    <MDBView hover>*/}
         {/*        <div id="project4" style={styles.projectBox} onClick={() => setActiveProject("/code/project4")}>*/}
@@ -92,48 +116,48 @@ export default function Design() {
     </div>
 }
 
-const styles= {
-    hoverText: {
-        display: "flex",
-        flexDirection: "column",
-        flexWrap: "wrap",
-        justifyContent: "center",
-        alignItems: "center",
-        textAlign: "center",
-        color: "white",
-        fontWeight: "500",
-        fontSize: "1.45em",
-        lineHeight: "16px",
-        marginTop: "24px"
-    },
-    projectBox: {
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        // border: "1px solid rgba(0, 0, 0, 0.65)",
-        margin: "10px",
-        minHeight: "200px",
-        height: "21vw",
-        maxHeight: "21vw",
-        minWidth: "275px",
-        maxWidth: "47vw",
-        width: "47vw",
-        fontSize: "24px"
-    },
-    image: {
-        minHeight: "198px",
-        height: "20.75vw",
-        maxHeight: "20.75vw",
-        minWidth: "448px",
-        maxWidth: "47vw",
-        width: "47vw",
-    },
-    imageModified: {
-        minHeight: "198px",
-        height: "20.85vw",
-        maxHeight: "20.85vw",
-        minWidth: "448px",
-        maxWidth: "47vw",
-        width: "47vw",
-    }
-}
+// const styles= {
+//     hoverText: {
+//         display: "flex",
+//         flexDirection: "column",
+//         flexWrap: "wrap",
+//         justifyContent: "center",
+//         alignItems: "center",
+//         textAlign: "center",
+//         color: "white",
+//         fontWeight: "500",
+//         fontSize: "1.45em",
+//         lineHeight: "16px",
+//         marginTop: "24px"
+//     },
+//     projectBox: {
+//         display: "flex",
+//         justifyContent: "center",
+//         alignItems: "center",
+//         // border: "1px solid rgba(0, 0, 0, 0.65)",
+//         margin: "10px",
+//         minHeight: "200px",
+//         height: "21vw",
+//         maxHeight: "21vw",
+//         minWidth: "275px",
+//         maxWidth: "47vw",
+//         width: "47vw",
+//         fontSize: "24px"
+//     },
+//     image: {
+//         minHeight: "198px",
+//         height: "20.75vw",
+//         maxHeight: "20.75vw",
+//         minWidth: "448px",
+//         maxWidth: "47vw",
+//         width: "47vw",
+//     },
+//     imageModified: {
+//         minHeight: "198px",
+//         height: "20.85vw",
+//         maxHeight: "20.85vw",
+//         minWidth: "448px",
+//         maxWidth: "47vw",
+//         width: "47vw",
+//     }
+// }

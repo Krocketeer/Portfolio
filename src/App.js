@@ -30,6 +30,7 @@ function App() {
                     <Route path="/design/SeattleTransit" component={SeattleTransit} />
                     <Route path="/design/BaseCamp" component={BaseCamp} />
                     <Route path="/design/WestSoundWildlifeShelter" component={WSWS}/>
+                    <Route path="/design/PortfolioRedesign" component={Upcoming}/>
                     {/*<Route path="/design/:projects" component={Design}></Route>*/}
                     {/*<Route path="/code/:projects" component={<Code />}></Route>*/}
                     <Route path="*">404 Not Found</Route>

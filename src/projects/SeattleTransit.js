@@ -73,7 +73,7 @@ export default function SeattleTransit() {
                             of the vibrant imagery that exists in and around the city. Midnight serves as a base color that
                             many Seattlites are used to while ocean blue, blizzard blue, and minty green act as an accent
                             that is visible in bright and dark environments. Pine green and slate purple were chosen to
-                            stand out against the other blues and greens while still being remaining cohesive with the
+                            stand out against the other blues and greens while still being cohesive with the
                             color scheme. </p>
                         <img id="SeaTransColor" src={colors} alt="Color palette for rebrand"/>
                     </div>

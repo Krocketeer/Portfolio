@@ -15,6 +15,7 @@ import mockups from "../images/WildlifeShelter/Mockups.png"
 
 import PRCover from "../images/ReactPortfolio/MacBookMockUp.png"
 import frontPage from "../images/ReactPortfolio/OldPortfolio/Front Page.png"
+import projectLayout from "../images/ReactPortfolio/OldPortfolio/Page Layout.png"
 
 
 export default function PortfolioRedesign() {
@@ -40,41 +41,40 @@ export default function PortfolioRedesign() {
                         <p> As a design student, I knew I needed to create a portfolio to showcase my design work. Over
                             the course of a few weeks during the winter break of my sophomore year, I quickly built my
                             portfolio using Wordpress and Elementor. However, I eventually became dissatisfied with the
-                            design of my portfolio because it did not reflect the style and skills I had developed since
-                            originally building my portfolio.
+                            design of my portfolio because it became outdated and did not reflect the style and skills
+                            I had developed since originally building my portfolio.
                         </p>
                     </div>
                 </div>
                 <div id="goal" style={{paddingBottom: "50px"}}>
                     <h6>The Goal</h6>
-                    <p> Recreate my portfolio to reflect the style and skills I have developed as a designer. </p>
+                    <p> Recreate and redesign my portfolio to reflect the style and skills I have developed as a
+                        designer. </p>
                 </div>
                 <div>
                     <h6>Old Portfolio Takeaways</h6>
                     <div style={styles.centerDiv50}>
-                        <p> Before I could recreate my portfolio, I first had to take a look at my old portfolio and
-                            note things that I liked and did not like about the design. While I fundamentally wanted to
-                            recreate my portfolio from scratch, there were aspects of my old portfolio that I wanted to
-                            keep going forward. Mainly, I wanted to keep the general rectangle layout of the portfolio
-                            the same because it strikes a nice balance between maximizing the amount of content per page
-                            while giving each project enough space to be prominent on their own.
+                        <p> Before recreating my portfolio, I first took a look at my old portfolio and noted things
+                            that I liked and did not like about the design. While I fundamentally wanted to redesign my
+                            portfolio from scratch, there were aspects of my old portfolio that I wanted to keep going
+                            forward. Mainly, I liked the simplicity of my rectangular layout since it struck a nice
+                            balance between maximizing content per page and without feeling too overwhelming. However,
+                            one thing I noticed that I didn't like was the varied amount of spacing and general lack of
+                            grid structure for things on the website. (The old portfolio can be viewed at
+                            <a href={links.oldPortfolio}> https://krocketeer.github.io/old-portfolio/</a>. Note: parts
+                            of the site are broken because site was transferred from Wordpress to Github).
                         </p>
                         <div style={{display: "flex", flexDirection: "column", alignItems: "center"}}>
                             <div className="WSWSBrandAudit">
                                 <img className="WSWSWebDesign" src={frontPage}
                                      alt="Successful design includes usage of organic colors and ways to get involved" />
-                            </div>
-                            <div className="WSWSBrandAudit">
-                                <img className="WSWSWebDesign" src={unsuccessful2}
-                                     alt="There are various instances of too much information, broken links, and text inconsistencies" />
-                                <img className="WSWSWebDesign" src={unsuccessful3}
-                                     alt="The web design also shows inconsistent margins and navigation bar layouts" />
+                                <img className="WSWSWebDesign" src={projectLayout} />
                             </div>
                         </div>
                     </div>
                 </div>
                 <div>
-                    <h6>Redesign Pillars & Communication Goals</h6>
+                    <h6>Sketching and Wireframing</h6>
                     <div style={styles.centerDiv50}>
                         <p> After conducting a brand audit, the team established four pillars to keep us grounded in
                             the organization's mission and identity while we were creating our redesigns. In particular,
@@ -156,4 +156,8 @@ const styles = {
 
 const lightboxOptions = {
     showDownloadButton: false,
+}
+
+const links = {
+    oldPortfolio: "https://krocketeer.github.io/old-portfolio/"
 }

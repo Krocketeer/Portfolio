@@ -122,7 +122,8 @@ export default function WSWS() {
                             Shelter.
                         </p>
                         <div style={styles.centerDiv}>
-                            <img id="WSWSMockups" src={mockups} alt="list of icons used in high fidelity wireframes"/>
+                            <img id="WSWSMockups" src={mockups} alt="Mobile mockups showcasing how someone would
+                            donate to the wildlife shelter"/>
                         </div>
                     </div>
                 </div>

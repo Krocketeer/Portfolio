@@ -13,6 +13,7 @@ import SeattleTransit from "./projects/SeattleTransit";
 import BaseCamp from "./projects/BaseCamp"
 import WSWS from "./projects/WSWS"
 import Portfolio from "./projects/PortfolioRedesign"
+import JPS from "./projects/JointPressureSleeve"
 
 
 function App() {
@@ -31,7 +32,8 @@ function App() {
                     <Route path="/design/SeattleTransit" component={SeattleTransit} />
                     <Route path="/design/BaseCamp" component={BaseCamp} />
                     <Route path="/design/WestSoundWildlifeShelter" component={WSWS}/>
-                    <Route path="/design/PortfolioRedesign" component={Portfolio}/>
+                    <Route path="/design/PortfolioRedesign" component={Upcoming}/>
+                    <Route path="/projects/JointPressureSleeve" component={JPS} />
                     {/*<Route path="/design/:projects" component={Design}></Route>*/}
                     {/*<Route path="/code/:projects" component={<Code />}></Route>*/}
                     <Route path="*">404 Not Found</Route>

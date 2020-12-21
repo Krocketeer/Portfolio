@@ -19,11 +19,11 @@ import designSys from "../images/BaseCamp/Design System.png"
 
 export default function BaseCamp() {
     return <SRLWrapper options={lightboxOptions}>
-        <ScrollArrow/>
+        <ScrollArrow />
         <div className="pageLayout">
             <div className="pageCover">
                 <img src={BaseCampCover} alt="Base Camp"
-                     style={{width: "100%", height: "100%", cursor: "zoom-in"}}/>
+                     style={{width: "100%", height: "100%", cursor: "zoom-in"}} />
             </div>
             <div className="pageHeader">
                 <h3>Base Camp</h3>
@@ -50,8 +50,8 @@ export default function BaseCamp() {
                     <div id="problemSpace" style={{paddingBottom: "50px"}}>
                         <div style={{paddingBottom: "25px"}}>
                             <h6>Problem Space</h6>
-                            <p> One of the easiest ways to start working out or participating in a sport is to do it with
-                                other people. Whether it’s on a team, a club, or just a dedicated group of friends,
+                            <p> One of the easiest ways to start working out or participating in a sport is to do it
+                                with other people. Whether it’s on a team, a club, or just a dedicated group of friends,
                                 exercising with other people is how a lot of people stay committed. However, when people
                                 aren’t able to exercise with their team, they usually fall off the boat — aren’t able to
                                 stay committed to exercising — relatively fast. </p>
@@ -77,7 +77,7 @@ export default function BaseCamp() {
                             Our interviewees spanned 5 different sports — rowing, football, water polo, sailing, and
                             swimming — at the high school, collegiate club, Division-1, and National Team levels. After
                             a thematic analysis of our interviews, we identified these 5 key findings:</p>
-                        <img id="BaseCampUserFindings" src={findings} alt="Key findings of interviews with athletes and coaches"/>
+                        <img id="BaseCampUserFindings" src={findings} alt="Key findings of interviews with athletes and coaches" />
                         <p style={{paddingBottom: "25px"}}>
                             We then took our findings to create 4 personas (primary, secondary, tertiary, & anti) and
                             a user journey map to ground our design. The personas and journey map captured the pain
@@ -92,7 +92,7 @@ export default function BaseCamp() {
                                 <img className="BaseCampPersona" src={tertiary} alt="Tertiary Persona" />
                                 <img className="BaseCampPersona" src={anti} alt="Anti Persona" />
                             </div>
-                            <img id="BaseCampJourneyMap" src={journeyMap} alt="User journey map for primary persona"/>
+                            <img id="BaseCampJourneyMap" src={journeyMap} alt="User journey map for primary persona" />
                         </div>
                     </div>
                 </div>
@@ -103,7 +103,7 @@ export default function BaseCamp() {
                             would entail. After reflecting on our user research, we identified several problems that our
                             design should address to meet the needs of our persona archetypes.
                         </p>
-                        <img id="BaseCampDesignSpec" src={designSpec} alt="Problems and goals for design solution"/>
+                        <img id="BaseCampDesignSpec" src={designSpec} alt="Problems and goals for design solution" />
                     </div>
                 </div>
                 <div>
@@ -114,7 +114,7 @@ export default function BaseCamp() {
                             and our design solution. Shown below, is my storyboard that shows a coach using the design
                             solution to send workouts to their team.
                         </p>
-                        <img id="BaseCampStoryBoard" src={storyboard} alt="Storyboard of coaching using design solution"/>
+                        <img id="BaseCampStoryBoard" src={storyboard} alt="Storyboard of coaching using design solution" />
                     </div>
                 </div>
                 <div>
@@ -133,12 +133,12 @@ export default function BaseCamp() {
                 <div>
                     <h6>Paper Prototypes & Wireframes</h6>
                     <div style={styles.centerDiv50}>
-                        <p style={{paddingBottom: "25px"}}> Before we could start on the wireframes, each of us created paper prototypes of the 5
-                            different sections outlined in the information architecture. This primarily allowed
-                            us materialize our ideas and experiment with what we wanted our design to look like.
-                            Afterwards, we sketched out our paper prototypes into wireframes and they eventually served
-                            as the basis for our digitalized wireframes. Of the 5 main sections, I focused the feed and
-                            leaderboards.
+                        <p style={{paddingBottom: "25px"}}> Before we could start on the wireframes, each of us created
+                            paper prototypes of the 5 different sections outlined in the information architecture. This
+                            primarily allowed us materialize our ideas and experiment with what we wanted our design to
+                            look like. Afterwards, we sketched out our paper prototypes into wireframes and they
+                            eventually served as the basis for our digitalized wireframes. Of the 5 main sections, I
+                            focused the feed and leaderboards.
                         </p>
                         <div id="SeaTransPDFs">
                             <div style={styles.centerDiv50}>
@@ -174,7 +174,7 @@ export default function BaseCamp() {
                             that many athletes are accustomed to while Open Sans was chosen for its welcoming and
                             friendly feeling.
                         </p>
-                        <img id="BaseCampDesignSys" src={designSys} alt="Centralized design system for the app"/>
+                        <img id="BaseCampDesignSys" src={designSys} alt="Centralized design system for the app" />
                     </div>
                 </div>
 
@@ -188,7 +188,7 @@ export default function BaseCamp() {
                         <div style={styles.centerDiv}>
                             <iframe id="figmaAppFrame"
                                     src={links.figmaAppEmbed}
-                                    allowFullScreen title="Seattle Transit Rebrand App"/>
+                                    allowFullScreen title="Seattle Transit Rebrand App" />
                         </div>
                     </div>
                 </div>

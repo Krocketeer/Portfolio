@@ -17,11 +17,11 @@ import ScrollArrow from "../components/ScrollArrow";
 
 export default function SeattleTransit() {
     return <SRLWrapper options={lightboxOptions}>
-        <ScrollArrow/>
+        <ScrollArrow />
         <div className="pageLayout">
             <div className="pageCover">
                 <img src={SeaTransitCover} alt="Seattle Transit Rebrand"
-                     style={{width: "100%", height: "100%", cursor: "zoom-in"}}/>
+                     style={{width: "100%", height: "100%", cursor: "zoom-in"}} />
             </div>
             <div className="pageHeader">
                 <h3>Seattle Public Transit</h3>
@@ -40,12 +40,13 @@ export default function SeattleTransit() {
                         <p> Living in a high density city often means using public transportation as a way of commuting.
                             Whether it’s traveling to school, to work, or anything in between, a city’s public
                             transportation service must be extensive enough to support its community. For the city of
-                            Seattle, two transit agencies — King County Metro and Sound Transit — fulfills the community’s
-                            public transportation needs. King County Metro operates the majority of the local busses within
-                            the city while Sound Transit operates regional busses in addition to the city’s rail service.
-                            While both agencies serve the city of Seattle, they both maintain a different visual branding
-                            on their buses and rail service from each other. This often causes confusion for out of city
-                            visitors and generally those who are not familiar with how public transit works in Seattle. </p>
+                            Seattle, two transit agencies — King County Metro and Sound Transit — fulfills the
+                            community’s public transportation needs. King County Metro operates the majority of the
+                            local busses within the city while Sound Transit operates regional busses in addition to the
+                            city’s rail service. While both agencies serve the city of Seattle, they both maintain a
+                            different visual branding on their buses and rail service from each other. This often causes
+                            confusion for out of city visitors and generally those who are not familiar with how public
+                            transit works in Seattle. </p>
                     </div>
                 </div>
                 <div id="goal" style={{paddingBottom: "50px"}}>
@@ -61,7 +62,7 @@ export default function SeattleTransit() {
                             the numerous rich-nature colors that exist in and around the city. Particularly, I wanted to
                             incorporate things and places that were iconic to Seattle, such as Pike Place Market, and be
                             able to represent them in the rebrand. </p>
-                        <img id="SeaTransMoodBoard" src={moodBoard} alt="Mood board"/>
+                        <img id="SeaTransMoodBoard" src={moodBoard} alt="Mood board" />
                         {/*<figcaption className="caption">Visual representation of the direction for the rebrand of Seattle public transit</figcaption>*/}
                     </div>
                 </div>
@@ -75,7 +76,7 @@ export default function SeattleTransit() {
                             that is visible in bright and dark environments. Pine green and slate purple were chosen to
                             stand out against the other blues and greens while still being cohesive with the
                             color scheme. </p>
-                        <img id="SeaTransColor" src={colors} alt="Color palette for rebrand"/>
+                        <img id="SeaTransColor" src={colors} alt="Color palette for rebrand" />
                     </div>
                 </div>
                 <div>
@@ -87,7 +88,7 @@ export default function SeattleTransit() {
                             chosen for its modern look while being bold enough to catch riders’ eyes. Open Sans was chosen
                             as the font pairs well with Cabin, creating a cohesive system.
                         </p>
-                        <img id="SeaTransType" src={type} alt="Typography layout for rebrand"/>
+                        <img id="SeaTransType" src={type} alt="Typography layout for rebrand" />
                     </div>
                 </div>
                 <div>
@@ -122,7 +123,7 @@ export default function SeattleTransit() {
                             or on an application.
                         </p>
                         <div style={styles.centerDiv}>
-                            <img id="SeaTransIcons" src={icons} alt="list of icons used in high fidelity wireframes"/>
+                            <img id="SeaTransIcons" src={icons} alt="list of icons used in high fidelity wireframes" />
                         </div>
                     </div>
                 </div>
@@ -139,10 +140,10 @@ export default function SeattleTransit() {
                         <div style={styles.centerDiv}>
                             <iframe id="figmaAppFrame"
                                     src={links.figmaAppEmbed}
-                                    allowFullScreen title="Seattle Transit Rebrand App"/>
+                                    allowFullScreen title="Seattle Transit Rebrand App" />
                             <iframe id="figmaKioskFrame"
                                     src={links.figmaKioskEmbed}
-                                    allowFullScreen title="Seattle Transit Rebrand Kiosk"/>
+                                    allowFullScreen title="Seattle Transit Rebrand Kiosk" />
                         </div>
                     </div>
                 </div>
@@ -156,11 +157,11 @@ export default function SeattleTransit() {
                             destination. In addition, the ORCA card was updated to a more modern and simplistic design to
                             compliment the styles shown in the rebrand. </p>
                         <div style={styles.centerDiv}>
-                            <img id="SeaTransWayfinding" src={busMockup} alt="Mockup of Signs at a Bus Stop"/>
-                            <img id="SeaTransWayfinding" src={busMockup2} alt="Mockup of Signs at a Bus Stop"/>
-                            <img id="SeaTransWayfinding" src={lightRailSign} alt="Mockup of Light Rail navigational signs"/>
-                            <img id="SeaTransWayfinding" src={railStationMockup} alt="Mockup of Light Rail navigational signs"/>
-                            <img id="SeaTransWayfinding" src={ORCA} alt="Mockup of front and back of ORCA card"/>
+                            <img id="SeaTransWayfinding" src={busMockup} alt="Mockup of Signs at a Bus Stop" />
+                            <img id="SeaTransWayfinding" src={busMockup2} alt="Mockup of Signs at a Bus Stop" />
+                            <img id="SeaTransWayfinding" src={lightRailSign} alt="Mockup of Light Rail navigational signs" />
+                            <img id="SeaTransWayfinding" src={railStationMockup} alt="Mockup of Light Rail navigational signs" />
+                            <img id="SeaTransWayfinding" src={ORCA} alt="Mockup of front and back of ORCA card" />
                         </div>
                     </div>
                 </div>

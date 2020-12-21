@@ -2,11 +2,6 @@ import React from "react"
 import { SRLWrapper } from "simple-react-lightbox"
 import ScrollArrow from "../components/ScrollArrow";
 
-import WSWSCover from "../images/WildlifeShelter/WSWSCoverGreen.png"
-import successful from "../images/WildlifeShelter/SuccessfulDesign.png"
-import unsuccessful1 from "../images/WildlifeShelter/UnsuccessfulDesign1.png"
-import unsuccessful2 from "../images/WildlifeShelter/UnsuccessfulDesign2.png"
-import unsuccessful3 from "../images/WildlifeShelter/UnsuccessfulDesign3.png"
 import pillars from "../images/WildlifeShelter/Pillars.png"
 import logo from "../images/WildlifeShelter/Logo.png"
 import type from "../images/WildlifeShelter/Type.png"
@@ -20,11 +15,11 @@ import projectLayout from "../images/ReactPortfolio/OldPortfolio/Page Layout.png
 
 export default function PortfolioRedesign() {
     return <SRLWrapper options={lightboxOptions}>
-        <ScrollArrow/>
+        <ScrollArrow />
         <div className="pageLayout">
             <div className="pageCover">
                 <img src={PRCover} alt="Portfolio Redesign"
-                     style={{width: "100%", height: "100%", cursor: "zoom-in"}}/>
+                     style={{width: "100%", height: "100%", cursor: "zoom-in"}} />
             </div>
             <div className="pageHeader">
                 <h3>Portfolio Redesign</h3>
@@ -80,7 +75,7 @@ export default function PortfolioRedesign() {
                             the organization's mission and identity while we were creating our redesigns. In particular,
                             my redesign emphasizes three things: wildlife, human-friendliness, and simplicity. </p>
                         <img id="WSWSPillars" src={pillars}
-                             alt="Our designs aimed to empower, communicate, focus, and implement"/>
+                             alt="Our designs aimed to empower, communicate, focus, and implement" />
                     </div>
                 </div>
                 <div>
@@ -90,7 +85,7 @@ export default function PortfolioRedesign() {
                             remaining simple. Modeled after a harpy eagle, the logo consists of an S as the body and
                             a W as the ears. The bird sits inside a hour to portray how humans and animals can exist
                             together as a part of the community. </p>
-                        <img id="WSWSLogo" src={logo} alt="Logo and word mark"/>
+                        <img id="WSWSLogo" src={logo} alt="Logo and word mark" />
                     </div>
                 </div>
                 <div>
@@ -101,7 +96,7 @@ export default function PortfolioRedesign() {
                             still being bold enough to catch people's attention. Paired with Gibson, is Poppins which
                             works well due to its softer, rounded font styling.
                         </p>
-                        <img id="WSWSType" src={type} alt="Typography layout for rebrand"/>
+                        <img id="WSWSType" src={type} alt="Typography layout for rebrand" />
                     </div>
                 </div>
                 <div>
@@ -114,7 +109,7 @@ export default function PortfolioRedesign() {
                             that is visible in bright and dark environments. Pine green and slate purple were chosen to
                             stand out against the other blues and greens while still being remaining cohesive with the
                             color scheme. </p>
-                        <img id="WSWSColor" src={colors} alt="Color palette for rebrand"/>
+                        <img id="WSWSColor" src={colors} alt="Color palette for rebrand" />
                     </div>
                 </div>
                 <div>
@@ -125,7 +120,7 @@ export default function PortfolioRedesign() {
                             Shelter.
                         </p>
                         <div style={styles.centerDiv}>
-                            <img id="WSWSMockups" src={mockups} alt="list of icons used in high fidelity wireframes"/>
+                            <img id="WSWSMockups" src={mockups} alt="list of icons used in high fidelity wireframes" />
                         </div>
                     </div>
                 </div>

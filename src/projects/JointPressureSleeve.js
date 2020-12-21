@@ -30,7 +30,7 @@ export default function JointPressureSleeve() {
         <div className="pageLayout">
             <div className="pageCover">
                 <img src={JPSCover} alt="Joint Pressure Sleeve"
-                     style={{width: "100%", height: "100%", cursor: "zoom-in"}}/>
+                     style={{width: "100%", height: "100%", cursor: "zoom-in"}} />
             </div>
             <div className="pageHeader">
                 <h3>Joint Pressure Sleeve</h3>
@@ -43,7 +43,7 @@ export default function JointPressureSleeve() {
                         <div>Circuit Design</div>
                         <div>Sewing</div>
                     </div>
-                    <div id="problemSpace" style={{paddingBottom: "25px"}}>
+                    <div id="JPSConcept" style={{paddingBottom: "25px"}}>
                         <h6>Product Concept</h6>
                         <p> The Joint Pressure Sleeve is a wearable device aimed at users who have injured muscles
                             or joints through the overuse of them. Wearing the sleeve let users know when they are
@@ -51,7 +51,7 @@ export default function JointPressureSleeve() {
                             re-aggravate their injury. </p>
                     </div>
                 </div>
-                <div id="goal" style={{paddingBottom: "25px"}}>
+                <div id="JPSBackstory" style={{paddingBottom: "25px"}}>
                     <h6>Backstory</h6>
                     <p> As I walked through Seward Park while talking to my swim coaches about possible ideas for a
                         wearable IOT device, it felt like all of my ideas were not super feasible. Originally, I
@@ -77,7 +77,7 @@ export default function JointPressureSleeve() {
                             minutes sketching, I came up with two different sketches, one of the physical manifestation
                             of the sleeve and the other of the electronic circuit as well in order to indicate to users
                             when to stop exerting pressure on their muscle/joint. </p>
-                        <img id="SeaTransMoodBoard" src={sketchV1} alt="Analog and Electronic Circuit Sketches"/>
+                        <img id="JPSSketchV1" src={sketchV1} alt="Analog and Electronic Circuit Sketches" />
                     </div>
                 </div>
                 <div>
@@ -94,10 +94,10 @@ export default function JointPressureSleeve() {
                             the best choice for the low fidelity prototype because it was easy to form it into brackets
                             but was also structurally sound enough to be physically used.
                         </p>
-                        <div className="BaseCampPersonaLayout">
-                            <img className="BaseCampPersona" src={sleeveParts}
+                        <div className="JPSDualPhotoLayout">
+                            <img className="JPSDualPhoto" src={sleeveParts}
                                  alt="Parts and pieces for the Joint Pressure Sleeve" />
-                            <img className="BaseCampPersona" src={sleeveProto}
+                            <img className="JPSDualPhoto" src={sleeveProto}
                                  alt="Assembled prototype sleeve with cardboard support brackets and tape to indicate sensors" />
                         </div>
                         <p style={{paddingBottom: "25px", marginTop: "25px"}}>
@@ -115,10 +115,10 @@ export default function JointPressureSleeve() {
                             to use some spare wires I had laying around the house as they worked more reliably in the
                             circuit.
                         </p>
-                        <div className="BaseCampPersonaLayout">
-                            <img className="BaseCampPersona" src={pouch}
+                        <div className="JPSDualPhotoLayout">
+                            <img className="JPSDualPhoto" src={pouch}
                                  alt="Sewing together the pouch to hold the battery" />
-                            <img className="BaseCampPersona" src={circuit}
+                            <img className="JPSDualPhoto" src={circuit}
                                  alt="Completed circuit for the LED indicator" />
                         </div>
                         <p style={{paddingBottom: "25px", marginTop: "25px"}}>
@@ -129,10 +129,10 @@ export default function JointPressureSleeve() {
                             parts around the bracket that existed on the side of the sleeve. The bracket was in the way
                             of where I wanted to place the LED, so instead I modified the bracket to hold the LED and
                             sorted the wires around it. </p>
-                        <div className="BaseCampPersonaLayout">
-                            <img className="BaseCampPersona" src={pouchSleeve}
+                        <div className="JPSDualPhotoLayout">
+                            <img className="JPSDualPhoto" src={pouchSleeve}
                                  alt="The pouch would be attached to the sleeve with a snap-on button" />
-                            <img className="BaseCampPersona" src={sleeveV1}
+                            <img className="JPSDualPhoto" src={sleeveV1}
                                  alt="Completed prototype with brackets and circuit" />
                         </div>
                     </div>
@@ -168,11 +168,11 @@ export default function JointPressureSleeve() {
                             functional, yet a draw back of that would be its non-adjustable sizing. In regards to the
                             electronic component, a few others pointed out that the location of the LED might make it
                             hard for users to notice, especially if they're not paying attention to the sleeve all the
-                            time. However, one area that he ran into trouble with the prototype was its fixed sizing. Because
-                            I used a pair of jeans and the pair of jeans happened to fit over my knee, I didn’t think
-                            of making the size adjustable to people with different body sizes. In addition, my housemate
-                            noted how careful he had to be with the prototype because he thought he would mess up the
-                            electronic circuit.
+                            time. However, one area that he ran into trouble with the prototype was its fixed sizing.
+                            Because I used a pair of jeans and the pair of jeans happened to fit over my knee, I didn’t
+                            think of making the size adjustable to people with different body sizes. In addition, my
+                            housemate  noted how careful he had to be with the prototype because he thought he would
+                            mess up the electronic circuit.
                         </p>
                         <p> Overall, I was happy that the first prototype turned out and had met the original goal of
                             usability. Though, there were some areas where the prototype could be improved. Going
@@ -196,9 +196,9 @@ export default function JointPressureSleeve() {
                             first version.
                         </p>
                         <div style={styles.centerDiv}>
-                            <img id="SeaTransIcons" src={sketchV2}
+                            <img id="JPSSketchV2" src={sketchV2}
                                  alt="Sketch for the second version to include an Arduino and flex sensor,
-                                  metal brackets, and velco straps"/>
+                                  metal brackets, and velcro straps" />
                         </div>
                     </div>
                 </div>
@@ -212,10 +212,10 @@ export default function JointPressureSleeve() {
                             went on add on two additional LEDs so that the lights are more visible to the user when
                             using the sleeve.
                         </p>
-                        <div className="BaseCampPersonaLayout">
-                            <img className="BaseCampPersona" src={circuitV2a}
-                                alt="First working electronic circuit with an Arduino and a flex sensor"/>
-                            <img className="BaseCampPersona" src={circuitV2b}
+                        <div className="JPSDualPhotoLayout">
+                            <img className="JPSDualPhoto" src={circuitV2a}
+                                alt="First working electronic circuit with an Arduino and a flex sensor" />
+                            <img className="JPSDualPhoto" src={circuitV2b}
                                  alt="Added additional LEDs to the circuit for greater user visibility" />
                         </div>
                         <p> Knowing that the main component of the electronic circuit was working, I moved on to start
@@ -227,11 +227,11 @@ export default function JointPressureSleeve() {
                             I quickly switched to a sewing machine after I realized that the velcro straps weren't being
                             secured well enough.
                         </p>
-                        <div className="BaseCampPersonaLayout">
-                            <img className="BaseCampPersona" src={velcroPins}
+                        <div className="JPSDualPhotoLayout">
+                            <img className="JPSDualPhoto" src={velcroPins}
                                  alt="Velcro straps pinned to the sleeve before sewing" />
-                            <img className="BaseCampPersona" src={velcroSewing}
-                                 alt="Attaching the velcro straps to the sleeve with a sewing macchine" />
+                            <img className="JPSDualPhoto" src={velcroSewing}
+                                 alt="Attaching the velcro straps to the sleeve with a sewing machine" />
                         </div>
                         <p> It was then that I realized that the breadboard I had built the electronic circuit on was
                             too big for the sleeve if it was attached. My goal for the second prototype was usability of
@@ -241,10 +241,10 @@ export default function JointPressureSleeve() {
                             cut out another piece of fabric from the original pair of jeans to create a small pocket
                             on the sleeve that the Arduino and its external battery could sit in.
                         </p>
-                        <div className="BaseCampPersonaLayout">
-                            <img className="BaseCampPersona" src={circuitV2c}
-                                 alt="Compact version of the electronic circuit"/>
-                            <img className="BaseCampPersona" src={circuitPocket}
+                        <div className="JPSDualPhotoLayout">
+                            <img className="JPSDualPhoto" src={circuitV2c}
+                                 alt="Compact version of the electronic circuit" />
+                            <img className="JPSDualPhoto" src={circuitPocket}
                                  alt="Electronic circuit and external battery secured in a pouch" />
                         </div>
                         <p> Finally it was time to put everything together. I had to replace the plugin wires that comes
@@ -257,10 +257,10 @@ export default function JointPressureSleeve() {
                             whole circuit would be complete. I decided to solder the LEDs to the wires instead of using
                             alligator clips so that the circuit wouldn't be as fragile when people are using it.
                         </p>
-                        <div className="BaseCampPersonaLayout">
-                            <img className="BaseCampPersona" src={circuitV2d}
-                                 alt="The underside of the sleeve with the flex sensor, the external battery, and the Arduino"/>
-                            <img className="BaseCampPersona" src={sleeveLED}
+                        <div className="JPSDualPhotoLayout">
+                            <img className="JPSDualPhoto" src={circuitV2d}
+                                 alt="The underside of the sleeve with the flex sensor, the external battery, and the Arduino" />
+                            <img className="JPSDualPhoto" src={sleeveLED}
                                  alt="LEDs attached to the top of the sleeve" />
                         </div>
                     </div>

@@ -1,6 +1,6 @@
 @import '~antd/dist/antd.css';
 
-*{
+* {
   box-sizing: border-box;
 }
 
@@ -62,10 +62,9 @@ html {
   line-height: 46px;
   white-space: nowrap;
   border-bottom: 0 solid #f0f0f0;
-  /*width: 100%;*/
 }
 
-.scrollTop:hover{
+.scrollTop:hover {
   opacity: 1;
   color: #1890ff;
 }
@@ -84,8 +83,6 @@ html {
   justify-content: space-between;
   padding-top: 30px;
   flex-flow: row wrap;
-  /*flex-direction: row-reverse;*/
-  /*flex-wrap: wrap;*/
 }
 
 .designProjects, .codeProjects {
@@ -163,7 +160,6 @@ h4 {
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-end;
-    /*flex: 1;*/
   }
 
   .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item {
@@ -174,12 +170,8 @@ h4 {
   .bio  {
     padding: 0 36px 0;
   }
-  .header_menu {
-    /*padding-left: 72px;*/
-  }
+
   .ant-menu-horizontal {
-    /*width: 31vmax;*/
-    /*margin-right: -16px;*/
     margin-bottom: 25px;
   }
 
@@ -200,18 +192,10 @@ h4 {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* border: "1px solid rgba(0, 0, 0, 0.65)",*/
     margin: 10px 10px 30px;
     height: 126px;
     width: 284px;
-    /*min-height: 114px;*/
-    /*height: 21vw;*/
-    /*max-height: 21vw;*/
-    /*min-width: 258px;*/
-    /*max-width: 47vw;*/
-    /*width: 47vw;*/
     font-size: 24px;
-    /*margin-bottom: 20px;*/
   }
 
   .coverImage {
@@ -225,13 +209,6 @@ h4 {
     align-items: center;
     height: 146px;
     width: 304px;
-    /*min-height: 134px;*/
-    /*height: 21vw;*/
-    /*max-height: 21vw;*/
-    /*min-width: 280px;*/
-    /*width: 47vw;*/
-    /*max-width: 47vw;*/
-    /*margin: 10px;*/
   }
 
   .hoverText {
@@ -242,7 +219,6 @@ h4 {
     text-align: center;
     color: white;
     font-weight: 500;
-    /*font-size: 1em;*/
     line-height: 30px;
     margin-top: 24px;
   }
@@ -278,19 +254,7 @@ h4 {
     justify-content: space-between;
   }
 
-  #SeaTransMoodBoard {
-    width: 100%;
-    height: 100%;
-    cursor: zoom-in;
-  }
-
-  #SeaTransColor {
-    width: 108%;
-    height: 100%;
-    cursor: zoom-in;
-  }
-
-  #SeaTransType {
+  #SeaTransType, #WSWSType {
     width: 115%;
     height: 100%;
     cursor: zoom-in;
@@ -300,7 +264,6 @@ h4 {
     display: flex;
     flex-flow: column wrap;
     align-items: center;
-    /*padding-bottom: 50px;*/
   }
 
   #SeaTransUserFlow, #SeaTransLowFi {
@@ -309,7 +272,10 @@ h4 {
     margin-bottom: 25px;
   }
 
-  #SeaTransIcons {
+  #SeaTransColor, #SeaTransMoodBoard, #SeaTransIcons,
+  #BaseCampStoryBoard,
+  #WSWSColor, #WSWSPillars, #WSWSLogo, #WSWSMockups,
+  #JPSSketchV1, #JPSSketchV2 {
     width: 100%;
     height: 100%;
     cursor: zoom-in;
@@ -340,27 +306,21 @@ h4 {
     cursor: zoom-in;
   }
 
-  .BaseCampPersonaLayout {
+  .BaseCampPersonaLayout, .JPSDualPhotoLayout {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
 
-  .BaseCampPersona {
+  .BaseCampPersona, .WSWSWebDesign, .JPSDualPhoto {
     width: 100%;
     height: 100%;
     margin-bottom: 25px;
   }
 
-  #BaseCampJourneyMap {
+  #BaseCampJourneyMap, #JPSVideo {
     width: 100%;
     height: 100%;
-  }
-
-  #BaseCampStoryBoard {
-    width: 100%;
-    height: 100%;
-    cursor: zoom-in;
   }
 
   #BaseCampPaperProto, #BaseCampLowFi, #BaseCampWireFrames {
@@ -374,30 +334,6 @@ h4 {
     flex-direction: column;
     justify-content: center;
   }
-
-  .WSWSWebDesign {
-    width: 100%;
-    height: 100%;
-    margin-bottom: 25px;
-  }
-
-  #WSWSColor, #WSWSPillars, #WSWSLogo, #WSWSMockups {
-    width: 100%;
-    height: 100%;
-    cursor: zoom-in;
-  }
-
-  #WSWSType {
-    width: 115%;
-    height: 100%;
-    cursor: zoom-in;
-  }
-
-  #JPSVideo {
-    width: 100%;
-    height: 100%;
-  }
-
 }
 
 @media (min-width: 768px) {
@@ -429,7 +365,6 @@ h4 {
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-end;
-    /*flex: 1;*/
   }
 
   .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item {
@@ -548,14 +483,16 @@ h4 {
     justify-content: space-between;
   }
 
-  #SeaTransMoodBoard {
+  #SeaTransMoodBoard, #JPSSketchV1 {
     width: 75%;
     height: 100%;
     margin-top: -25px;
     cursor: zoom-in;
   }
 
-  #SeaTransColor, #SeaTransType {
+  #SeaTransColor, #SeaTransType,
+  #BaseCampDesignSpec, #BaseCampStoryBoard,
+  #WSWSColor, #WSWSType, #WSWSLogo, #WSWSPillars {
     width: 69%;
     height: 100%;
     cursor: zoom-in;
@@ -574,7 +511,7 @@ h4 {
     margin-right: 48px;
   }
 
-  #SeaTransIcons {
+  #SeaTransIcons, #WSWSMockups, #JPSSketchV2 {
     width: 75%;
     height: 100%;
     cursor: zoom-in;
@@ -606,13 +543,13 @@ h4 {
     cursor: zoom-in;
   }
 
-  .BaseCampPersonaLayout {
+  .BaseCampPersonaLayout, .JPSDualPhotoLayout {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
 
-  .BaseCampPersona {
+  .BaseCampPersona, .JPSDualPhoto {
     width: 49%;
     height: 100%;
     margin-bottom: 25px;
@@ -621,12 +558,6 @@ h4 {
   #BaseCampJourneyMap {
     width: 50%;
     height: 100%;
-  }
-
-  #BaseCampDesignSpec, #BaseCampStoryBoard {
-    width: 69%;
-    height: 100%;
-    cursor: zoom-in;
   }
 
   #BaseCampPaperProto, #BaseCampLowFi, #BaseCampWireFrames {
@@ -647,24 +578,11 @@ h4 {
     margin-bottom: 25px;
   }
 
-  #WSWSColor, #WSWSType, #WSWSLogo, #WSWSPillars {
-    width: 69%;
-    height: 100%;
-    cursor: zoom-in;
-  }
-
-  #WSWSMockups {
-    width: 75%;
-    height: 100%;
-    cursor: zoom-in;
-  }
-
   #JPSVideo {
     width: 80vw;
     height: 45vw;
   }
 }
-
 
 /*#project1, #project2, #project3, #project4 {*/
 /*  display: flex;*/
@@ -682,7 +600,3 @@ h4 {
 /*  max-width: 47vw;*/
 /*  font-size: 24px;*/
 /*}*/
-
-
-
-

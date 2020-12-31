@@ -175,6 +175,21 @@ h4 {
     margin-bottom: 25px;
   }
 
+  #Error {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #Error h1 {
+    font-size: 60px;
+  }
+
+  #Error p {
+    font-size: 20px;
+  }
+
+
   .bio img {
     width: 100%;
     height: 100%;
@@ -372,7 +387,7 @@ h4 {
     padding: 0;
   }
 
-  .bio  {
+  .bio {
     padding: 0 44px 0;
   }
 
@@ -380,6 +395,20 @@ h4 {
     /*width: 20vmax;*/
     margin-right: -16px;
     margin-bottom: 0;
+  }
+
+  #Error {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #Error h1 {
+    font-size: 200px;
+  }
+
+  #Error p {
+    font-size: 30px
   }
 
   .bio img {

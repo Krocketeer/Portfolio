@@ -4,15 +4,36 @@ import { MDBMask, MDBView } from "mdbreact";
 import Airbnb from "../images/AirBnb Logo w Name.png";
 import PortfolioCover from "../images/ReactPortfolio/MacBookMockUp.png"
 import PortfolioCoverHover from "../images/ReactPortfolio/MacBookMockUpHover.png"
+import ArduinoCover from "../images/Arduino/IMG_2129.png";
+import ArduinoCoverHover from "../images/Arduino/Blinking.gif";
 
 export default function Code() {
     const path = window.location.pathname
     const [activeProject, setActiveProject] = useState(path)
     const [p1Image, setP1Image] = useState(Airbnb)
     const [p2Image, setP2Image] = useState(PortfolioCover)
-    const projectName = ["nullHolder", "Insights into AirBnb & Cities", "Portfolio Redesign", "Project 3", "Project 4"]
+    const [p3Image, setP3Image] = useState(ArduinoCover)
+    const projectName = ["nullHolder", "Insights into AirBnb & Cities", "Portfolio Redesign", "Arduino Projects", "Project 4"]
 
     return <div className="codeProjects" onClick={e => setActiveProject(e.key)}>
+        <a href="https://kmdle-hcde439.web.app/">
+            <MDBView hover>
+                <div className="projectBox"
+                     onMouseOver={() => setP3Image(ArduinoCoverHover)}
+                     onMouseOut={() => setP3Image(ArduinoCover)}>
+                    <img className="coverImage"
+                         src={p3Image}
+                         alt="Arduino Circuit" />
+                    <MDBMask overlay="black-strong">
+                        <div className="hoverText">
+                            <p>{projectName[3]}</p>
+                            <p style={{fontSize: ".75em"}}>Physical Computing</p>
+                        </div>
+                    </MDBMask>
+                </div>
+            </MDBView>
+        </a>
+
         <Link to="/code/airbnb">
             <MDBView hover>
                 <div className="projectBox"

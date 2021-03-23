@@ -60,6 +60,17 @@ html {
   color: #1890ff;
 }
 
+/* Footer */
+.LinkedIn:hover, .Github:hover, .Mail:hover {
+  color: #1890ff;
+}
+
+/* Footer */
+.LinkedIn, .Github, .Mail {
+  color: black;
+}
+
+
 .ant-menu-horizontal {
   line-height: 46px;
   white-space: nowrap;

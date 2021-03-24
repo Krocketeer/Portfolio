@@ -17,7 +17,7 @@ export default function Footer() {
         </div>
         <div style={styles.centerDiv}>
             <p style={{color: "rgb(102, 102, 102)", fontWeight: "500", fontSize: "13px"}}> Kenny Le &copy; 2021
-                {" "}<a href={links.CC} style={{color: "#1890ff"}}>CC BY-NC-SA 4.0</a>
+                {" "}<a href={links.CC} style={{color: "#1890ff"}}>CC BY-NC-ND 4.0</a>
             </p>
         </div>
     </div>

@@ -437,6 +437,7 @@ h4 {
     min-width: 400px;
     font-size: 18px;
     font-weight: 400;
+    padding-left: 1rem;
   }
 
   .projectBox {

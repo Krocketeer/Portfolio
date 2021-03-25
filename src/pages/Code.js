@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, {useEffect, useState} from "react"
 import { Link } from "react-router-dom";
 import { MDBMask, MDBView } from "mdbreact";
 import Airbnb from "../images/AirBnb Logo w Name.png";
@@ -6,16 +6,43 @@ import PortfolioCover from "../images/ReactPortfolio/MacBookMockUp.png"
 import PortfolioCoverHover from "../images/ReactPortfolio/MacBookMockUpHover.png"
 import ArduinoCover from "../images/Arduino/IMG_2129.png";
 import ArduinoCoverHover from "../images/Arduino/Blinking.gif";
+import TwitterCover from "../images/TwitterTrends/TwitterTrendsCover.png"
+import TwitterHover from "../images/TwitterTrends/TwitterTrendsHover.png"
 
 export default function Code() {
+    useEffect(()  =>  {
+        window.scrollTo(0, 0)
+    }, [])
+
     const path = window.location.pathname
     const [activeProject, setActiveProject] = useState(path)
     const [p1Image, setP1Image] = useState(Airbnb)
     const [p2Image, setP2Image] = useState(PortfolioCover)
     const [p3Image, setP3Image] = useState(ArduinoCover)
-    const projectName = ["nullHolder", "Insights into AirBnb & Cities", "Portfolio Redesign", "Arduino Projects", "Project 4"]
+    const [p4Image, setP4Image] = useState(TwitterCover)
+    const projectName = ["nullHolder", "Insights into AirBnb & Cities", "Portfolio Redesign", "Arduino Projects",
+        "Twitter Trends Mapper"]
 
     return <div className="codeProjects" onClick={e => setActiveProject(e.key)}>
+        <Link to="/code/twittertrends">
+            <MDBView hover>
+                <div className="projectBox"
+                     onClick={() => setActiveProject("/code/twittertrends")}
+                     onMouseOver={() => setP4Image(TwitterHover)}
+                     onMouseOut={() => setP4Image(TwitterCover)}>
+                    <img className="coverImage"
+                         src={p4Image}
+                         alt="Twitter Trends" />
+                    <MDBMask overlay="black-strong">
+                        <div className="hoverText">
+                            <p>{projectName[4]}</p>
+                            <p style={{fontSize: ".75em"}}>Full Stack Development</p>
+                        </div>
+                    </MDBMask>
+                </div>
+            </MDBView>
+        </Link>
+
         <a href="https://kmdle-hcde439.web.app/">
             <MDBView hover>
                 <div className="projectBox"

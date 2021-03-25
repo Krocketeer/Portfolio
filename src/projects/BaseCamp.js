@@ -1,4 +1,4 @@
-import React from "react"
+import React, {useEffect} from "react"
 import { SRLWrapper } from "simple-react-lightbox"
 import ScrollArrow from "../components/ScrollArrow"
 
@@ -18,6 +18,10 @@ import wireframes from "../images/BaseCamp/Wireframes.pdf"
 import designSys from "../images/BaseCamp/Design System.png"
 
 export default function BaseCamp() {
+    useEffect(()  =>  {
+        window.scrollTo(0, 0)
+    }, [])
+
     return <SRLWrapper options={lightboxOptions}>
         <ScrollArrow />
         <div className="pageLayout">

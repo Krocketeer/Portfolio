@@ -1,4 +1,4 @@
-import React from "react"
+import React, {useEffect} from "react"
 import { SRLWrapper } from "simple-react-lightbox"
 import MetaTags from "react-meta-tags"
 
@@ -22,6 +22,10 @@ import sleeveLED from "../images/JointPressureSleeve/SleeveLED.jpeg"
 import ScrollArrow from "../components/ScrollArrow";
 
 export default function JointPressureSleeve() {
+    useEffect(()  =>  {
+        window.scrollTo(0, 0)
+    }, [])
+
     return <SRLWrapper options={lightboxOptions}>
         <MetaTags>
             <meta content="noindex" />

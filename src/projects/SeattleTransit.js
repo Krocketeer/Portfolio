@@ -1,4 +1,4 @@
-import React from "react"
+import React, {useEffect} from "react"
 import { SRLWrapper } from "simple-react-lightbox"
 
 import SeaTransitCover from "../images/SeattleTransit/STCover.png"
@@ -16,6 +16,10 @@ import ORCA from "../images/SeattleTransit/Orca Card Mockup.png"
 import ScrollArrow from "../components/ScrollArrow";
 
 export default function SeattleTransit() {
+    useEffect(()  =>  {
+        window.scrollTo(0, 0)
+    }, [])
+
     return <SRLWrapper options={lightboxOptions}>
         <ScrollArrow />
         <div className="pageLayout">

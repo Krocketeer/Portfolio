@@ -23,7 +23,7 @@ export default function Routing() {
         <Route path="/design/SeattleTransit" component={SeattleTransit} />
         <Route path="/design/BaseCamp" component={BaseCamp} />
         <Route path="/design/WestSoundWildlifeShelter" component={WSWS} />
-        <Route path="/design/PortfolioRedesign" component={Upcoming} />
+        <Route path="/design/PortfolioRedesign" component={Portfolio} />
         <Route path="/projects/JointPressureSleeve" component={JPS} />
         {/*<Route path="/design/:projects" component={Design}></Route>*/}
         {/*<Route path="/code/:projects" component={<Code />}></Route>*/}

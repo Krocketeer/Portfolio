@@ -1,4 +1,4 @@
-import React from "react"
+import React, {useEffect} from "react"
 import { SRLWrapper } from "simple-react-lightbox"
 import ScrollArrow from "../components/ScrollArrow";
 
@@ -14,6 +14,10 @@ import projectLayout from "../images/ReactPortfolio/OldPortfolio/Page Layout.png
 
 
 export default function PortfolioRedesign() {
+    useEffect(()  =>  {
+        window.scrollTo(0, 0)
+    }, [])
+
     return <SRLWrapper options={lightboxOptions}>
         <ScrollArrow />
         <div className="pageLayout">

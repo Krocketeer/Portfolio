@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, {useEffect, useState} from "react"
 import { Link } from "react-router-dom";
 import { MDBMask, MDBView } from "mdbreact";
 
@@ -13,6 +13,10 @@ import PortfolioCoverHover from "../images/ReactPortfolio/MacBookMockUpHover.png
 import PortfolioCover from "../images/ReactPortfolio/MacBookMockUp.png";
 
 export default function Design() {
+    useEffect(()  =>  {
+        window.scrollTo(0, 0)
+    }, [])
+
     const path = window.location.pathname
     const [activeProject, setActiveProject] = useState(path)
     const [p1Image, setP1Image] = useState(SeaTransitCover)
@@ -99,7 +103,6 @@ export default function Design() {
             </MDBView>
         </Link>
 
-
         {/*<Link to="/design/project4">*/}
         {/*    <MDBView hover>*/}
         {/*        <div id="project4" style={styles.projectBox} onClick={() => setActiveProject("/code/project4")}>*/}
@@ -115,49 +118,3 @@ export default function Design() {
         {/*</Link>*/}
     </div>
 }
-
-// const styles= {
-//     hoverText: {
-//         display: "flex",
-//         flexDirection: "column",
-//         flexWrap: "wrap",
-//         justifyContent: "center",
-//         alignItems: "center",
-//         textAlign: "center",
-//         color: "white",
-//         fontWeight: "500",
-//         fontSize: "1.45em",
-//         lineHeight: "16px",
-//         marginTop: "24px"
-//     },
-//     projectBox: {
-//         display: "flex",
-//         justifyContent: "center",
-//         alignItems: "center",
-//         // border: "1px solid rgba(0, 0, 0, 0.65)",
-//         margin: "10px",
-//         minHeight: "200px",
-//         height: "21vw",
-//         maxHeight: "21vw",
-//         minWidth: "275px",
-//         maxWidth: "47vw",
-//         width: "47vw",
-//         fontSize: "24px"
-//     },
-//     image: {
-//         minHeight: "198px",
-//         height: "20.75vw",
-//         maxHeight: "20.75vw",
-//         minWidth: "448px",
-//         maxWidth: "47vw",
-//         width: "47vw",
-//     },
-//     imageModified: {
-//         minHeight: "198px",
-//         height: "20.85vw",
-//         maxHeight: "20.85vw",
-//         minWidth: "448px",
-//         maxWidth: "47vw",
-//         width: "47vw",
-//     }
-// }

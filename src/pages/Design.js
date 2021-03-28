@@ -4,13 +4,10 @@ import { MDBMask, MDBView } from "mdbreact";
 
 import SeaTransitCoverHover from "../images/SeattleTransit/STAltCover.png"
 import SeaTransitCover from "../images/SeattleTransit/STCover.png"
-import BaseCampCover from "../images/BaseCamp/BaseCampCover.png"
 import BaseCampCoverHover from "../images/BaseCamp/CalendarSmaller.gif"
-import BaseCampCoverAlt from "../images/BaseCamp/BaseCampCoverAlt.png"
+import BaseCampCover from "../images/BaseCamp/BaseCampCoverAlt.png"
 import WSWSCoverHover from "../images/WildlifeShelter/WSWSCover.png"
 import WSWSCover from "../images/WildlifeShelter/WSWSCoverGreen.png"
-// import PortfolioCoverHover from "../images/ReactPortfolio/MacBookMockUpHover.png";
-// import PortfolioCover from "../images/ReactPortfolio/MacBookMockUp.png";
 import PortfolioCover from "../images/ReactPortfolio/PortfolioCover.png"
 import PortfolioCoverHover from "../images/ReactPortfolio/PortfolioCoverHover2.png"
 
@@ -22,7 +19,7 @@ export default function Design() {
     const path = window.location.pathname
     const [activeProject, setActiveProject] = useState(path)
     const [p1Image, setP1Image] = useState(SeaTransitCover)
-    const [p2Image, setP2Image] = useState(BaseCampCoverAlt)
+    const [p2Image, setP2Image] = useState(BaseCampCover)
     const [p3Image, setP3Image] = useState(WSWSCover)
     const [p4Image, setP4Image] = useState(PortfolioCover)
     const projectName = ["nullHolder", "Seattle Transit Rebrand", "Base Camp", "West Sound Wildlife Shelter",
@@ -54,7 +51,7 @@ export default function Design() {
                 <div className="projectBox"
                      onClick={() => setActiveProject("/design/BaseCamp")}
                      onMouseOver={() => setP2Image(BaseCampCoverHover)}
-                     onMouseOut={() => setP2Image(BaseCampCoverAlt)}>
+                     onMouseOut={() => setP2Image(BaseCampCover)}>
                     {/*Gif recording at 1908x876*/}
                     <img className="coverImage" src={p2Image} alt="Base Camp" />
                     <MDBMask overlay="black-strong">
@@ -98,7 +95,7 @@ export default function Design() {
                     <MDBMask overlay="black-strong">
                         <div className="hoverText">
                             <p>{projectName[4]}</p>
-                            <p style={{fontSize: ".75em"}}>Web Design & React.js Development</p>
+                            <p style={{fontSize: ".75em"}}>Web Design & React Development</p>
                         </div>
                     </MDBMask>
                 </div>

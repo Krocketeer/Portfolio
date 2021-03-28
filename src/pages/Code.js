@@ -93,7 +93,7 @@ export default function Code() {
                     <MDBMask overlay="black-strong">
                         <div className="hoverText">
                             <p>{projectName[2]}</p>
-                            <p style={{fontSize: ".75em"}}>Web Design & React.js Development</p>
+                            <p style={{fontSize: ".75em"}}>Web Design & React Development</p>
                         </div>
                     </MDBMask>
                 </div>

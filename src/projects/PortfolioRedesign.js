@@ -2,12 +2,6 @@ import React, {useEffect} from "react"
 import { SRLWrapper } from "simple-react-lightbox"
 import ScrollArrow from "../components/ScrollArrow";
 
-import pillars from "../images/WildlifeShelter/Pillars.png"
-import logo from "../images/WildlifeShelter/Logo.png"
-import type from "../images/WildlifeShelter/Type.png"
-import colors from "../images/WildlifeShelter/Colors.png"
-import mockups from "../images/WildlifeShelter/Mockups.png"
-
 import PortfolioCover from "../images/ReactPortfolio/PortfolioCover.png"
 // import PRCover from "../images/ReactPortfolio/MacBookMockUp.png"
 import frontPage from "../images/ReactPortfolio/OldPortfolio/Front Page.png"

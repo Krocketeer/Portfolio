@@ -1,13 +1,14 @@
 import React, {useEffect, useState} from "react"
 import { Link } from "react-router-dom";
 import { MDBMask, MDBView } from "mdbreact";
-import Airbnb from "../images/AirBnb Logo w Name.png";
-import PortfolioCover from "../images/ReactPortfolio/MacBookMockUp.png"
-import PortfolioCoverHover from "../images/ReactPortfolio/MacBookMockUpHover.png"
+import AirbnbCover from "../images/Airbnb/AirBnbCover.png";
+import AirbnbCoverHover from "../images/Airbnb/AirBnbCoverHover.png"
+import PortfolioCover from "../images/ReactPortfolio/PortfolioCover.png"
+import PortfolioCoverHover from "../images/ReactPortfolio/PortfolioCoverHover2.png"
 import ArduinoCover from "../images/Arduino/IMG_2129.png";
 import ArduinoCoverHover from "../images/Arduino/Blinking.gif";
 import TwitterCover from "../images/TwitterTrends/TwitterTrendsCover.png"
-import TwitterHover from "../images/TwitterTrends/TwitterTrendsHover.png"
+import TwitterCoverHover from "../images/TwitterTrends/TwitterTrendsHover.png"
 
 export default function Code() {
     useEffect(()  =>  {
@@ -16,7 +17,7 @@ export default function Code() {
 
     const path = window.location.pathname
     const [activeProject, setActiveProject] = useState(path)
-    const [p1Image, setP1Image] = useState(Airbnb)
+    const [p1Image, setP1Image] = useState(AirbnbCoverHover)
     const [p2Image, setP2Image] = useState(PortfolioCover)
     const [p3Image, setP3Image] = useState(ArduinoCover)
     const [p4Image, setP4Image] = useState(TwitterCover)
@@ -28,7 +29,7 @@ export default function Code() {
             <MDBView hover>
                 <div className="projectBox"
                      onClick={() => setActiveProject("/code/twittertrends")}
-                     onMouseOver={() => setP4Image(TwitterHover)}
+                     onMouseOver={() => setP4Image(TwitterCoverHover)}
                      onMouseOut={() => setP4Image(TwitterCover)}>
                     <img className="coverImage"
                          src={p4Image}
@@ -65,8 +66,8 @@ export default function Code() {
             <MDBView hover>
                 <div className="projectBox"
                      onClick={() => setActiveProject("/code/airbnb")}
-                     onMouseOver={() => setP1Image(Airbnb)}
-                     onMouseOut={() => setP1Image(Airbnb)}>
+                     onMouseOver={() => setP1Image(AirbnbCover)}
+                     onMouseOut={() => setP1Image(AirbnbCoverHover)}>
                     <img className="coverImage"
                          src={p1Image}
                          alt="Airbnb" />

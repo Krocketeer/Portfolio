@@ -8,9 +8,11 @@ import type from "../images/WildlifeShelter/Type.png"
 import colors from "../images/WildlifeShelter/Colors.png"
 import mockups from "../images/WildlifeShelter/Mockups.png"
 
-import PRCover from "../images/ReactPortfolio/MacBookMockUp.png"
+import PortfolioCover from "../images/ReactPortfolio/PortfolioCover.png"
+// import PRCover from "../images/ReactPortfolio/MacBookMockUp.png"
 import frontPage from "../images/ReactPortfolio/OldPortfolio/Front Page.png"
 import projectLayout from "../images/ReactPortfolio/OldPortfolio/Page Layout.png"
+import wireframes from "../images/ReactPortfolio/PortfolioWireframes.png"
 
 
 export default function PortfolioRedesign() {
@@ -22,12 +24,12 @@ export default function PortfolioRedesign() {
         <ScrollArrow />
         <div className="pageLayout">
             <div className="pageCover">
-                <img src={PRCover} alt="Portfolio Redesign"
+                <img src={PortfolioCover} alt="Portfolio Redesign"
                      style={{width: "100%", height: "100%", cursor: "zoom-in"}} />
             </div>
             <div className="pageHeader">
                 <h3>Portfolio Redesign</h3>
-                <h6>Web Design & React.js Development</h6>
+                <h6>Web Design & React Development</h6>
 
                 <div className="details" style={{marginTop: "50px"}}>
                     <div className="info">
@@ -59,15 +61,17 @@ export default function PortfolioRedesign() {
                             forward. Mainly, I liked the simplicity of my rectangular layout since it struck a nice
                             balance between maximizing content per page and without feeling too overwhelming. However,
                             one thing I noticed that I didn't like was the varied amount of spacing and general lack of
-                            grid structure for things on the website. (The old portfolio can be viewed at
-                            <a href={links.oldPortfolio}> https://krocketeer.github.io/old-portfolio/</a>. Note: parts
-                            of the site are broken because site was transferred from Wordpress to Github).
+                            a grid structure for various components on the website. While I have taken down my old
+                            portfolio, I a static version of it can be viewed
+                            <a href={links.oldPortfolio}> here</a>. (Note: parts of the site are broken because it was
+                            transferred from Wordpress to Github).
                         </p>
                         <div style={{display: "flex", flexDirection: "column", alignItems: "center"}}>
                             <div className="WSWSBrandAudit">
                                 <img className="WSWSWebDesign" src={frontPage}
-                                     alt="Successful design includes usage of organic colors and ways to get involved" />
-                                <img className="WSWSWebDesign" src={projectLayout} />
+                                     alt="Rectangular layout of different projects" />
+                                <img className="WSWSWebDesign" src={projectLayout}
+                                    alt="Layout format for a project page" />
                             </div>
                         </div>
                     </div>
@@ -75,57 +79,36 @@ export default function PortfolioRedesign() {
                 <div>
                     <h6>Sketching and Wireframing</h6>
                     <div style={styles.centerDiv50}>
-                        <p> After conducting a brand audit, the team established four pillars to keep us grounded in
-                            the organization's mission and identity while we were creating our redesigns. In particular,
-                            my redesign emphasizes three things: wildlife, human-friendliness, and simplicity. </p>
-                        <img id="WSWSPillars" src={pillars}
-                             alt="Our designs aimed to empower, communicate, focus, and implement" />
-                    </div>
-                </div>
-                <div>
-                    <h6>Logo</h6>
-                    <div style={styles.centerDiv50}>
-                        <p> The logo and word mark work together to integrate a wildlife and a human aspect while still
-                            remaining simple. Modeled after a harpy eagle, the logo consists of an S as the body and
-                            a W as the ears. The bird sits inside a hour to portray how humans and animals can exist
-                            together as a part of the community. </p>
-                        <img id="WSWSLogo" src={logo} alt="Logo and word mark" />
-                    </div>
-                </div>
-                <div>
-                    <h6>Typography</h6>
-                    <div style={styles.centerDiv50}>
-                        <p> The two typefaces chosen reflect the messages of being friendly and welcoming while still
-                            remaining simple and functional. Gibson is a nice blend of friendly and simple while
-                            still being bold enough to catch people's attention. Paired with Gibson, is Poppins which
-                            works well due to its softer, rounded font styling.
+                        <p> With a general sense of what I wanted in the redesign, I sketched out some ideas to see how
+                            those ideas would physically look like. I generally tried to maintain a modern and
+                            simplistic design as most of my projects thus far have reflected this style though the use
+                            of white space and key placements of color. After juggling a few ideas on paper, I then
+                            created some wireframes — both a desktop and mobile version — of the most promising sketch.
                         </p>
-                        <img id="WSWSType" src={type} alt="Typography layout for rebrand" />
+                        <img id="WSWSPillars" src={wireframes}
+                             alt="Desktop and Mobile Wireframe for portfolio" />
                     </div>
                 </div>
                 <div>
-                    <h6>Colors</h6>
+                    <h6>Programming the Portfolio & Reflection</h6>
                     <div style={styles.centerDiv50}>
-                        <p style={{paddingBottom: "25px"}}>
-                            Inspired by the mood board, the color palette pulls from many
-                            of the vibrant imagery that exists in and around the city. Midnight serves as a base color that
-                            many Seattlites are used to while ocean blue, blizzard blue, and minty green act as an accent
-                            that is visible in bright and dark environments. Pine green and slate purple were chosen to
-                            stand out against the other blues and greens while still being remaining cohesive with the
-                            color scheme. </p>
-                        <img id="WSWSColor" src={colors} alt="Color palette for rebrand" />
-                    </div>
-                </div>
-                <div>
-                    <h6>Mobile Mockups</h6>
-                    <div style={styles.centerDiv25}>
-                        <p> In order to illustrate how various components of the redesign would be used, a mobile design
-                            mockup was created. This example shows how a user would donate to the West Sound Wildlife
-                            Shelter.
+                        <p> One of the main reasons why I decided to redesign my portfolio was because I wanted a more
+                            granular control of what my portfolio would look like. While Wordpress and Elementor was
+                            great for getting my starting portfolio going, I knew it wouldn't serve me well into the
+                            future since my ability to customize various components was limited. Fortunately enough, I
+                            was beginning to learn React as my first framework for web development. Although my
+                            experience in React was limited to the one class I took at the time, I was determined to
+                            code my entire portfolio. My progress in creating my portfolio in React was slow at first
+                            due to me working out the technical details of how everything came together. I never
+                            had a strong foundation in Javascript, HTML, or CSS and so being thrown into React
+                            development meant I had to learn all of these at once. At times I still am unsure about
+                            certain things that come up that are essential to React. However, over time I was able to
+                            better understand how React worked — through trial and error as well as googling various
+                            things. As of now, my portfolio is up and running, fully built in React (full code can be
+                            found on my <a href={links.github}> Github</a>). I am continually updating my portfolio but
+                            overall I am proud that I was able to create something from scratch using a totally new
+                            framework that I have never used before.
                         </p>
-                        <div style={styles.centerDiv}>
-                            <img id="WSWSMockups" src={mockups} alt="list of icons used in high fidelity wireframes" />
-                        </div>
                     </div>
                 </div>
             </div>
@@ -158,5 +141,6 @@ const lightboxOptions = {
 }
 
 const links = {
-    oldPortfolio: "https://krocketeer.github.io/old-portfolio/"
+    oldPortfolio: "https://krocketeer.github.io/old-portfolio/",
+    github: "https://github.com/Krocketeer/Portfolio"
 }

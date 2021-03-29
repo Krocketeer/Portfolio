@@ -5,8 +5,8 @@ import AirbnbCover from "../images/Airbnb/AirBnbCover.png";
 import AirbnbCoverHover from "../images/Airbnb/AirBnbCoverHover.png"
 import PortfolioCover from "../images/ReactPortfolio/PortfolioCover.png"
 import PortfolioCoverHover from "../images/ReactPortfolio/PortfolioCoverHover2.png"
-import ArduinoCover from "../images/Arduino/IMG_2129.png";
-import ArduinoCoverHover from "../images/Arduino/Blinking.gif";
+import ArduinoCover from "../images/LightBar/LightBarCover.png";
+import ArduinoCoverHover from "../images/LightBar/LightBarCoverHover.png";
 import TwitterCover from "../images/TwitterTrends/TwitterTrendsCover.png"
 import TwitterCoverHover from "../images/TwitterTrends/TwitterTrendsHover.png"
 
@@ -21,7 +21,7 @@ export default function Code() {
     const [p2Image, setP2Image] = useState(PortfolioCover)
     const [p3Image, setP3Image] = useState(ArduinoCover)
     const [p4Image, setP4Image] = useState(TwitterCover)
-    const projectName = ["nullHolder", "Insights into AirBnb & Cities", "Portfolio Redesign", "Arduino Projects",
+    const projectName = ["nullHolder", "Insights into AirBnb & Cities", "Portfolio Redesign", "LED Light Bar",
         "Twitter Trends Mapper"]
 
     return <div className="codeProjects" onClick={e => setActiveProject(e.key)}>
@@ -44,7 +44,7 @@ export default function Code() {
             </MDBView>
         </Link>
 
-        <a href="https://kmdle-hcde439.web.app/">
+        <Link to="/code/LightBar">
             <MDBView hover>
                 <div className="projectBox"
                      onMouseOver={() => setP3Image(ArduinoCoverHover)}
@@ -60,7 +60,7 @@ export default function Code() {
                     </MDBMask>
                 </div>
             </MDBView>
-        </a>
+        </Link>
 
         <Link to="/code/airbnb">
             <MDBView hover>

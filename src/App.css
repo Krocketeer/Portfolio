@@ -1,8 +1,9 @@
 @import '~antd/dist/antd.css';
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
 
-* {
+  * {
   box-sizing: border-box;
 }
 
@@ -361,6 +362,11 @@ h4 {
     flex-direction: column;
     justify-content: center;
   }
+
+  .DemoVideo {
+    width: 17rem;
+    height: 10rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -640,6 +646,23 @@ h4 {
   #JPSVideo {
     width: 80vw;
     height: 45vw;
+  }
+
+  .DemoVideo {
+    width: 65vw;
+    height: 36vw;
+    /*width: 44.5rem;*/
+    /*height: 24.5rem;*/
+  }
+
+  #CombinedCircuitImages {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .CombinedCircuit {
+    height: 32%;
+    width: 32%;
   }
 }
 

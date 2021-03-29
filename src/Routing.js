@@ -11,6 +11,7 @@ import WSWS from "./projects/WSWS"
 import Portfolio from "./projects/PortfolioRedesign"
 import JPS from "./projects/JointPressureSleeve"
 import TwitterTrends from  "./projects/TwitterTrends"
+import LightBar from "./projects/LightBar"
 
 export default function Routing() {
     return <Switch>
@@ -22,6 +23,7 @@ export default function Routing() {
         <Route path="/code" exact component={Code} />
         <Route path="/code/airbnb" exact component={Upcoming} />
         <Route path="/code/TwitterTrends" component={TwitterTrends} />
+        <Route path="/code/LightBar" component={LightBar} />
         <Route path="/design/SeattleTransit" component={SeattleTransit} />
         <Route path="/design/BaseCamp" component={BaseCamp} />
         <Route path="/design/WestSoundWildlifeShelter" component={WSWS} />

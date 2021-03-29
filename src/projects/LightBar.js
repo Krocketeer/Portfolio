@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 // import { CopyBlock, monoBlue } from "react-code-blocks"
 
 import { SRLWrapper } from "simple-react-lightbox"
@@ -17,6 +17,10 @@ import ProjectBoxCircuit from "../images/LightBar/IMG_2413.jpeg"
 
 
 export default function LightBar() {
+    useEffect(()  =>  {
+        window.scrollTo(0, 0)
+    }, [])
+
     return <>
         <SRLWrapper options={lightboxOptions}>
             <ScrollArrow />

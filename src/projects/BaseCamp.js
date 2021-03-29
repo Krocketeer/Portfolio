@@ -144,7 +144,7 @@ export default function BaseCamp() {
                             eventually served as the basis for our digitalized wireframes. Of the 5 main sections, I
                             focused the feed and leaderboards.
                         </p>
-                        <div id="SeaTransPDFs">
+                        <div id="BaseCampPDFs">
                             <div style={styles.centerDiv50}>
                                 {/*<embed id="SeaTransUserFlow" src={paperProto} allowFullScreen/>*/}
                                 {/*https://stackoverflow.com/questions/1244788/embed-vs-object*/}
@@ -156,11 +156,11 @@ export default function BaseCamp() {
                                 {/*<embed id="BaseCampLowFi" src={lowFi} allowFullScreen/>*/}
                                 <i>Low-fidelity mockups of feed and leaderboard sections</i>
                             </div>
-                        </div>
-                        <div style={styles.centerDiv50}>
-                            <object id="BaseCampWireFrames" data={wireframes} type="application/pdf">Digitalized wireframes of feed and leaderboard sections</object>
-                            {/*<embed id="SeaTransLowFi" src={wireframes} allowFullScreen/>*/}
-                            <i>Digitalized wireframes of feed and leaderboard sections</i>
+                            <div style={styles.centerDiv50}>
+                                <object id="BaseCampWireFrames" data={wireframes} type="application/pdf">Digitalized wireframes of feed and leaderboard sections</object>
+                                {/*<embed id="SeaTransLowFi" src={wireframes} allowFullScreen/>*/}
+                                <i>Digitalized wireframes of feed and leaderboard sections</i>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -218,6 +218,11 @@ const styles = {
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
+    },
+    centerDiv50NoAlign: {
+        display: "flex",
+        flexDirection: "column",
+        paddingBottom: "50px"
     },
 
 }

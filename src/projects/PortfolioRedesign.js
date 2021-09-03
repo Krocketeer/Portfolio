@@ -3,7 +3,6 @@ import { SRLWrapper } from "simple-react-lightbox"
 import ScrollArrow from "../components/ScrollArrow";
 
 import PortfolioCover from "../images/ReactPortfolio/PortfolioCover.png"
-// import PRCover from "../images/ReactPortfolio/MacBookMockUp.png"
 import frontPage from "../images/ReactPortfolio/OldPortfolio/Front Page.png"
 import projectLayout from "../images/ReactPortfolio/OldPortfolio/Page Layout.png"
 import wireframes from "../images/ReactPortfolio/PortfolioWireframes.png"

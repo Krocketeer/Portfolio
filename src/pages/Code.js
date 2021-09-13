@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import AirbnbCover from "../images/Airbnb/AirBnbCover.png";
 import AirbnbCoverHover from "../images/Airbnb/AirBnbCoverHover.png"
 import PortfolioCover from "../images/ReactPortfolio/PortfolioCover.png"
-import PortfolioCoverHover from "../images/ReactPortfolio/PortfolioCoverHover2.png"
+import PortfolioCoverHover from "../images/ReactPortfolio/PortfolioCoverHover.png"
 import ArduinoCover from "../images/LightBar/LightBarCover.png";
 import ArduinoCoverHover from "../images/LightBar/LightBarCoverHover.png";
 import TwitterCover from "../images/TwitterTrends/TwitterTrendsCover.png"

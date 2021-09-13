@@ -7,7 +7,7 @@ import BaseCampCover from "../images/BaseCamp/BaseCampCoverAlt.png"
 import WSWSCoverHover from "../images/WildlifeShelter/WSWSCover.png"
 import WSWSCover from "../images/WildlifeShelter/WSWSCoverGreen.png"
 import PortfolioCover from "../images/ReactPortfolio/PortfolioCover.png"
-import PortfolioCoverHover from "../images/ReactPortfolio/PortfolioCoverHover2.png"
+import PortfolioCoverHover from "../images/ReactPortfolio/PortfolioCoverHover.png"
 
 export default function Design() {
     useEffect(()=> {

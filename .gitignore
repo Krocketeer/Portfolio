@@ -28,4 +28,5 @@ yarn-error.log*
 firebase.json
 
 # Other
-/PortfolioMockups
+/PortfolioMockups/
+/src/images/ReactPortfolio/MockImages/

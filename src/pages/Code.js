@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react"
+import React, { useEffect, useState } from "react"
 import { Link } from "react-router-dom";
 import AirbnbCover from "../images/Airbnb/AirBnbCover.png";
 import AirbnbCoverHover from "../images/Airbnb/AirBnbCoverHover.png"
@@ -8,7 +8,6 @@ import ArduinoCover from "../images/LightBar/LightBarCover.png";
 import ArduinoCoverHover from "../images/LightBar/LightBarCoverHover.png";
 import TwitterCover from "../images/TwitterTrends/TwitterTrendsCover.png"
 import TwitterCoverHover from "../images/TwitterTrends/TwitterTrendsHover.png"
-
 
 export default function Code() {
     useEffect(()=> {
@@ -53,10 +52,10 @@ export default function Code() {
 
     const path = window.location.pathname
     const [activeProject, setActiveProject] = useState(path)
-    const projectName = ["nullHolder", "Twitter Trends Mapper", "LED Light Bar", "Insights into AirBnb & Cities", "Portfolio Redesign"]
+    const projectName = ["nullHolder", "Twitter Trends Mapper", "LED Light Bar", "Insights into AirBnb & Cities",
+                        "Portfolio Redesign"]
 
     return <div className="codeProjects" onClick={e => setActiveProject(e.key)}>
-
         <Link to="/code/twittertrends">
             <div className="projectBox" id="code-project1">
                 <img id="code-project1-cover" className="coverImage" src={TwitterCover} alt="Twitter Trends" />

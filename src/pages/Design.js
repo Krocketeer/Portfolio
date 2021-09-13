@@ -1,6 +1,5 @@
-import React, {useEffect, useState} from "react"
+import React, { useEffect, useState } from "react"
 import { Link } from "react-router-dom";
-
 import SeaTransitCoverHover from "../images/SeattleTransit/STAltCover.png"
 import SeaTransitCover from "../images/SeattleTransit/STCover.png"
 import BaseCampCoverHover from "../images/BaseCamp/CalendarSmaller.gif"

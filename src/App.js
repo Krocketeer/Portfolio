@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import './css/App.css';
 import "./components/Header"
 import { BrowserRouter as Router } from 'react-router-dom';
 import SimpleReactLightbox from "simple-react-lightbox"

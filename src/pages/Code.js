@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react"
 import { Link } from "react-router-dom";
-import AirbnbCover from "../images/Airbnb/AirBnbCover.png";
-import AirbnbCoverHover from "../images/Airbnb/AirBnbCoverHover.png"
+import AirbnbCover from "../images/Airbnb/AirBnbCoverHover.png";
+import AirbnbCoverHover from "../images/Airbnb/AirBnbCover.png";
 import PortfolioCover from "../images/ReactPortfolio/PortfolioCover.png"
 import PortfolioCoverHover from "../images/ReactPortfolio/PortfolioCoverHover.png"
 import ArduinoCover from "../images/LightBar/LightBarCover.png";
@@ -60,7 +60,7 @@ export default function Code() {
             <div className="projectBox" id="code-project1">
                 <img id="code-project1-cover" className="coverImage" src={TwitterCover} alt="Twitter Trends" />
                 <div className="hover-overlay">
-                    <img className="coverImage" src={TwitterCoverHover} alt="Seattle Transit Rebrand" />
+                    <img className="coverImage" src={TwitterCoverHover} alt="Twitter Trends" />
                     <div className="hoverText overlay-text">
                         <p>{projectName[1]}</p>
                         <p style={{fontSize: ".75em"}}>Full Stack Development</p>
@@ -71,9 +71,9 @@ export default function Code() {
 
         <Link to="/code/LightBar">
             <div className="projectBox" id="code-project2">
-                <img id="code-project2-cover" className="coverImage" src={ArduinoCover} alt="Seattle Transit Rebrand" />
+                <img id="code-project2-cover" className="coverImage" src={ArduinoCover} alt="LED Light Bar" />
                 <div className="hover-overlay">
-                    <img className="coverImage" src={ArduinoCoverHover} alt="Arduino Circuit" />
+                    <img className="coverImage" src={ArduinoCoverHover} alt="LED Light Bar" />
                     <div className="hoverText overlay-text">
                         <p>{projectName[2]}</p>
                         <p style={{fontSize: ".75em"}}>Physical Computing</p>
@@ -84,9 +84,9 @@ export default function Code() {
 
         <Link to="/code/airbnb">
             <div className="projectBox" id="code-project3">
-                <img id="code-project3-cover" className="coverImage" src={AirbnbCover} alt="Seattle Transit Rebrand" />
+                <img id="code-project3-cover" className="coverImage" src={AirbnbCover} alt="Insights into Airbnb & Cities" />
                 <div className="hover-overlay">
-                    <img className="coverImage" src={AirbnbCoverHover} alt="AirBnb" />
+                    <img className="coverImage" src={AirbnbCoverHover} alt="Insights into Airbnb & Cities" />
                     <div className="hoverText overlay-text">
                         <p>{projectName[3]}</p>
                         <p style={{fontSize: ".75em"}}>Data Visualization</p>
@@ -97,9 +97,9 @@ export default function Code() {
 
         <Link to="/design/PortfolioRedesign">
             <div className="projectBox" id="code-project4">
-                <img id="code-project4-cover" className="coverImage" src={PortfolioCover} alt="Seattle Transit Rebrand" />
+                <img id="code-project4-cover" className="coverImage" src={PortfolioCover} alt="Portfolio Redesign" />
                 <div className="hover-overlay">
-                    <img className="coverImage" src={PortfolioCoverHover} alt="Seattle Transit Rebrand" />
+                    <img className="coverImage" src={PortfolioCoverHover} alt="Portfolio Redesign" />
                     <div className="hoverText overlay-text">
                         <p>{projectName[4]}</p>
                         <p style={{fontSize: ".75em"}}>Web Design & React Development</p>

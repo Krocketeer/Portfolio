@@ -71,9 +71,9 @@ export default function Design() {
 
         <Link to="/design/BaseCamp">
             <div className="projectBox" id="project2">
-                <img id="project2-cover" className="coverImage" src={BaseCampCover} alt="Seattle Transit Rebrand" />
+                <img id="project2-cover" className="coverImage" src={BaseCampCover} alt="Base Camp" />
                 <div className="hover-overlay">
-                    <img className="coverImage" src={BaseCampCoverHover} alt="Seattle Transit Rebrand" />
+                    <img className="coverImage" src={BaseCampCoverHover} alt="Base Camp" />
                     <div className="hoverText overlay-text">
                         <p>{projectName[2]}</p>
                         <p style={{fontSize: ".75em"}}>UX Design</p>
@@ -84,9 +84,9 @@ export default function Design() {
 
         <Link to="/design/WestSoundWildlifeShelter">
             <div className="projectBox" id="project3">
-                <img id="project3-cover" className="coverImage" src={WSWSCover} alt="Seattle Transit Rebrand" />
+                <img id="project3-cover" className="coverImage" src={WSWSCover} alt="West Sound Wildlife Shelter" />
                 <div className="hover-overlay">
-                    <img className="coverImage" src={WSWSCoverHover} alt="Seattle Transit Rebrand" />
+                    <img className="coverImage" src={WSWSCoverHover} alt="West Sound Wildlife Shelter" />
                     <div className="hoverText overlay-text">
                         <p>{projectName[3]}</p>
                         <p style={{fontSize: ".75em"}}>Visual Design & Brand Identity</p>
@@ -97,9 +97,9 @@ export default function Design() {
 
         <Link to="/design/PortfolioRedesign">
             <div className="projectBox" id="project4">
-                <img id="project4-cover" className="coverImage" src={PortfolioCover} alt="Seattle Transit Rebrand" />
+                <img id="project4-cover" className="coverImage" src={PortfolioCover} alt="Portfolio Redesign" />
                 <div className="hover-overlay">
-                    <img className="coverImage" src={PortfolioCoverHover} alt="Seattle Transit Rebrand" />
+                    <img className="coverImage" src={PortfolioCoverHover} alt="Portfolio Redesign" />
                     <div className="hoverText overlay-text">
                         <p>{projectName[4]}</p>
                         <p style={{fontSize: ".75em"}}>Web Design & React Development</p>

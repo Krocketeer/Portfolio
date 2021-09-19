@@ -4,7 +4,7 @@ import { ArrowUpOutlined } from "@ant-design/icons"
 export default function ScrollArrow() {
     const [showScroll, setShowScroll] = useState(false)
 
-    const checkScrollTop = () => {
+    const checkScrollTop =()=> {
         if (!showScroll && window.pageYOffset > 400){
             setShowScroll(true)
         } else if (showScroll && window.pageYOffset <= 400){
@@ -12,13 +12,13 @@ export default function ScrollArrow() {
         }
     };
 
-    const scrollTop = () =>{
+    const scrollTop =()=> {
         window.scrollTo({top: 0, behavior: 'smooth'});
     };
 
-    useEffect(() => {
+    useEffect(()=> {
         window.addEventListener('scroll', checkScrollTop)
-    }, [])
+    })
 
     return <ArrowUpOutlined className="scrollTop" onClick={scrollTop} style={{display: showScroll ? 'flex' : 'none'}}/>
 }

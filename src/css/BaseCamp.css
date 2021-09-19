@@ -1,0 +1,151 @@
+.pageCover {
+    display: flex;
+    justify-content: center;
+}
+
+.pageHeader {
+    margin-top: 50px;
+}
+
+.pageLayout {
+    padding: 0 36px;
+}
+
+.details {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+#BaseCampPDFs {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+#BaseCampInfoArch, #BaseCampDesignSys, #BaseCampStoryBoard, #BaseCampJourneyMap {
+    width: 100%;
+    height: 100%;
+    cursor: zoom-in;
+}
+
+#figmaAppFrame {
+    width: 232px;
+    height: 466px;
+    border: 1px solid rgba(0, 0, 0, 0);
+}
+
+#figmaKioskFrame {
+    width: 383px;
+    height: 333px;
+    border: 1px solid rgba(0, 0, 0, 0);
+}
+
+#BaseCampUserFindings, #BaseCampDesignSpec {
+    width: 112%;
+    height: 100%;
+    cursor: zoom-in;
+}
+
+.BaseCampPersonaLayout {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.BaseCampPersona {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 25px;
+    cursor: zoom-in;
+}
+
+#BaseCampPaperProto, #BaseCampLowFi, #BaseCampWireFrames {
+    width: 320px;
+    height: 426px;
+    margin-bottom: 25px;
+}
+
+@media (min-width: 768px) {
+    html, body { /* DESKTOP & TABLET */
+        font-size: 21px;
+    }
+
+    .pageHeader {
+        margin-top: 100px;
+    }
+
+    .pageLayout {
+        padding-left: 108px;
+        padding-right: 108px;
+    }
+
+    .details {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+    }
+
+    #BaseCampDesignSpec, #BaseCampStoryBoard {
+        width: 69%;
+        height: 100%;
+        cursor: zoom-in;
+    }
+
+    #figmaAppFrame {
+        width: 464px;
+        height: 933px;
+        border: 1px solid rgba(0, 0, 0, 0);
+    }
+
+    #figmaKioskFrame {
+        width: 1100px;
+        height: 900px;
+        border: 1px solid rgba(0, 0, 0, 0);
+    }
+
+    #BaseCampUserFindings {
+        width: 75%;
+        height: 100%;
+        margin-top: -25px;
+    }
+
+    .BaseCampPersonaLayout {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .BaseCampPersona {
+        width: 49%;
+        height: 100%;
+        margin-bottom: 25px;
+    }
+
+    #BaseCampJourneyMap {
+        width: 50%;
+        height: 100%;
+    }
+
+    #BaseCampPDFs {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    #BaseCampPaperProto, #BaseCampLowFi, #BaseCampWireFrames {
+        width: 24rem;
+        height: 32rem;
+        margin-right: 24px;
+        margin-left: 24px;
+    }
+
+    #BaseCampPDFs i {
+        display: flex;
+        flex-flow: row wrap;
+        max-width: 24rem;
+        font-size: 18px;
+        text-align: center;
+    }
+}

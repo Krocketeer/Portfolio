@@ -1,4 +1,5 @@
 import React, {useEffect} from "react"
+import "../css/JointPressureSleeve.css";
 import { SRLWrapper } from "simple-react-lightbox"
 import MetaTags from "react-meta-tags"
 
@@ -287,7 +288,7 @@ export default function JointPressureSleeve() {
                             which was creating a usable prototype of the Joint Pressure Sleeve.
                          </p>
                         <div style={styles.centerDiv}>
-                            <iframe id="JPSVideo"
+                            <iframe className="DemoVideo"
                                     title="Joint Pressure Sleeve Version 2 Demo"
                                     src="https://www.youtube.com/embed/uirDy4rB1cc"
                                     frameBorder="0"

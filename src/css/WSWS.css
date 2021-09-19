@@ -1,0 +1,78 @@
+.pageHeader {
+    margin-top: 50px;
+}
+
+.pageLayout {
+    padding: 0 36px;
+}
+
+.details {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+#WSWSType {
+    width: 115%;
+    height: 100%;
+    cursor: zoom-in;
+}
+
+#WSWSMockups {
+    width: 100%;
+    height: 100%;
+    cursor: zoom-in;
+}
+
+.WSWSWebDesign {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 25px;
+}
+
+.WSWSBrandAudit {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media (min-width: 768px) {
+    .pageHeader {
+        margin-top: 100px;
+    }
+
+    .pageLayout {
+        padding-left: 108px;
+        padding-right: 108px;
+    }
+
+    .details {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+    }
+
+    #WSWSType {
+        width: 69%;
+        height: 100%;
+        cursor: zoom-in;
+    }
+
+    #WSWSMockups {
+        width: 75%;
+        height: 100%;
+        cursor: zoom-in;
+    }
+
+    .WSWSBrandAudit {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .WSWSWebDesign {
+        width: 49%;
+        height: 100%;
+        margin-bottom: 25px;
+    }
+}

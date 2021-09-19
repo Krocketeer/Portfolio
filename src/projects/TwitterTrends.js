@@ -77,7 +77,7 @@ export default function TwitterTrends() {
                             <a href={links.github}> Github</a>).
                         </p>
                         <div style={styles.centerDiv}>
-                            <iframe id="JPSVideo"
+                            <iframe className="DemoVideo"
                                     title="Twitter Trends Mapper Demo"
                                     src="https://www.youtube.com/embed/HAahmbTK64Q"
                                     frameBorder="0"

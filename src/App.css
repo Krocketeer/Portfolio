@@ -135,16 +135,6 @@ h4 {
   min-width: 269px;
 }
 
-#SeaTransUserFlow, #SeaTransLowFi {
-  width: 360px;
-  height: 480px;
-}
-
-#BaseCampInfoArch, #BaseCampDesignSys {
-  width: 100%;
-  height: 100%;
-}
-
 header {
   display: flex;
   flex-flow: column nowrap;
@@ -279,33 +269,6 @@ header p {
   justify-content: space-between;
 }
 
-#SeaTransType, #WSWSType {
-  width: 115%;
-  height: 100%;
-  cursor: zoom-in;
-}
-
-#SeaTransPDFs, #BaseCampPDFs {
-  display: flex;
-  flex-flow: column wrap;
-  align-items: center;
-}
-
-#SeaTransUserFlow, #SeaTransLowFi {
-  width: 240px;
-  height: 320px;
-  margin-bottom: 25px;
-}
-
-#SeaTransColor, #SeaTransMoodBoard, #SeaTransIcons,
-#BaseCampStoryBoard,
-#WSWSColor, #WSWSPillars, #WSWSLogo, #WSWSMockups,
-#JPSSketchV1, #JPSSketchV2 {
-  width: 100%;
-  height: 100%;
-  cursor: zoom-in;
-}
-
 #figmaAppFrame {
   width: 232px;
   height: 466px;
@@ -318,55 +281,9 @@ header p {
   border: 1px solid rgba(0, 0, 0, 0);
 }
 
-#SeaTransWayfinding {
-  width: 100%;
-  height: 100%;
-  margin-bottom: 30px;
-  cursor: zoom-in;
-}
-
-#BaseCampUserFindings, #BaseCampDesignSpec {
-  width: 112%;
-  height: 100%;
-  cursor: zoom-in;
-}
-
-.BaseCampPersonaLayout, .JPSDualPhotoLayout {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.BaseCampPersona, .WSWSWebDesign, .JPSDualPhoto {
-  width: 100%;
-  height: 100%;
-  margin-bottom: 25px;
-}
-
-#BaseCampJourneyMap, #JPSVideo {
-  width: 100%;
-  height: 100%;
-}
-
-#BaseCampPaperProto, #BaseCampLowFi, #BaseCampWireFrames {
-  width: 320px;
-  height: 426px;
-  margin-bottom: 25px;
-}
-
-.WSWSBrandAudit {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
 .DemoVideo {
   width: 17rem;
   height: 10rem;
-}
-
-#test-regular {
-  display: block;
 }
 
 .hover-overlay, #test-hover {
@@ -384,6 +301,12 @@ header p {
   height: 100%;
   bottom: 0;
   z-index: 999;
+}
+
+.single-image {
+  width: 69%;
+  height: 100%;
+  cursor: zoom-in;
 }
 
 @media (min-width: 768px) {
@@ -543,40 +466,6 @@ header p {
     justify-content: space-between;
   }
 
-  #SeaTransMoodBoard, #JPSSketchV1 {
-    width: 75%;
-    height: 100%;
-    margin-top: -25px;
-    cursor: zoom-in;
-  }
-
-  #SeaTransColor, #SeaTransType,
-  #BaseCampDesignSpec, #BaseCampStoryBoard,
-  #WSWSColor, #WSWSType, #WSWSLogo, #WSWSPillars {
-    width: 69%;
-    height: 100%;
-    cursor: zoom-in;
-  }
-
-  #SeaTransPDFs {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: center;
-  }
-
-  #SeaTransUserFlow, #SeaTransLowFi {
-    width: 720px;
-    height: 960px;
-    margin-right: 48px;
-  }
-
-  #SeaTransIcons, #WSWSMockups, #JPSSketchV2 {
-    width: 75%;
-    height: 100%;
-    cursor: zoom-in;
-  }
-
   #figmaAppFrame {
     width: 464px;
     height: 933px;
@@ -589,74 +478,10 @@ header p {
     border: 1px solid rgba(0, 0, 0, 0);
   }
 
-  #SeaTransWayfinding {
-    width: 69%;
+  .single-image {
+    width: 100%;
     height: 100%;
-    margin-bottom: 40px;
     cursor: zoom-in;
-  }
-
-  #BaseCampUserFindings {
-    width: 75%;
-    height: 100%;
-    margin-top: -25px;
-    cursor: zoom-in;
-  }
-
-  .BaseCampPersonaLayout, .JPSDualPhotoLayout {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .BaseCampPersona, .JPSDualPhoto {
-    width: 49%;
-    height: 100%;
-    margin-bottom: 25px;
-  }
-
-  #BaseCampJourneyMap {
-    width: 50%;
-    height: 100%;
-  }
-
-  #BaseCampPDFs {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: space-around;
-  }
-
-  #BaseCampPaperProto, #BaseCampLowFi, #BaseCampWireFrames {
-    width: 24rem;
-    height: 32rem;
-    margin-right: 24px;
-    margin-left: 24px;
-  }
-
-  #BaseCampPDFs i {
-    display: flex;
-    flex-flow: row wrap;
-    max-width: 24rem;
-    font-size: 18px;
-    text-align: center;
-  }
-
-  .WSWSBrandAudit {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .WSWSWebDesign {
-    width: 49%;
-    height: 100%;
-    margin-bottom: 25px;
-  }
-
-  #JPSVideo {
-    width: 80vw;
-    height: 45vw;
   }
 
   .DemoVideo {

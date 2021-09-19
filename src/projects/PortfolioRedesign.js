@@ -55,7 +55,7 @@ export default function PortfolioRedesign() {
                             balance between maximizing content per page and without feeling too overwhelming. However,
                             one thing I noticed that I didn't like was the varied amount of spacing and general lack of
                             a grid structure for various components on the website. While I have taken down my old
-                            portfolio, I a static version of it can be viewed
+                            portfolio, a static version of it can be viewed
                             <a href={links.oldPortfolio}> here</a>. (Note: parts of the site are broken because it was
                             transferred from Wordpress to Github).
                         </p>
@@ -78,7 +78,7 @@ export default function PortfolioRedesign() {
                             of white space and key placements of color. After juggling a few ideas on paper, I then
                             created some wireframes — both a desktop and mobile version — of the most promising sketch.
                         </p>
-                        <img id="WSWSPillars" src={wireframes}
+                        <img className="single-image" src={wireframes}
                              alt="Desktop and Mobile Wireframe for portfolio" />
                     </div>
                 </div>

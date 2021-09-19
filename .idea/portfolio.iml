@@ -8,6 +8,7 @@
       <excludeFolder url="file://$MODULE_DIR$/.firebase" />
       <excludeFolder url="file://$MODULE_DIR$/build" />
       <excludeFolder url="file://$MODULE_DIR$/PortfolioMockups" />
+      <excludeFolder url="file://$MODULE_DIR$/src/images/ReactPortfolio/MockImages" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

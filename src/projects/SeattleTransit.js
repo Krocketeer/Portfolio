@@ -1,4 +1,5 @@
 import React, {useEffect} from "react"
+import "../css/SeattleTransit.css";
 import { SRLWrapper } from "simple-react-lightbox"
 
 import SeaTransitCover from "../images/SeattleTransit/STCover.png"

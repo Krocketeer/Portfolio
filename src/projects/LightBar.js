@@ -56,7 +56,7 @@ export default function LightBar() {
                             </p>
                         </div>
                     </div>
-                    <div id="moodBoard">
+                    <div>
                         <h6>Building a Basic Version</h6>
                         <div style={styles.centerDiv50}>
                             <p style={{paddingBottom: "25px"}}>
@@ -79,7 +79,7 @@ export default function LightBar() {
                             </div>
                         </div>
                     </div>
-                    <div id="moodBoard">
+                    <div>
                         <h6>Adding the LED Bar to the Circuit</h6>
                         <div style={styles.centerDiv50}>
                             <p style={{paddingBottom: "25px"}}>
@@ -117,7 +117,7 @@ export default function LightBar() {
                                 transistors, the 5V and the VCC had to be connected but it was okay as long as I did not
                                 connect their respective grounds together.
                             </p>
-                            <img id="SeaTransColor" src={BasicCircuit}
+                            <img className="single-image" src={BasicCircuit}
                                  alt="Simple circuit of P-Channel transistor with LED light strip" />
                         </div>
                     </div>
@@ -137,7 +137,7 @@ export default function LightBar() {
                                 resistors were needed for the LED light bar since they were built into the light bar
                                 itself.
                             </p>
-                            <img id="SeaTransColor" src={schematic}
+                            <img className="single-image" src={schematic}
                                  alt="Schematic that connects a light bar to an Arduino using two transistors" />
                         </div>
                     </div>

@@ -1,5 +1,6 @@
 import React from "react"
-import profile_pic from "../images/IMG_3352.jpeg";
+// import profile_pic from "../images/IMG_3352.jpeg";
+import profile_pic from "../images/IMG_1300.jpeg";
 import Typical from "react-typical"
 
 export default function About() {
@@ -23,7 +24,7 @@ export default function About() {
             </h3>
             {/*<h3 style={{fontWeight: 350}}>based in Seattle, Washington.</h3>*/}
             <p> I am currently an undergraduate studying
-                <a href="https://www.hcde.washington.edu/"> Human Centered Design & Engineering </a>
+                <a href="https://www.hcde.washington.edu/" target="_blank"> Human Centered Design & Engineering </a>
                 at the University of Washington. My journey in design first started when I took an introductory course
                 about inclusive design. It wasn't until then that I started to think about how important designing for
                 all users is. As someone who grew up in a very diverse neighborhood of different
@@ -31,10 +32,10 @@ export default function About() {
                 lived experiences ultimately make us who we are and as a result, I strive to create equitable
                 and inclusive experiences for all.
             </p>
-            <p> When I'm not designing, you can find me outside taking photographs, swimming, or exploring what it
+            <p> When I'm not designing, you can find me outside taking photographs, ice skating, or exploring what it
                 means to be a human :)
-
             </p>
+            <p>While you're here, feel free to take a look at my <a href="https://read.cv/kmdle" target="_blank">resume</a>.</p>
         </div>
     </div>
 }

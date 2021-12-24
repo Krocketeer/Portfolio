@@ -66,6 +66,10 @@
     margin-bottom: 25px;
 }
 
+#BaseCampPDFs i {
+    text-align: center;
+}
+
 @media (min-width: 768px) {
     html, body { /* DESKTOP & TABLET */
         font-size: 21px;
@@ -146,6 +150,5 @@
         flex-flow: row wrap;
         max-width: 24rem;
         font-size: 18px;
-        text-align: center;
     }
 }

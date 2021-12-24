@@ -119,7 +119,7 @@ export default function BaseCamp() {
                             and our design solution. Shown below, is my storyboard that shows a coach using the design
                             solution to send workouts to their team.
                         </p>
-                        <img className="single-image" id="BaseCampStoryBoard" src={storyboard} alt="Storyboard of coaching using design solution" />
+                        <img className="SingleImage" id="BaseCampStoryBoard" src={storyboard} alt="Storyboard of coaching using design solution" />
                     </div>
                 </div>
                 <div>

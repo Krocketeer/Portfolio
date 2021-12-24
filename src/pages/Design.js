@@ -16,37 +16,37 @@ export default function Design() {
 
     useEffect(()=> {
         document.getElementById("project1").addEventListener("mouseover", () => {
-            hover("project1-cover");
+            hover("project1Cover");
         });
         document.getElementById("project1").addEventListener("mouseout", () => {
-            hover("project1-cover");
+            hover("project1Cover");
         });
     });
 
     useEffect(()=> {
         document.getElementById("project2").addEventListener("mouseover", ()=>{
-            hover("project2-cover");
+            hover("project2Cover");
         });
         document.getElementById("project2").addEventListener("mouseout", ()=>{
-            hover("project2-cover");
+            hover("project2Cover");
         });
     });
 
     useEffect(()=> {
         document.getElementById("project3").addEventListener("mouseover", ()=>{
-            hover("project3-cover");
+            hover("project3Cover");
         });
         document.getElementById("project3").addEventListener("mouseout", ()=>{
-            hover("project3-cover");
+            hover("project3Cover");
         });
     });
 
     useEffect(()=> {
         document.getElementById("project4").addEventListener("mouseover", ()=>{
-            hover("project4-cover");
+            hover("project4Cover");
         });
         document.getElementById("project4").addEventListener("mouseout", ()=>{
-            hover("project4-cover");
+            hover("project4Cover");
         });
     });
 
@@ -58,10 +58,10 @@ export default function Design() {
     return <div className="designProjects" onClick={e => setActiveProject(e.key)}>
         <Link to="/design/SeattleTransit">
             <div className="projectBox" id="project1">
-                <img id="project1-cover" className="coverImage" src={SeaTransitCover} alt="Seattle Transit Rebrand" />
-                <div className="hover-overlay">
+                <img id="project1Cover" className="coverImage" src={SeaTransitCover} alt="Seattle Transit Rebrand" />
+                <div className="hoverOverlay">
                     <img className="coverImage" src={SeaTransitCoverHover} alt="Seattle Transit Rebrand" />
-                    <div className="hoverText overlay-text">
+                    <div className="hoverText overlayText">
                         <p>{projectName[1]}</p>
                         <p style={{fontSize: ".75em"}}>Visual Design & Brand Identity</p>
                     </div>
@@ -71,10 +71,10 @@ export default function Design() {
 
         <Link to="/design/BaseCamp">
             <div className="projectBox" id="project2">
-                <img id="project2-cover" className="coverImage" src={BaseCampCover} alt="Base Camp" />
-                <div className="hover-overlay">
+                <img id="project2Cover" className="coverImage" src={BaseCampCover} alt="Base Camp" />
+                <div className="hoverOverlay">
                     <img className="coverImage" src={BaseCampCoverHover} alt="Base Camp" />
-                    <div className="hoverText overlay-text">
+                    <div className="hoverText overlayText">
                         <p>{projectName[2]}</p>
                         <p style={{fontSize: ".75em"}}>UX Design</p>
                     </div>
@@ -84,10 +84,10 @@ export default function Design() {
 
         <Link to="/design/WestSoundWildlifeShelter">
             <div className="projectBox" id="project3">
-                <img id="project3-cover" className="coverImage" src={WSWSCover} alt="West Sound Wildlife Shelter" />
-                <div className="hover-overlay">
+                <img id="project3Cover" className="coverImage" src={WSWSCover} alt="West Sound Wildlife Shelter" />
+                <div className="hoverOverlay">
                     <img className="coverImage" src={WSWSCoverHover} alt="West Sound Wildlife Shelter" />
-                    <div className="hoverText overlay-text">
+                    <div className="hoverText overlayText">
                         <p>{projectName[3]}</p>
                         <p style={{fontSize: ".75em"}}>Visual Design & Brand Identity</p>
                     </div>
@@ -97,10 +97,10 @@ export default function Design() {
 
         <Link to="/design/PortfolioRedesign">
             <div className="projectBox" id="project4">
-                <img id="project4-cover" className="coverImage" src={PortfolioCover} alt="Portfolio Redesign" />
-                <div className="hover-overlay">
+                <img id="project4Cover" className="coverImage" src={PortfolioCover} alt="Portfolio Redesign" />
+                <div className="hoverOverlay">
                     <img className="coverImage" src={PortfolioCoverHover} alt="Portfolio Redesign" />
-                    <div className="hoverText overlay-text">
+                    <div className="hoverText overlayText">
                         <p>{projectName[4]}</p>
                         <p style={{fontSize: ".75em"}}>Web Design & React Development</p>
                     </div>

@@ -78,7 +78,7 @@ export default function PortfolioRedesign() {
                             of white space and key placements of color. After juggling a few ideas on paper, I then
                             created some wireframes — both a desktop and mobile version — of the most promising sketch.
                         </p>
-                        <img className="single-image" src={wireframes}
+                        <img className="SingleImage" src={wireframes}
                              alt="Desktop and Mobile Wireframe for portfolio" />
                     </div>
                 </div>

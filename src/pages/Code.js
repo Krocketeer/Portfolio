@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react"
 import { Link } from "react-router-dom";
+import hover from "../components/Hover.js"
 import AirbnbCover from "../images/Airbnb/AirBnbCoverHover.png";
 import AirbnbCoverHover from "../images/Airbnb/AirBnbCover.png";
 import PortfolioCover from "../images/ReactPortfolio/PortfolioCover.png"
@@ -8,6 +9,7 @@ import ArduinoCover from "../images/LightBar/LightBarCover.png";
 import ArduinoCoverHover from "../images/LightBar/LightBarCoverHover.png";
 import TwitterCover from "../images/TwitterTrends/TwitterTrendsCover.png"
 import TwitterCoverHover from "../images/TwitterTrends/TwitterTrendsHover.png"
+
 
 export default function Code() {
     useEffect(()=> {
@@ -109,17 +111,3 @@ export default function Code() {
         </Link>
     </div>
 };
-
-function hover(id) {
-    let element = document.getElementById(id);
-    if (element.classList.contains("active")) {
-        element.style.display = "block";
-        element.nextElementSibling.style.display = "none";
-        element.classList.remove("active");
-    } else {
-        element.style.display = "none";
-        element.nextElementSibling.style.display = "block";
-        element.classList.add("active");
-    }
-}
-

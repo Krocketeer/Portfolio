@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react"
 import { Link } from "react-router-dom";
+import hover from "../components/Hover.js"
 import SeaTransitCoverHover from "../images/SeattleTransit/STAltCover.png"
 import SeaTransitCover from "../images/SeattleTransit/STCover.png"
 import BaseCampCoverHover from "../images/BaseCamp/CalendarSmaller.gif"
@@ -109,16 +110,3 @@ export default function Design() {
         </Link>
     </div>
 };
-
-function hover(id) {
-    let element = document.getElementById(id);
-    if (element.classList.contains("active")) {
-        element.style.display = "block";
-        element.nextElementSibling.style.display = "none";
-        element.classList.remove("active");
-    } else {
-        element.style.display = "none";
-        element.nextElementSibling.style.display = "block";
-        element.classList.add("active");
-    }
-}

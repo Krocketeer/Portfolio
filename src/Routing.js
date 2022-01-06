@@ -3,6 +3,7 @@ import { Route, Switch, Redirect } from 'react-router-dom';
 
 import About from "./pages/About"
 import Airbnb from "./projects/Airbnb"
+import Anthem from "./projects/AnthemIntern"
 import BaseCamp from "./projects/BaseCamp"
 import Code from "./pages/Code"
 import Design from "./pages/Design"
@@ -24,6 +25,7 @@ export default function Routing() {
         <Route path="/code/airbnb" exact component={Airbnb} />
         <Route path="/code/TwitterTrends" component={TwitterTrends} />
         <Route path="/code/LightBar" component={LightBar} />
+        <Route path="/code/anthem" exact component={Anthem} />
         <Route path="/design/SeattleTransit" component={SeattleTransit} />
         <Route path="/design/BaseCamp" component={BaseCamp} />
         <Route path="/design/WestSoundWildlifeShelter" component={WSWS} />

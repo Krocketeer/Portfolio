@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react"
 import { Link } from "react-router-dom";
 import hover from "../components/Hover.js"
+import AnthemCover from "../images/Anthem/Anthem.png"
+import AnthemCoverHover from "../images/Anthem/AnthemCoverAlt.png"
 import AirbnbCover from "../images/Airbnb/AirBnbCoverHover.png";
 import AirbnbCoverHover from "../images/Airbnb/AirBnbCover.png";
 import PortfolioCover from "../images/ReactPortfolio/PortfolioCover.png"
@@ -54,8 +56,8 @@ export default function Code() {
 
     const path = window.location.pathname
     const [activeProject, setActiveProject] = useState(path)
-    const projectName = ["nullHolder", "Twitter Trends Mapper", "LED Light Bar", "Insights into AirBnb & Cities",
-                        "Portfolio Redesign"]
+    const projectName = ["nullHolder", "Twitter Trends Mapper", "Anthem, Inc. Internship", "LED Light Bar",
+        "Insights into AirBnb & Cities", "Portfolio Redesign"]
 
     return <div className="codeProjects" onClick={e => setActiveProject(e.key)}>
         <Link to="/code/twittertrends">
@@ -71,31 +73,44 @@ export default function Code() {
             </div>
         </Link>
 
-        <Link to="/code/LightBar">
+        <Link to="/code/anthem">
             <div className="projectBox" id="code-project2">
-                <img id="codeProject2Cover" className="coverImage" src={ArduinoCover} alt="LED Light Bar" />
+                <img id="codeProject2Cover" className="coverImage" src={AnthemCover} alt="Insights into Airbnb & Cities" />
+                <div className="hoverOverlay">
+                    <img className="coverImage" src={AnthemCoverHover} alt="Anthem Insurance" />
+                    <div className="hoverText overlayText">
+                        <p>{projectName[2]}</p>
+                        <p style={{fontSize: ".75em"}}>Web Development</p>
+                    </div>
+                </div>
+            </div>
+        </Link>
+
+        <Link to="/code/LightBar">
+            <div className="projectBox" id="code-project3">
+                <img id="codeProject3Cover" className="coverImage" src={ArduinoCover} alt="LED Light Bar" />
                 <div className="hoverOverlay">
                     <img className="coverImage" src={ArduinoCoverHover} alt="LED Light Bar" />
                     <div className="hoverText overlayText">
-                        <p>{projectName[2]}</p>
+                        <p>{projectName[3]}</p>
                         <p style={{fontSize: ".75em"}}>Physical Computing</p>
                     </div>
                 </div>
             </div>
         </Link>
 
-        <Link to="/code/airbnb">
-            <div className="projectBox" id="code-project3">
-                <img id="codeProject3Cover" className="coverImage" src={AirbnbCover} alt="Insights into Airbnb & Cities" />
-                <div className="hoverOverlay">
-                    <img className="coverImage" src={AirbnbCoverHover} alt="Insights into Airbnb & Cities" />
-                    <div className="hoverText overlayText">
-                        <p>{projectName[3]}</p>
-                        <p style={{fontSize: ".75em"}}>Data Visualization</p>
-                    </div>
-                </div>
-            </div>
-        </Link>
+        {/*<Link to="/code/airbnb">*/}
+        {/*    <div className="projectBox" id="code-project3">*/}
+        {/*        <img id="codeProject3Cover" className="coverImage" src={AirbnbCover} alt="Insights into Airbnb & Cities" />*/}
+        {/*        <div className="hoverOverlay">*/}
+        {/*            <img className="coverImage" src={AirbnbCoverHover} alt="Insights into Airbnb & Cities" />*/}
+        {/*            <div className="hoverText overlayText">*/}
+        {/*                <p>{projectName[3]}</p>*/}
+        {/*                <p style={{fontSize: ".75em"}}>Data Visualization</p>*/}
+        {/*            </div>*/}
+        {/*        </div>*/}
+        {/*    </div>*/}
+        {/*</Link>*/}
 
         <Link to="/design/PortfolioRedesign">
             <div className="projectBox" id="code-project4">
@@ -103,7 +118,7 @@ export default function Code() {
                 <div className="hoverOverlay">
                     <img className="coverImage" src={PortfolioCoverHover} alt="Portfolio Redesign" />
                     <div className="hoverText overlayText">
-                        <p>{projectName[4]}</p>
+                        <p>{projectName[5]}</p>
                         <p style={{fontSize: ".75em"}}>Web Design & React Development</p>
                     </div>
                 </div>
